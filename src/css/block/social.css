@@ -1,0 +1,19 @@
+.social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+} 
+
+.social__item {    
+  margin: 0 20px;
+}
+
+.social__img {
+  max-width: 100%;
+  width: 70px;
+} 
+
+.social:hover {
+  opacity: 0.8;
+}

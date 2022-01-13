@@ -1,0 +1,60 @@
+@import '../_mixins/font-face';
+
+// Подключение шрифтов
+@include font-face(
+  'Cabinet Grotesk',
+  '../font/CabinetGrotesk/CabinetGrotesk-Bold',
+  700
+);
+@include font-face(
+  'Cabinet Grotesk',
+  '../font/CabinetGrotesk/CabinetGrotesk-Black',
+  900
+);
+
+@include font-face(
+  'Helvetica Now Display',
+  '../font/HelveticaNowDisplay/HelveticaNowDisplay-Regular',
+  400
+);
+@include font-face(
+  'Helvetica Now Display',
+  '../font/HelveticaNowDisplay/HelveticaNowDisplay-Medium',
+  500
+);
+@include font-face(
+  'Helvetica Now Display',
+  '../font/HelveticaNowDisplay/HelveticaNowDisplay-Bold',
+  700
+);
+
+// Миксины для шрифтов
+@mixin font-cabinet-bold {
+  font-family: 'Cabinet Grotesk';
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin font-cabinet-black {
+  font-family: 'Cabinet Grotesk';
+  font-weight: 900;
+  font-style: normal;
+}
+
+@mixin font-helvetica-regular {
+  font-family: 'Helvetica Now Display';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-helvetica-medium {
+  font-family: 'Helvetica Now Display';
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin font-helvetica-bold {
+  font-family: 'Helvetica Now Display';
+  font-weight: 700;
+  font-style: normal;
+}

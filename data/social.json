@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Youtube",
+    "link": "https://www.youtube.com/c/CodeQuestRu",
+    "img": "img/youtube.png"
+  },
+  {
+    "name": "VK",
+    "link": "https://vk.com/codequest",
+    "img": "img/vk.png"
+  },
+  {
+    "name": "Instagram",
+    "link": "https://www.instagram.com/codequest/",
+    "img": "img/instagram.png"
+  },
+  {
+    "name": "Telegram",
+    "link": "https://t.me/codequest",
+    "img": "img/telegram.png"
+  },
+  {
+    "name": "Patreon",
+    "link": "https://www.patreon.com/codequest_ru",
+    "img": "img/patreon.png"
+  }
+]

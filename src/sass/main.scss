@@ -1,0 +1,77 @@
+// Настройки
+@import '_config/variables';
+@import '_config/fonts';
+
+// Миксины
+@import '_mixins/reset';
+@import '_mixins/media';
+@import '_mixins/container';
+@import '_mixins/flex';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  @include reset-model;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #e5e5e5;
+
+  @include font-helvetica-regular;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+// Сброс списка, ссылок и кнопки
+ul {
+  @include reset-list();
+}
+
+a {
+  @include reset-link();
+}
+
+button {
+  @include reset-button();
+}
+
+// Визуальное скрытие элементов
+.vhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// Изображения
+img {
+  max-width: 100%;
+}
+
+// Ограничение для макета
+.wrapper {
+  @include wrapper;
+  background-color: $color-bg-second;
+  color: $color-text-base;
+}
+
+// Контентная область
+.container {
+  @include container;
+}
+
+// Подключение блоков
+@import 'block/*.scss';

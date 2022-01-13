@@ -1,0 +1,17 @@
+// Ограничение макета
+@mixin wrapper {
+  max-width: $wrapper-max;
+  min-width: $wrapper-min;
+  min-height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #f7f7f7 !important;
+}
+
+// Контейнер
+@mixin container {
+  max-width: $container-max-widths;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  margin: 0 auto;
+}

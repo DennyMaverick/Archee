@@ -1,0 +1,11 @@
+extends layout/app.pug
+
+block page
+  h1.title Gulp-starter
+  p.subtitle от CodeQuest
+
+  ul.social
+    each item in social
+      li.social__item
+        a(href=item.link, target="_blank", title=item.name)
+          img.social__img(src=item.img, alt=item.name)
