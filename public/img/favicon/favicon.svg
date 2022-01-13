@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" viewBox="0 0 105 105" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-90.39 -21.572)">
+  <circle cx="142.89" cy="74.072" r="50" fill="#f9f9f9" fill-rule="evenodd" stroke="#7373da" stroke-width="5"/>
+  <text transform="scale(.99463 1.0054)" x="115.0592" y="87.479294" fill="#000000" font-family="Arial" font-size="40.31px" font-weight="bold" stroke-width="1.0078" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="115.0592" y="87.479294" font-family="Arial" font-size="40.31px" font-weight="bold" stroke-width="1.0078" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">C</tspan></text>
+  <text transform="scale(.96134 1.0402)" x="150.4272" y="82.823631" fill="#7373da" font-family="Arial" font-size="36.059px" font-weight="bold" stroke-width=".901" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="150.4272" y="82.823631" fill="#7373da" font-family="Arial" font-size="36.059px" font-weight="bold" stroke-width=".901" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Q</tspan></text>
+ </g>
+</svg>
