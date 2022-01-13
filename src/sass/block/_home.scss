@@ -106,7 +106,7 @@
       width: 12px;
       height: 9px;
       transform: translateY(-50%);
-      background-image: url('../../img/header/arrow-down.svg');
+      background-image: url('../img/header/arrow-down.svg');
       background-repeat: no-repeat;
       cursor: pointer;
     }
@@ -172,7 +172,7 @@
       position: relative;
       &::before {
         content: '';
-        background-image: url('./img/rating/star.png');
+        background-image: url('../img/rating/star.png');
         position: absolute;
         left: -20px;
         top: 10px;
