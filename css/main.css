@@ -260,7 +260,7 @@ img {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-image: url("../../img/header/arrow-down.svg");
+  background-image: url("../img/header/arrow-down.svg");
   background-repeat: no-repeat;
   cursor: pointer;
 }
