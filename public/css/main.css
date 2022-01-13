@@ -316,7 +316,7 @@ img {
 
 .rate__title span::before {
   content: "";
-  background-image: url("./img/rating/star.png");
+  background-image: url("../img/rating/star.png");
   position: absolute;
   left: -20px;
   top: 10px;
