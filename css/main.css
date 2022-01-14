@@ -404,11 +404,11 @@ img {
 
 @supports (-webkit-appearance:none) {
   .lang__lang-choose::after {
-    background-image: url("../../img/header/arrow-down.svg");
+    background-image: url("../img/header/arrow-down.svg");
   }
 
   .rate__title span::before {
-    background-image: url("./img/rating/star.webp");
+    background-image: url("../img/rating/star.webp");
   }
 
   .wrapper {
