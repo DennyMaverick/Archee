@@ -19,12 +19,21 @@ p {
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 html,
 body {
   @include reset-model;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: #e5e5e5;
+  // background-color: #e5e5e5;
 
   @include font-helvetica-regular;
   font-size: $font-size-base;
@@ -42,6 +51,23 @@ a {
 
 button {
   @include reset-button();
+}
+
+.btn {
+  padding: 10px 30px;
+  background-color: $primary-color;
+  border-radius: 6px;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.4s linear;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 // Визуальное скрытие элементов
@@ -64,7 +90,6 @@ img {
 // Ограничение для макета
 .wrapper {
   @include wrapper;
-  background-color: $color-bg-second;
   color: $color-text-base;
 }
 

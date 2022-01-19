@@ -1,0 +1,55 @@
+.about {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: $color-bg-fouth;
+  // .about__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .about__image
+
+  &__image {
+    margin-left: -145px;
+    mix-blend-mode: darken;
+    height: 571px;
+    max-width: 833px;
+  }
+
+  // .about__content
+
+  &__content {
+    margin-top: -55px;
+  }
+
+  // .about__title
+
+  &__title {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.25;
+    color: $black;
+    max-width: 388px;
+    margin-bottom: 20px;
+  }
+
+  // .about__description
+
+  &__description {
+    font-size: 16px;
+    line-height: 1.75;
+    color: $color-text-base;
+    max-width: 419px;
+    margin-bottom: 40px;
+  }
+
+  // .about__btn
+
+  &__btn {
+    padding: 20px 40px;
+  }
+}

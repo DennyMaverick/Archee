@@ -1,0 +1,65 @@
+.benefits {
+  padding-top: 113px;
+  padding-bottom: 120px;
+  background-color: $white;
+  // .benefits__items
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .benefits__item
+  &__item {
+    max-width: 291px;
+  }
+  &__item + &__item {
+    margin-left: 134px;
+  }
+
+  // .benefits__item-img
+
+  &__item-img {
+    display: inline-block;
+    margin-bottom: 22px;
+    margin-top: 7px;
+  }
+
+  // .benefits__item-title
+
+  &__item-title {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.25;
+    color: $black;
+    margin-bottom: 10px;
+  }
+
+  // .benefits__item-desc
+
+  &__item-desc {
+    font-size: 16px;
+    line-height: 1.75;
+    color: $color-text-base;
+    margin-bottom: 26px;
+  }
+
+  // .benefits__projects
+
+  &__projects {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    border-bottom: 1px solid $color-text-base;
+    padding-bottom: 1px;
+    color: $color-text-base;
+    transition: color 0.4s linear, border-bottom 0.4s linear;
+    cursor: pointer;
+    &:hover {
+      color: $primary-color;
+      border-bottom: 1px solid $primary-color;
+    }
+  }
+}

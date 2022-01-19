@@ -1,6 +1,8 @@
+.main-screen {
+  background-color: #f7f7f7;
+}
 .header {
   padding-top: 30px;
-  margin-bottom: 138px;
   // .header__inner
 
   &__inner {
@@ -12,6 +14,7 @@
   // .header__tool-bar
 
   &__tool-bar {
+    margin-top: -5px;
     display: flex;
     align-items: center;
   }
@@ -24,8 +27,8 @@
 }
 
 .menu-nav {
-  margin-right: auto;
-  margin-left: 297px;
+  margin-left: 71px;
+  margin-top: -9px;
   // .menu-nav__list
 
   &__list {
@@ -63,7 +66,7 @@
 .lang {
   position: relative;
   // .lang__lang-choose
-  &__langs-choose {
+  &-list {
     height: 0;
     opacity: 0;
     overflow: hidden;
@@ -72,7 +75,8 @@
     left: 0;
     width: 50px;
     border-radius: 5px;
-    li {
+
+    &__item {
       font-weight: 500;
       font-size: 14px;
       line-height: 21px;
@@ -92,7 +96,7 @@
     text-transform: uppercase;
     position: relative;
     cursor: pointer;
-    &:hover .lang__langs-choose {
+    &:hover .lang-list {
       height: auto;
       opacity: 1;
       overflow: visible;
@@ -116,9 +120,11 @@
 // Intro
 
 .intro {
+  padding-top: 138px;
+  padding-bottom: 175px;
   // .intro__title
 
-  &__title h1 {
+  &__title {
     max-width: 533px;
     font-family: 'Cabinet Grotesk', sans-serif;
     font-weight: 900;
@@ -130,7 +136,7 @@
 
   // .intro__subtitle
 
-  &__subtitle p {
+  &__subtitle {
     max-width: 452px;
     line-height: 30px;
     font-size: 18px;
@@ -142,20 +148,19 @@
 
   &__btn {
     margin-bottom: 120px;
+    padding: 20px 40px;
   }
 }
 
-.intro__btn.btn {
-  padding: 20px 40px;
-}
-
 .rate {
-  p {
+  margin-top: -18px;
+  &__desc {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #61594d;
     margin-bottom: 20px;
+    margin-top: -4px;
   }
   // .rate__title
 
@@ -167,14 +172,15 @@
     letter-spacing: 0.02em;
     color: $black;
     margin-bottom: 7px;
+    margin-top: -2px;
     span {
-      margin-left: 31px;
+      margin-left: 25px;
       position: relative;
       &::before {
         content: '';
         background-image: url('../img/rating/star.png');
         position: absolute;
-        left: -20px;
+        left: -21px;
         top: 10px;
         transform: translateY(-50%);
         width: 15px;
@@ -185,7 +191,7 @@
 
   // .rate__list
 
-  &__list {
+  &-list {
     display: flex;
     li + li {
       margin-left: -10px;
@@ -197,7 +203,7 @@
 
   // .rate__list-circle
 
-  &__list-circle {
+  &-list__circle {
     width: 48px;
     height: 48px;
     background-color: $primary-color;
@@ -215,38 +221,39 @@
 .feedback {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 175px;
 }
 
 .contact {
+  margin-top: 32px;
   // .contact__description
 
-  &__description p {
+  &__description {
+    margin-top: -3px;
+    margin-right: 5px;
     max-width: 249px;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
     color: $color-text-base;
+    margin-right: -1px;
   }
 }
 .phone {
   margin-bottom: 10px;
-  a {
-    display: inline-block;
-    border-bottom: 1px solid $primary-color;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: $primary-color;
-  }
+  display: inline-block;
+  border-bottom: 1px solid $primary-color;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $primary-color;
 }
 
 .wrapper {
   background: url('../img/intro/blur.svg') left 26px top 86px / 249px 220px
       no-repeat,
-    url('../img/intro/modern-house.png') right 0 top 208px / 838px 600px
+    url('../img/intro/modern-house.png') right 0 top 203px / 838px 600px
       no-repeat;
+  // background-color: $color-bg-second !important;
   // background-size: 249px 220px, 838px 600px;
 }
