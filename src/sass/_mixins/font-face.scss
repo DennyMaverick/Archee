@@ -13,3 +13,10 @@
       url('#{$file-path}.ttf') format('truetype');
   }
 }
+
+@mixin font($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: math.div($line-height, $font-size);
+}
+
+// Подключение миксина @include font(14px, 21px);
