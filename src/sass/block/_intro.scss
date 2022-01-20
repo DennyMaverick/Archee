@@ -1,0 +1,32 @@
+.intro {
+  padding-top: 138px;
+  padding-bottom: 175px;
+  // .intro__title
+
+  &__title {
+    max-width: 533px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 900;
+    font-size: 62px;
+    line-height: 77px;
+    color: $black;
+    margin-bottom: 20px;
+  }
+
+  // .intro__subtitle
+
+  &__subtitle {
+    max-width: 452px;
+    line-height: 30px;
+    font-size: 18px;
+    color: $color-text-base;
+    margin-bottom: 34px;
+  }
+
+  // .intro__btn
+
+  &__btn {
+    margin-bottom: 120px;
+    padding: 20px 40px;
+  }
+}

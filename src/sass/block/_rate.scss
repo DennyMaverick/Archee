@@ -1,0 +1,65 @@
+.rate {
+  margin-top: -18px;
+  &__desc {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #61594d;
+    margin-bottom: 20px;
+    margin-top: -4px;
+  }
+  // .rate__title
+
+  &__title {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: $black;
+    margin-bottom: 7px;
+    margin-top: -2px;
+    span {
+      margin-left: 25px;
+      position: relative;
+      &::before {
+        content: '';
+        background-image: url('../img/rating/star.png');
+        position: absolute;
+        left: -21px;
+        top: 10px;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  // .rate__list
+
+  &-list {
+    display: flex;
+    li + li {
+      margin-left: -10px;
+    }
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  // .rate__list-circle
+
+  &-list__circle {
+    width: 48px;
+    height: 48px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $white;
+    @include flex-center();
+  }
+}

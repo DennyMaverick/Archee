@@ -135,6 +135,7 @@ img {
   min-height: 100%;
   margin: 0 auto;
   overflow-x: hidden;
+  background: url("../img/intro/blur.svg") left 26px top 86px/249px 220px no-repeat, url("../img/intro/modern-house.png") right 0 top 203px/838px 600px no-repeat;
   color: #61594d;
 }
 
@@ -260,8 +261,39 @@ img {
   border-bottom: 1px solid #d6680f;
 }
 
-.main-screen {
-  background-color: #f7f7f7;
+.contact {
+  margin-top: 32px;
+}
+
+.contact__phone {
+  margin-bottom: 10px;
+  display: inline-block;
+  border-bottom: 1px solid #d6680f;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #d6680f;
+}
+
+.contact__description {
+  margin-top: -3px;
+  margin-right: 5px;
+  max-width: 249px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #61594d;
+  margin-right: -1px;
+}
+
+.feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header {
@@ -294,46 +326,32 @@ img {
   margin-right: 49px;
 }
 
-.menu-nav {
-  margin-left: 71px;
-  margin-top: -9px;
+.intro {
+  padding-top: 138px;
+  padding-bottom: 175px;
 }
 
-.menu-nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menu-nav__list li + li {
-  margin-left: 20px;
-}
-
-.menu-nav__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
+.intro__title {
+  max-width: 533px;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 900;
+  font-size: 62px;
+  line-height: 77px;
   color: #2c2321;
-  text-transform: uppercase;
-  padding: 5px;
-  position: relative;
+  margin-bottom: 20px;
 }
 
-.menu-nav__link::before {
-  content: "";
-  position: absolute;
-  bottom: 3px;
-  left: 5px;
-  background-color: #2c2321;
-  height: 1px;
-  width: 0;
-  -webkit-transition: width 0.4s linear;
-  -o-transition: width 0.4s linear;
-  transition: width 0.4s linear;
+.intro__subtitle {
+  max-width: 452px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #61594d;
+  margin-bottom: 34px;
 }
 
-.menu-nav__link:hover::before {
-  width: calc(100% - 10px);
+.intro__btn {
+  margin-bottom: 120px;
+  padding: 20px 40px;
 }
 
 .lang {
@@ -398,32 +416,46 @@ img {
   cursor: pointer;
 }
 
-.intro {
-  padding-top: 138px;
-  padding-bottom: 175px;
+.menu-nav {
+  margin-left: 71px;
+  margin-top: -9px;
 }
 
-.intro__title {
-  max-width: 533px;
-  font-family: "Cabinet Grotesk", sans-serif;
-  font-weight: 900;
-  font-size: 62px;
-  line-height: 77px;
+.menu-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-nav__list li + li {
+  margin-left: 20px;
+}
+
+.menu-nav__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
   color: #2c2321;
-  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding: 5px;
+  position: relative;
 }
 
-.intro__subtitle {
-  max-width: 452px;
-  line-height: 30px;
-  font-size: 18px;
-  color: #61594d;
-  margin-bottom: 34px;
+.menu-nav__link::before {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+  background-color: #2c2321;
+  height: 1px;
+  width: 0;
+  -webkit-transition: width 0.4s linear;
+  -o-transition: width 0.4s linear;
+  transition: width 0.4s linear;
 }
 
-.intro__btn {
-  margin-bottom: 120px;
-  padding: 20px 40px;
+.menu-nav__link:hover::before {
+  width: calc(100% - 10px);
 }
 
 .rate {
@@ -502,45 +534,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.feedback {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.contact {
-  margin-top: 32px;
-}
-
-.contact__description {
-  margin-top: -3px;
-  margin-right: 5px;
-  max-width: 249px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  color: #61594d;
-  margin-right: -1px;
-}
-
-.phone {
-  margin-bottom: 10px;
-  display: inline-block;
-  border-bottom: 1px solid #d6680f;
-  font-family: "Cabinet Grotesk", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #d6680f;
-}
-
-.wrapper {
-  background: url("../img/intro/blur.svg") left 26px top 86px/249px 220px no-repeat, url("../img/intro/modern-house.png") right 0 top 203px/838px 600px no-repeat;
 }
 
 .search {
@@ -658,16 +651,16 @@ img {
 }
 
 @supports (-webkit-appearance:none) {
+  .wrapper {
+    background: url("../img/intro/blur.svg") left 26px top 86px/249px 220px no-repeat, url("../img/intro/modern-house.webp") right 0 top 203px/838px 600px no-repeat;
+  }
+
   .lang__lang-choose::after {
     background-image: url("../img/header/arrow-down.svg");
   }
 
   .rate__title span::before {
     background-image: url("../img/rating/star.webp");
-  }
-
-  .wrapper {
-    background: url("../img/intro/blur.svg") left 26px top 86px/249px 220px no-repeat, url("../img/intro/modern-house.webp") right 0 top 203px/838px 600px no-repeat;
   }
 
   .search__item-input:nth-child(1) {

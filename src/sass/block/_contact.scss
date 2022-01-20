@@ -1,0 +1,26 @@
+.contact {
+  margin-top: 32px;
+
+  &__phone {
+    margin-bottom: 10px;
+    display: inline-block;
+    border-bottom: 1px solid $primary-color;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $primary-color;
+  }
+  // .contact__description
+
+  &__description {
+    margin-top: -3px;
+    margin-right: 5px;
+    max-width: 249px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-text-base;
+    margin-right: -1px;
+  }
+}

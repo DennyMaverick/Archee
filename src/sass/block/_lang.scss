@@ -1,0 +1,53 @@
+.lang {
+  position: relative;
+  // .lang__lang-choose
+  &-list {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 50px;
+    border-radius: 5px;
+
+    &__item {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: $black;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+  &__lang-choose {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $black;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    &:hover .lang-list {
+      height: auto;
+      opacity: 1;
+      overflow: visible;
+      transition: all 0.4s linear;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 57%;
+      right: -21.5px;
+      width: 12px;
+      height: 9px;
+      transform: translateY(-50%);
+      background-image: url('../img/header/arrow-down.svg');
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
+}
