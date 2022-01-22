@@ -1,7 +1,7 @@
 {
-  "name": "My App",
-  "short_name": "App",
-  "description": "This is my application",
+  "name": "Archee project",
+  "short_name": "Archee",
+  "description": "This is a project from CodeQuest marafon",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
