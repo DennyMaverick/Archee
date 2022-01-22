@@ -30,9 +30,9 @@ module.exports = {
   },
 
   favicons: {
-    appName: 'My App',
-    appShortName: 'App',
-    appDescription: 'This is my application',
+    appName: 'Archee project',
+    appShortName: 'Archee',
+    appDescription: 'This is a project from CodeQuest marafon',
     developerName: '',
     developerURL: '',
     background: '#fff',

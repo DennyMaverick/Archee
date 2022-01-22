@@ -1,8 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="800" height="800" viewBox="0 0 105 105" version="1.1" xmlns="http://www.w3.org/2000/svg">
- <g transform="translate(-90.39 -21.572)">
-  <circle cx="142.89" cy="74.072" r="50" fill="#f9f9f9" fill-rule="evenodd" stroke="#7373da" stroke-width="5"/>
-  <text transform="scale(.99463 1.0054)" x="115.0592" y="87.479294" fill="#000000" font-family="Arial" font-size="40.31px" font-weight="bold" stroke-width="1.0078" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="115.0592" y="87.479294" font-family="Arial" font-size="40.31px" font-weight="bold" stroke-width="1.0078" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">C</tspan></text>
-  <text transform="scale(.96134 1.0402)" x="150.4272" y="82.823631" fill="#7373da" font-family="Arial" font-size="36.059px" font-weight="bold" stroke-width=".901" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="150.4272" y="82.823631" fill="#7373da" font-family="Arial" font-size="36.059px" font-weight="bold" stroke-width=".901" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Q</tspan></text>
- </g>
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg
+  version="1.0"
+  xmlns="http://www.w3.org/2000/svg"
+  width="32px"
+  height="32px"
+  viewBox="0 0 96.000000 96.000000"
+  preserveAspectRatio="xMidYMid meet"
+>
+
+<g
+    transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+    fill="#d6680f"
+    stroke="none"
+  >
+<path
+      d="M260 849 c-102 -55 -195 -110 -208 -122 -36 -34 -42 -79 -42 -342 0
+-240 1 -253 23 -295 40 -80 40 -80 445 -80 390 0 400 1 443 61 24 33 24 38 27
+294 2 143 1 274 -3 292 -3 18 -17 46 -31 62 -36 43 -390 231 -435 231 -25 0
+-86 -28 -219 -101z m109 -562 c50 -103 177 -104 222 -1 16 34 25 44 44 44 73
+0 9 -138 -82 -176 -38 -16 -84 -18 -133 -4 -90 25 -171 180 -95 180 17 0 28
+-11 44 -43z"
+    />
+</g>
 </svg>
