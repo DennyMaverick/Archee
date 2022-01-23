@@ -135,8 +135,6 @@ img {
   min-height: 100%;
   margin: 0 auto;
   overflow-x: hidden;
-  background: url("../img/intro/blur.svg") left 26px top 86px/249px 220px no-repeat, url("../img/intro/modern-house.png") right 0 top 203px/838px 600px no-repeat;
-  color: #61594d;
 }
 
 .container {
@@ -200,7 +198,6 @@ img {
 .benefits {
   padding-top: 113px;
   padding-bottom: 120px;
-  background-color: #fff;
 }
 
 .benefits__items {
@@ -297,6 +294,7 @@ img {
 }
 
 .header {
+  background-color: #f7f7f7;
   padding-top: 30px;
 }
 
@@ -327,8 +325,13 @@ img {
 }
 
 .intro {
+  background-color: #f7f7f7;
   padding-top: 138px;
   padding-bottom: 175px;
+  background-image: url("../img/intro/blur.svg"), url("../img/intro/modern-house.png");
+  background-position: top 16px left 26px, top 138px right 0;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 249px 220px, 838px 600px;
 }
 
 .intro__title {
@@ -577,14 +580,15 @@ img {
   width: 100%;
   max-width: 271px;
   padding: 18px 20px;
+  border: none;
   border-radius: 6px;
-  border: 1px solid transparent;
+  outline: 1px solid transparent;
   outline: none;
   height: 60px;
   padding-right: 50px;
-  -webkit-transition: border 0.4s linear;
-  -o-transition: border 0.4s linear;
-  transition: border 0.4s linear;
+  -webkit-transition: outline 0.4s linear;
+  -o-transition: outline 0.4s linear;
+  transition: outline 0.4s linear;
 }
 
 .search__item-input::-webkit-input-placeholder {
@@ -628,7 +632,7 @@ img {
 }
 
 .search__item-input:focus {
-  border: 1px solid #d6680f;
+  outline: 1px solid #d6680f;
 }
 
 .search__item-input:nth-child(1) {
@@ -651,8 +655,8 @@ img {
 }
 
 @supports (-webkit-appearance:none) {
-  .wrapper {
-    background: url("../img/intro/blur.svg") left 26px top 86px/249px 220px no-repeat, url("../img/intro/modern-house.webp") right 0 top 203px/838px 600px no-repeat;
+  .intro {
+    background-image: url("../img/intro/blur.svg"), url("../img/intro/modern-house.webp");
   }
 
   .lang__lang-choose::after {
