@@ -92,7 +92,6 @@ img {
 // Ограничение для макета
 .wrapper {
   @include wrapper;
-  color: $color-text-base;
 }
 
 // Контентная область

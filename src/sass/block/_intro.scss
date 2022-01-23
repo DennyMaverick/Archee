@@ -1,6 +1,12 @@
 .intro {
+  background-color: $color-bg-second;
   padding-top: 138px;
   padding-bottom: 175px;
+  background-image: url('../img/intro/blur.svg'),
+    url('../img/intro/modern-house.png');
+  background-position: top 16px left 26px, top 138px right 0;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 249px 220px, 838px 600px;
   // .intro__title
 
   &__title {

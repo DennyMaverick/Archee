@@ -37,12 +37,13 @@
     width: 100%;
     max-width: 271px;
     padding: 18px 20px;
+    border: none;
     border-radius: 6px;
-    border: 1px solid transparent;
+    outline: 1px solid transparent;
     outline: none;
     height: 60px;
     padding-right: 50px;
-    transition: border 0.4s linear;
+    transition: outline 0.4s linear;
     &::placeholder {
       font-family: 'Helvetica Now Display', sans-serif;
       font-weight: 500;
@@ -52,7 +53,7 @@
     }
 
     &:focus {
-      border: 1px solid $primary-color;
+      outline: 1px solid $primary-color;
     }
 
     &:nth-child(1) {
