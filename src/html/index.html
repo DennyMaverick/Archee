@@ -9,7 +9,7 @@
   <link rel="icon" href="./img/favicon/favicon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/main.min.css">
   <script src="../js/main.js" defer></script>
 </head>
 
@@ -107,9 +107,9 @@
           Search the price you looking for
         </h2>
         <div class="search__items">
-          <input class="search__item search__item-input" type="text" placeholder="Location">
-          <input class="search__item search__item-input" type="text" placeholder="Type">
-          <input class="search__item search__item-input" type="text" placeholder="Budget">
+          <input class="search__item search__item-input search__item--location" type="text" placeholder="Location">
+          <input class="search__item search__item-input search__item--type" type="text" placeholder="Type">
+          <input class="search__item search__item-input search__item--budget" type="text" placeholder="Budget">
           <button class="search__item search__btn btn">
             Search Now
           </button>
@@ -119,8 +119,8 @@
     <section class="benefits">
       <div class="container">
         <h2 class="vhidden">our benefits</h2>
-        <div class="benefits__items">
-          <div class="benefits__item">
+        <ul class="benefits__items">
+          <li class="benefits__item">
             <img class="benefits__item-img" src="./img/benefits/arch-interior.svg" alt="benefit image">
             <h3 class="benefits__item-title">Arch & Interior
             </h3>
@@ -130,8 +130,8 @@
             <span class="benefits__projects">
               120 Projects
             </span>
-          </div>
-          <div class="benefits__item">
+          </li>
+          <li class="benefits__item">
             <img class="benefits__item-img" src="./img/benefits/design.svg" alt="benefit image">
             <h3 class="benefits__item-title">Design
             </h3>
@@ -141,8 +141,8 @@
             <span class="benefits__projects">
               50 Projects
             </span>
-          </div>
-          <div class="benefits__item">
+          </li>
+          <li class="benefits__item">
             <img class="benefits__item-img" src="./img/benefits/product.svg" alt="benefit image">
             <h3 class="benefits__item-title">Product
             </h3>
@@ -152,8 +152,8 @@
             <span class="benefits__projects">
               310 Projects
             </span>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="about">

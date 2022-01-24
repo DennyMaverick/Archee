@@ -5,11 +5,14 @@
     margin-bottom: 10px;
     display: inline-block;
     border-bottom: 1px solid $primary-color;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    @include font-cabinet-bold();
+    @include font(16px, 20px);
     color: $primary-color;
+    transition: border-botom 0.4s ease-in, color 0.4s ease-in;
+    &:hover {
+      color: lighten($primary-color, 20%);
+      border-bottom: 1px solid lighten($primary-color, 20%);
+    }
   }
   // .contact__description
 
@@ -18,8 +21,7 @@
     margin-right: 5px;
     max-width: 249px;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
+    @include font(12px, 18px);
     color: $color-text-base;
     margin-right: -1px;
   }

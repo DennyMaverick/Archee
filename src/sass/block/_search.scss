@@ -15,10 +15,8 @@
 
   &__title {
     margin-bottom: 20px;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.25;
+    @include font-cabinet-bold();
+    @include font(24px, 30px);
     color: $black;
   }
 
@@ -33,6 +31,25 @@
     margin-right: auto;
   }
 
+  &__item {
+    &--location {
+      background: url('../img/search-form/location.svg') right 20px center /
+        20px 20px no-repeat $color-bg-third;
+      // margin-left: 15px;
+    }
+
+    &--type {
+      background: url('../img/search-form/home.svg') right 20px center / 20px
+        20px no-repeat $color-bg-third;
+      // margin-left: -4px;
+    }
+
+    &--budget {
+      background: url('../img/search-form/dollar-sign.svg') right 20px center /
+        20px 20px no-repeat $color-bg-third;
+    }
+  }
+
   &__item-input {
     width: 100%;
     max-width: 271px;
@@ -40,37 +57,17 @@
     border: none;
     border-radius: 6px;
     outline: 1px solid transparent;
-    outline: none;
     height: 60px;
     padding-right: 50px;
     transition: outline 0.4s linear;
     &::placeholder {
-      font-family: 'Helvetica Now Display', sans-serif;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.5;
+      @include font-helvetica-medium();
+      @include font(16px, 24px);
       color: rgba(97, 89, 77, 0.6);
     }
 
     &:focus {
       outline: 1px solid $primary-color;
-    }
-
-    &:nth-child(1) {
-      background: url('../img/search-form/location.svg') right 20px center /
-        20px 20px no-repeat $color-bg-third;
-      // margin-left: 15px;
-    }
-
-    &:nth-child(2) {
-      background: url('../img/search-form/home.svg') right 20px center / 20px
-        20px no-repeat $color-bg-third;
-      // margin-left: -4px;
-    }
-
-    &:nth-child(3) {
-      background: url('../img/search-form/dollar-sign.svg') right 20px center /
-        20px 20px no-repeat $color-bg-third;
     }
   }
 

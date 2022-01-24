@@ -11,10 +11,8 @@
 
   &__title {
     max-width: 533px;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 900;
-    font-size: 62px;
-    line-height: 77px;
+    @include font-cabinet-black();
+    @include font(62px, 77px);
     color: $black;
     margin-bottom: 20px;
   }
@@ -23,8 +21,7 @@
 
   &__subtitle {
     max-width: 452px;
-    line-height: 30px;
-    font-size: 18px;
+    @include font(18px, 30px);
     color: $color-text-base;
     margin-bottom: 34px;
   }

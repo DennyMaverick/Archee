@@ -65,7 +65,7 @@ body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
-  font-family: "Helvetica Now Display";
+  font-family: "Helvetica Now Display", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -176,6 +176,7 @@ img {
 .about__title {
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 900;
+  font-style: normal;
   font-size: 48px;
   line-height: 1.25;
   color: #2c2321;
@@ -213,10 +214,6 @@ img {
   max-width: 291px;
 }
 
-.benefits__item + .benefits__item {
-  margin-left: 134px;
-}
-
 .benefits__item-img {
   display: inline-block;
   margin-bottom: 22px;
@@ -226,6 +223,7 @@ img {
 .benefits__item-title {
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 900;
+  font-style: normal;
   font-size: 32px;
   line-height: 1.25;
   color: #2c2321;
@@ -242,6 +240,7 @@ img {
 .benefits__projects {
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 700;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.25;
   border-bottom: 1px solid #61594d;
@@ -268,9 +267,18 @@ img {
   border-bottom: 1px solid #d6680f;
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 700;
+  font-style: normal;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   color: #d6680f;
+  -webkit-transition: border-botom 0.4s ease-in, color 0.4s ease-in;
+  -o-transition: border-botom 0.4s ease-in, color 0.4s ease-in;
+  transition: border-botom 0.4s ease-in, color 0.4s ease-in;
+}
+
+.contact__phone:hover {
+  color: #f39d58;
+  border-bottom: 1px solid #f39d58;
 }
 
 .contact__description {
@@ -279,7 +287,7 @@ img {
   max-width: 249px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
   color: #61594d;
   margin-right: -1px;
 }
@@ -338,16 +346,17 @@ img {
   max-width: 533px;
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 900;
+  font-style: normal;
   font-size: 62px;
-  line-height: 77px;
+  line-height: 1.2419354839;
   color: #2c2321;
   margin-bottom: 20px;
 }
 
 .intro__subtitle {
   max-width: 452px;
-  line-height: 30px;
   font-size: 18px;
+  line-height: 1.6666666667;
   color: #61594d;
   margin-bottom: 34px;
 }
@@ -375,7 +384,7 @@ img {
 .lang-list__item {
   font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   color: #2c2321;
   text-transform: uppercase;
   cursor: pointer;
@@ -388,7 +397,7 @@ img {
 .lang__lang-choose {
   font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   color: #2c2321;
   text-transform: uppercase;
   position: relative;
@@ -437,7 +446,7 @@ img {
 .menu-nav__link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   color: #2c2321;
   text-transform: uppercase;
   padding: 5px;
@@ -467,7 +476,7 @@ img {
 
 .rate__desc {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #61594d;
   margin-bottom: 20px;
@@ -477,8 +486,9 @@ img {
 .rate__title {
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 700;
+  font-style: normal;
   font-size: 20px;
-  line-height: 22px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: #2c2321;
   margin-bottom: 7px;
@@ -524,8 +534,9 @@ img {
   border-radius: 50%;
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 700;
+  font-style: normal;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   letter-spacing: 0.02em;
   color: #fff;
   display: -webkit-box;
@@ -556,6 +567,7 @@ img {
   margin-bottom: 20px;
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 700;
+  font-style: normal;
   font-size: 24px;
   line-height: 1.25;
   color: #2c2321;
@@ -576,6 +588,18 @@ img {
   margin-right: auto;
 }
 
+.search__item--location {
+  background: url("../img/search-form/location.svg") right 20px center/20px 20px no-repeat #f5f5f5;
+}
+
+.search__item--type {
+  background: url("../img/search-form/home.svg") right 20px center/20px 20px no-repeat #f5f5f5;
+}
+
+.search__item--budget {
+  background: url("../img/search-form/dollar-sign.svg") right 20px center/20px 20px no-repeat #f5f5f5;
+}
+
 .search__item-input {
   width: 100%;
   max-width: 271px;
@@ -583,7 +607,6 @@ img {
   border: none;
   border-radius: 6px;
   outline: 1px solid transparent;
-  outline: none;
   height: 60px;
   padding-right: 50px;
   -webkit-transition: outline 0.4s linear;
@@ -594,6 +617,7 @@ img {
 .search__item-input::-webkit-input-placeholder {
   font-family: "Helvetica Now Display", sans-serif;
   font-weight: 500;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   color: rgba(97, 89, 77, 0.6);
@@ -602,6 +626,7 @@ img {
 .search__item-input::-moz-placeholder {
   font-family: "Helvetica Now Display", sans-serif;
   font-weight: 500;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   color: rgba(97, 89, 77, 0.6);
@@ -610,6 +635,7 @@ img {
 .search__item-input:-ms-input-placeholder {
   font-family: "Helvetica Now Display", sans-serif;
   font-weight: 500;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   color: rgba(97, 89, 77, 0.6);
@@ -618,6 +644,7 @@ img {
 .search__item-input::-ms-input-placeholder {
   font-family: "Helvetica Now Display", sans-serif;
   font-weight: 500;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   color: rgba(97, 89, 77, 0.6);
@@ -626,6 +653,7 @@ img {
 .search__item-input::placeholder {
   font-family: "Helvetica Now Display", sans-serif;
   font-weight: 500;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   color: rgba(97, 89, 77, 0.6);
@@ -633,18 +661,6 @@ img {
 
 .search__item-input:focus {
   outline: 1px solid #d6680f;
-}
-
-.search__item-input:nth-child(1) {
-  background: url("../img/search-form/location.svg") right 20px center/20px 20px no-repeat #f5f5f5;
-}
-
-.search__item-input:nth-child(2) {
-  background: url("../img/search-form/home.svg") right 20px center/20px 20px no-repeat #f5f5f5;
-}
-
-.search__item-input:nth-child(3) {
-  background: url("../img/search-form/dollar-sign.svg") right 20px center/20px 20px no-repeat #f5f5f5;
 }
 
 .search__btn {
@@ -667,15 +683,15 @@ img {
     background-image: url("../img/rating/star.webp");
   }
 
-  .search__item-input:nth-child(1) {
+  .search__item--location {
     background: url("../img/search-form/location.svg") right 20px center/20px 20px no-repeat #f5f5f5;
   }
 
-  .search__item-input:nth-child(2) {
+  .search__item--type {
     background: url("../img/search-form/home.svg") right 20px center/20px 20px no-repeat #f5f5f5;
   }
 
-  .search__item-input:nth-child(3) {
+  .search__item--budget {
     background: url("../img/search-form/dollar-sign.svg") right 20px center/20px 20px no-repeat #f5f5f5;
   }
 }

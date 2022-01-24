@@ -30,31 +30,31 @@
 
 // Миксины для шрифтов
 @mixin font-cabinet-bold {
-  font-family: 'Cabinet Grotesk';
+  font-family: 'Cabinet Grotesk', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
 @mixin font-cabinet-black {
-  font-family: 'Cabinet Grotesk';
+  font-family: 'Cabinet Grotesk', sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
 @mixin font-helvetica-regular {
-  font-family: 'Helvetica Now Display';
+  font-family: 'Helvetica Now Display', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 @mixin font-helvetica-medium {
-  font-family: 'Helvetica Now Display';
+  font-family: 'Helvetica Now Display', sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 @mixin font-helvetica-bold {
-  font-family: 'Helvetica Now Display';
+  font-family: 'Helvetica Now Display', sans-serif;
   font-weight: 700;
   font-style: normal;
 }

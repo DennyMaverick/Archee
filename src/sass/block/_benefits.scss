@@ -12,9 +12,9 @@
   &__item {
     max-width: 291px;
   }
-  &__item + &__item {
-    margin-left: 134px;
-  }
+  // &__item + &__item {
+  //   margin-left: 134px;
+  // }
 
   // .benefits__item-img
 
@@ -27,10 +27,8 @@
   // .benefits__item-title
 
   &__item-title {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 1.25;
+    @include font-cabinet-black();
+    @include font(32px, 40px);
     color: $black;
     margin-bottom: 10px;
   }
@@ -38,8 +36,7 @@
   // .benefits__item-desc
 
   &__item-desc {
-    font-size: 16px;
-    line-height: 1.75;
+    @include font(16px, 28px);
     color: $color-text-base;
     margin-bottom: 26px;
   }
@@ -47,10 +44,8 @@
   // .benefits__projects
 
   &__projects {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font-cabinet-bold();
+    @include font(16px, 20px);
     border-bottom: 1px solid $color-text-base;
     padding-bottom: 1px;
     color: $color-text-base;

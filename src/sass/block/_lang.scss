@@ -13,8 +13,7 @@
 
     &__item {
       font-weight: 500;
-      font-size: 14px;
-      line-height: 21px;
+      @include font(14px, 21px);
       color: $black;
       text-transform: uppercase;
       cursor: pointer;
@@ -25,8 +24,7 @@
   }
   &__lang-choose {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
+    @include font(14px, 21px);
     color: $black;
     text-transform: uppercase;
     position: relative;

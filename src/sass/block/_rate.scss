@@ -1,8 +1,7 @@
 .rate {
   margin-top: -18px;
   &__desc {
-    font-size: 16px;
-    line-height: 24px;
+    @include font(16px, 24px);
     letter-spacing: 0.02em;
     color: #61594d;
     margin-bottom: 20px;
@@ -11,10 +10,8 @@
   // .rate__title
 
   &__title {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 22px;
+    @include font-cabinet-bold();
+    @include font(20px, 22px);
     letter-spacing: 0.02em;
     color: $black;
     margin-bottom: 7px;
@@ -54,10 +51,8 @@
     height: 48px;
     background-color: $primary-color;
     border-radius: 50%;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
+    @include font-cabinet-bold();
+    @include font(16px, 16px);
     letter-spacing: 0.02em;
     color: $white;
     @include flex-center();
