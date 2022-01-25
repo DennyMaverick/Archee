@@ -1,0 +1,17 @@
+.projects-list {
+  // .projects-list__item
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      margin-right: -150px;
+    }
+  }
+
+  &__item + &__item {
+    margin-top: 150px;
+  }
+}

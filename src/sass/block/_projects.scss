@@ -1,0 +1,21 @@
+.projects {
+  padding: 83px 0 120px 0;
+  // .projects__inner
+
+  // &__inner {
+  // }
+
+  // .projects__items
+
+  // &__items {
+  // }
+
+  // .projects__title
+
+  &__title {
+    @include font-cabinet-black();
+    @include font(48px, 60px);
+    color: $black;
+    margin-bottom: 50px;
+  }
+}

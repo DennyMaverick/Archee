@@ -1,0 +1,46 @@
+.footer {
+  // .footer__inner
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 50px 0;
+    border-top: 1px solid $color-text-base;
+  }
+
+  // .footer__block
+
+  // &__block {
+  // }
+
+  // .footer__list
+
+  &__list {
+    @include font(16px, 28px);
+    color: $color-text-base;
+  }
+
+  // .footer__list-contact
+
+  // &__list-contact {
+  // }
+
+  // .footer__list-item
+
+  // &__list-item {
+  // }
+
+  // .footer__list-nav
+
+  // &__list-nav {
+  // }
+
+  // .footer__list-link
+
+  // &__list-link {
+  // }
+
+  // .footer__list-socials
+
+  // &__list-socials {
+  // }
+}

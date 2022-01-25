@@ -9,6 +9,7 @@
 @import '_mixins/media';
 @import '_mixins/container';
 @import '_mixins/flex';
+@import '_mixins/decore';
 
 *,
 *::before,
@@ -87,6 +88,8 @@ button {
 // Изображения
 img {
   max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 // Ограничение для макета

@@ -1,0 +1,25 @@
+.news {
+  padding: 120px 0;
+  // .news__inner
+
+  // &__inner {
+  // }
+
+  // .news__list
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .news__list-item
+
+  // &__list-item {
+  // }
+
+  // .news__list-img
+
+  &__list-img {
+    margin-bottom: 50px;
+  }
+}

@@ -127,6 +127,8 @@ button {
 
 img {
   max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 .wrapper {
@@ -296,6 +298,23 @@ img {
   margin-top: -18px;
 }
 
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 40px 0 50px 0;
+  border-top: 1px solid #61594d;
+}
+
+.footer__list {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #61594d;
+}
+
 .header {
   background-color: #f7f7f7;
   padding-top: 30px;
@@ -437,6 +456,10 @@ img {
   cursor: pointer;
 }
 
+.main__search {
+  margin-top: -112px;
+}
+
 .menu-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -472,6 +495,157 @@ img {
 
 .menu-nav__link:hover::before {
   width: calc(100% - 10px);
+}
+
+.news {
+  padding: 120px 0;
+}
+
+.news__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.news__list-img {
+  margin-bottom: 50px;
+}
+
+.project__content {
+  max-width: 330px;
+  margin-right: 10px;
+}
+
+.project__title {
+  position: relative;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 1.25;
+  color: #2c2321;
+  margin-bottom: 10px;
+}
+
+.project__title::before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  left: 0;
+  background-color: #61594d;
+  height: 1px;
+  width: 300px;
+}
+
+.project__description {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #61594d;
+  max-width: 330px;
+}
+
+.projects-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.projects-list__item:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  margin-right: -150px;
+}
+
+.projects-list__item + .projects-list__item {
+  margin-top: 150px;
+}
+
+.projects {
+  padding: 83px 0 120px 0;
+}
+
+.projects__title {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 1.25;
+  color: #2c2321;
+  margin-bottom: 50px;
+}
+
+.publication__info {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  color: #61594d;
+  margin-bottom: 31px;
+}
+
+.publication__content {
+  max-width: 479px;
+}
+
+.publication__time {
+  margin-right: 29px;
+}
+
+.publication__author {
+  position: relative;
+}
+
+.publication__author::before {
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "";
+  background-color: #d6680f;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.publication__title {
+  position: relative;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 1.25;
+  max-width: 479px;
+  color: #2c2321;
+  margin-bottom: 10px;
+}
+
+.publication__title::before {
+  content: "";
+  position: absolute;
+  top: -21px;
+  left: 0;
+  background-color: #61594d;
+  height: 1px;
+  width: 300px;
+}
+
+.publication__description {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #61594d;
+  max-width: 453px;
 }
 
 .rate__desc {
@@ -548,10 +722,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.search__section {
-  margin-top: -112px;
 }
 
 .search__form {

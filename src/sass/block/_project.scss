@@ -1,0 +1,34 @@
+.project {
+  // .project__photo
+
+  // &__photo {
+  // }
+
+  // .project__content
+
+  &__content {
+    max-width: 330px;
+    margin-right: 10px;
+  }
+
+  // .project__title
+
+  &__title {
+    position: relative;
+    @include font-cabinet-black();
+    @include font(32px, 40px);
+    color: $black;
+    margin-bottom: 10px;
+    &::before {
+      @include decore-line();
+    }
+  }
+
+  // .project__description
+
+  &__description {
+    @include font(16px, 28px);
+    color: $color-text-base;
+    max-width: 330px;
+  }
+}
