@@ -26,6 +26,10 @@
     margin-bottom: 34px;
   }
 
+  &__feedback {
+    display: flex;
+    justify-content: space-between;
+  }
   // .intro__btn
 
   &__btn {

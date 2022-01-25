@@ -1,4 +1,9 @@
 .feedback {
-  display: flex;
-  justify-content: space-between;
+  // .feedback__contact
+  &__contact {
+    margin-top: 32px;
+  }
+  &__rate {
+    margin-top: -18px;
+  }
 }
