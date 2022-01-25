@@ -35,9 +35,12 @@
   // }
 
   // .footer__list-link
-
-  // &__list-link {
-  // }
+  &__list-link {
+    transition: color 0.4s ease-in;
+    &:hover {
+      color: $primary-color;
+    }
+  }
 
   // .footer__list-socials
 

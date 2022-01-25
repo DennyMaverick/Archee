@@ -315,6 +315,16 @@ img {
   color: #61594d;
 }
 
+.footer__list-link {
+  -webkit-transition: color 0.4s ease-in;
+  -o-transition: color 0.4s ease-in;
+  transition: color 0.4s ease-in;
+}
+
+.footer__list-link:hover {
+  color: #d6680f;
+}
+
 .header {
   background-color: #f7f7f7;
   padding-top: 30px;
