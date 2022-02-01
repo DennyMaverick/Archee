@@ -35,6 +35,12 @@ module.exports = {
     dest: pathDest + '/js/'
   },
 
+  libs: {
+    src: pathSrc + '/libs/**/*.js',
+    watch: pathSrc + '/libs/**/*.js',
+    dest: pathDest + '/libs/'
+  },
+
   img: {
     src: pathSrc + '/img/**/*.{png,jpg,jpeg,gif,svg}',
     watch: pathSrc + '/img/**/*.{png,jpg,jpeg,gif,svg}',
@@ -51,5 +57,5 @@ module.exports = {
     src: pathSrc + '/img/favicon/favicon.svg',
     watch: pathSrc + '/img/favicon/favicon.svg',
     dest: pathDest + '/img/favicon/'
-  },
+  }
 }
