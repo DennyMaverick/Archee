@@ -1,7 +1,7 @@
 .intro {
   background-color: $color-bg-second;
   padding-top: 138px;
-  padding-bottom: 175px;
+  padding-bottom: 181px;
   background-image: url('../img/intro/blur.svg'),
     url('../img/intro/modern-house.png');
   background-position: top 16px left 26px, top 138px right 0;
@@ -11,9 +11,6 @@
 
   &__title {
     max-width: 533px;
-    @include font-cabinet-black();
-    @include font(62px, 77px);
-    color: $black;
     margin-bottom: 20px;
   }
 

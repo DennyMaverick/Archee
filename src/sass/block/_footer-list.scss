@@ -1,0 +1,10 @@
+.footer-list {
+  @include font(16px, 28px);
+  color: $color-text-base;
+  &__link {
+    transition: color 0.4s ease-in;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

@@ -12,9 +12,6 @@
 
   &__title {
     margin-bottom: 20px;
-    @include font-cabinet-bold();
-    @include font(24px, 30px);
-    color: $black;
   }
 
   // .search__items

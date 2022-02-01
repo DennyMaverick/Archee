@@ -13,9 +13,6 @@
   // .projects__title
 
   &__title {
-    @include font-cabinet-black();
-    @include font(48px, 60px);
-    color: $black;
     margin-bottom: 50px;
   }
 }

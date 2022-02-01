@@ -1,0 +1,22 @@
+.title {
+  @include font-cabinet-black();
+  @include font(32px, 40px);
+  color: $black;
+  &--section {
+    @include font(48px, 60px);
+  }
+  &--promo {
+    @include font(62px, 77px);
+  }
+  &--search {
+    @include font-cabinet-bold;
+    @include font(24px, 30px);
+  }
+  &--decore::before {
+    content: '';
+    display: block;
+    margin-bottom: 20px;
+    border-top: 1px solid $color-text-base;
+    max-width: 300px;
+  }
+}

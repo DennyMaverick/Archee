@@ -13,24 +13,22 @@
   // .about__image
 
   &__image {
-    margin-left: -145px;
+    margin-left: -140px;
     mix-blend-mode: darken;
     height: 571px;
     max-width: 833px;
+    margin-top: -8px;
   }
 
   // .about__content
 
   &__content {
-    margin-top: -55px;
+    margin-top: -44px;
   }
 
   // .about__title
 
   &__title {
-    @include font-cabinet-black();
-    @include font(48px, 60px);
-    color: $black;
     max-width: 388px;
     margin-bottom: 20px;
   }

@@ -27,9 +27,6 @@
   // .benefits__item-title
 
   &__item-title {
-    @include font-cabinet-black();
-    @include font(32px, 40px);
-    color: $black;
     margin-bottom: 10px;
   }
 

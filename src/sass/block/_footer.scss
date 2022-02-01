@@ -3,47 +3,12 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    padding: 40px 0 50px 0;
+    padding-top: 40px;
+    padding-bottom: 50px;
     border-top: 1px solid $color-text-base;
   }
 
-  // .footer__block
-
-  // &__block {
-  // }
-
-  // .footer__list
-
-  &__list {
-    @include font(16px, 28px);
-    color: $color-text-base;
+  &__address {
+    font-style: normal;
   }
-
-  // .footer__list-contact
-
-  // &__list-contact {
-  // }
-
-  // .footer__list-item
-
-  // &__list-item {
-  // }
-
-  // .footer__list-nav
-
-  // &__list-nav {
-  // }
-
-  // .footer__list-link
-  &__list-link {
-    transition: color 0.4s ease-in;
-    &:hover {
-      color: $primary-color;
-    }
-  }
-
-  // .footer__list-socials
-
-  // &__list-socials {
-  // }
 }
