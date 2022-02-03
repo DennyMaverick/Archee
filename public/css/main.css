@@ -194,8 +194,20 @@ img {
 }
 
 .architects {
-  height: 680px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: #2c2321;
+}
+
+.architects__slider-container {
+  min-height: 440px;
+  width: 100%;
+  margin-left: 399px;
+}
+
+.architects__title {
+  position: absolute;
+  max-width: 388px;
 }
 
 .benefits {
@@ -358,6 +370,10 @@ img {
 
 .header__lang {
   margin-right: 49px;
+}
+
+.hide {
+  display: none;
 }
 
 .intro {
@@ -800,6 +816,58 @@ img {
   width: 166px;
 }
 
+.slide__title {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #fff;
+  margin-top: auto;
+}
+
+.slide__subtitle {
+  font-family: "Helvetica Now Display", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #cdcdcd;
+  font-style: normal;
+}
+
+.slide__container {
+  position: relative;
+}
+
+.slide__content {
+  position: absolute;
+  left: 30px;
+  bottom: 19px;
+}
+
+.slider__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.slider__item {
+  -ms-flex-preferred-size: 350px;
+  flex-basis: 350px;
+  min-height: 440px;
+}
+
+.slider__btn {
+  width: 35px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 .title {
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 900;
@@ -837,6 +905,10 @@ img {
 
 .title--slider {
   color: #fff;
+}
+
+.hide {
+  display: none;
 }
 
 @supports (-webkit-appearance:none) {

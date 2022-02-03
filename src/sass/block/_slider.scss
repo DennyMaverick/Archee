@@ -1,0 +1,24 @@
+.slider {
+  // .slider__wrapper
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    gap: 30px;
+  }
+
+  // .slider__item
+
+  &__item {
+    flex-basis: 350px;
+    min-height: 440px;
+  }
+
+  &__btn {
+    width: 35px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}

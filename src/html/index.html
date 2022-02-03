@@ -9,8 +9,9 @@
   <link rel="icon" href="./img/favicon/favicon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/main.min.css">
-  <script src="./libs/vendor-libs/swiper-bundle.js" defer></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -227,7 +228,56 @@
           </ul>
         </div>
       </section>
-      <section class="architects"></section>
+      <section class="architects">
+        <div class="architects__inner container">
+          <h2 class="architects__title title title--section title--slider">Architects of Archee
+          </h2>
+          <div class="architects__slider-container swiper slider">
+            <div class="architects__slider-wrapper slider__wrapper swiper-wrapper">
+              <div class="slider__item slide swiper-slide">
+                <div class="slide__container">
+                  <img class="slide__img" src="./img/architects/slide-1.jpg" width="350" height="440"
+                    alt="slider image">
+                  <div class="slide__content">
+                    <h3 class="slide__title">
+                      Ralph Edwards
+                    </h3>
+                    <cite class="slide__subtitle">Architect</cite>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slide swiper-slide slide">
+                <div class="slide__container">
+                  <img class="slide__img" src="./img/architects/slide-2.jpg" width="350" height="440"
+                    alt="slider image">
+                  <div class="slide__content">
+                    <h3 class="slide__title">
+                      Cody Fisher
+                    </h3>
+                    <cite class="slide__subtitle">Interior Disigner</cite>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item swiper-slide slide">
+                <div class="slide__container">
+                  <img class="slide__image" src="./img/architects/slide-3.jpg" width="350" height="440"
+                    alt="slider image">
+                  <div class="slide__content">
+                    <h3 class="slide__title">
+                      Floyd Miles
+                    </h3>
+                    <cite class="slide__subtitle">Project Manager</cite>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__button-prev slider__btn">
+            </div>
+            <div class="slider__button-next slider__btn">
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="news">
         <div class="news__inner container">
           <h2 class="news__title vhidden">Our news</h2>

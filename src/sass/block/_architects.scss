@@ -1,4 +1,24 @@
 .architects {
-  height: 680px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: #2c2321;
+  // .architects__inner
+
+  // .architects__slider-container
+
+  &__slider-container {
+    // overflow: hidden;
+    min-height: 440px;
+    width: 100%;
+    margin-left: 399px;
+  }
+
+  // .architects__title
+
+  &__title {
+    position: absolute;
+    max-width: 388px;
+    // margin-right: 11px;
+    // flex-shrink: 0;
+  }
 }

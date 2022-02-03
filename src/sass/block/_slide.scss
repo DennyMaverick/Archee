@@ -1,0 +1,23 @@
+.slide {
+  &__title {
+    @include font-cabinet-black;
+    @include font(24px, 30px);
+    color: $white;
+    margin-top: auto;
+  }
+  &__subtitle {
+    @include font-helvetica-medium;
+    @include font(16px, 24px);
+    color: $color-subtitle-slide;
+    font-style: normal;
+  }
+
+  &__container {
+    position: relative;
+  }
+  &__content {
+    position: absolute;
+    left: 30px;
+    bottom: 19px;
+  }
+}
