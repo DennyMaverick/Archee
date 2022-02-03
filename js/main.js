@@ -1,0 +1,1 @@
+new Swiper(".swiper",{loop:!0,slidesPerView:"3",navigation:{nextEl:".slider__button-next",prevEl:".slider__button-prev"}});
