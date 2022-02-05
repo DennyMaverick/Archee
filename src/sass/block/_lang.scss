@@ -10,7 +10,6 @@
     left: 0;
     width: 50px;
     border-radius: 5px;
-
     &__item {
       font-weight: 500;
       @include font(14px, 21px);
@@ -22,30 +21,29 @@
       }
     }
   }
+  &-list__show {
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+    transition: all 0.4s linear;
+  }
+  &__name {
+    margin-right: 9.5px;
+  }
+  &__arrow {
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.4s ease-in;
+    &-rotate {
+      transform: rotate(90deg);
+    }
+  }
   &__lang-choose {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     @include font(14px, 21px);
     color: $black;
     text-transform: uppercase;
-    position: relative;
-    cursor: pointer;
-    &:hover .lang-list {
-      height: auto;
-      opacity: 1;
-      overflow: visible;
-      transition: all 0.4s linear;
-    }
-    &::after {
-      content: '';
-      position: absolute;
-      top: 57%;
-      right: -21.5px;
-      width: 12px;
-      height: 9px;
-      transform: translateY(-50%);
-      background-image: url('../img/header/arrow-down.svg');
-      background-repeat: no-repeat;
-      cursor: pointer;
-    }
   }
 }

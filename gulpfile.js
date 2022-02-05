@@ -22,7 +22,7 @@ const server = () => {
     server: {
       baseDir: path.root
     },
-    browser: 'chrome'
+    browser: "chrome"
   });
 }
 

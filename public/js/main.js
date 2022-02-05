@@ -1,1 +1,1 @@
-new Swiper(".swiper",{loop:!0,slidesPerView:"3",navigation:{nextEl:".slider__button-next",prevEl:".slider__button-prev"}});
+window.addEventListener("DOMContentLoaded",(()=>{new Swiper(".swiper",{loop:!0,slidesPerView:"3",navigation:{nextEl:".slider__button-next",prevEl:".slider__button-prev"}});const e=document.getElementById("lang-arrow"),t=document.querySelector(".lang-list");e.addEventListener("click",(function(){t.classList.toggle("lang-list__show"),this.classList.toggle("lang__arrow-rotate")}))}));
