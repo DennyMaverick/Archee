@@ -1,24 +1,35 @@
 .architects {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-color: #2c2321;
+  background-color: $black;
   // .architects__inner
 
-  // .architects__slider-container
-
-  &__slider-container {
-    // overflow: hidden;
-    min-height: 440px;
-    width: 100%;
-    margin-left: 399px;
+  &__inner {
+    display: flex;
+    position: relative;
   }
 
   // .architects__title
 
   &__title {
-    position: absolute;
     max-width: 388px;
-    // margin-right: 11px;
-    // flex-shrink: 0;
+    margin-right: 11px;
+    flex-shrink: 0;
+  }
+
+  // .architects__slider-container
+
+  &__slider-container {
+    flex-shrink: 0;
+    min-height: 440px;
+    width: 100%;
+  }
+
+  // .architects__nav
+
+  &__nav {
+    position: absolute;
+    left: 15px;
+    bottom: -9px;
   }
 }

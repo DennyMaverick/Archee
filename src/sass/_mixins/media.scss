@@ -1,15 +1,28 @@
 // Медиа-выражение
-@mixin media($width) {
-  @media(min-width: $width) {
+@mixin media-up($width) {
+  @media (min-width: $width) {
     @content;
   }
 }
 
+@mixin media-down($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
 
 // Контрольная точка
-@mixin bp($name) {
+// Для mobile-first
+@mixin bp-mobile($name) {
   $width: map-get($breakpoints, $name);
-  @include media($width) {
+  @include media-up($width) {
+    @content;
+  }
+}
+// для desktop-first
+@mixin bp-desk($name) {
+  $width: map-get($breakpoints, $name);
+  @include media-down($width) {
     @content;
   }
 }

@@ -27,7 +27,7 @@ const scss = () => {
       }))
     }))
     .pipe(sassGlob())
-    .pipe(sass())
+    .pipe(sass(app.scss))
     .pipe(webpCss())
     .pipe(autoprefixer())
     .pipe(groupMedia())

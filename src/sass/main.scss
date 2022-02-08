@@ -1,9 +1,5 @@
 @use "sass:math";
 
-// Библиотеки
-// @import '_libs/swiper/swiper-vars.scss';
-// @import '_libs/swiper/swiper.scss';
-
 // Настройки
 @import '_config/variables';
 @import '_config/fonts';
@@ -13,6 +9,9 @@
 @import '_mixins/media';
 @import '_mixins/container';
 @import '_mixins/flex';
+
+// Библиотеки
+@import '_libs/swiper';
 
 *,
 *::before,

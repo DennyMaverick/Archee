@@ -29,6 +29,11 @@ module.exports = {
     formats: ["ttf", "woff", "eot", "svg"]
   },
 
+  scss: {
+    importer: require('node-sass-tilde-importer'),
+    outputStyle: 'compressed'
+  },
+
   favicons: {
     appName: 'Archee project',
     appShortName: 'Archee',

@@ -55,7 +55,9 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
+    "node-sass-tilde-importer": "^1.0.2",
     "sass": "^1.43.4",
+    "swiper": "^8.0.3",
     "webpack": "^5.61.0",
     "webpack-stream": "^7.0.0"
   }

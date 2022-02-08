@@ -1,0 +1,13 @@
+.architects-nav {
+  // .architects-nav__button
+  &__btn {
+    width: 35px;
+    height: 24px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &__btn + &__btn {
+    margin-left: 8px;
+  }
+}
