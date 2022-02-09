@@ -9,6 +9,7 @@
 @import '_mixins/media';
 @import '_mixins/container';
 @import '_mixins/flex';
+@import '_mixins/hide-element';
 
 // Библиотеки
 @import '_libs/swiper';
@@ -39,7 +40,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   // background-color: #e5e5e5;
-
+  scroll-behavior: smooth;
   @include font-helvetica-regular;
   font-size: $font-size-base;
   line-height: $line-height-base;

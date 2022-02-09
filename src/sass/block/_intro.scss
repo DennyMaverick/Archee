@@ -7,11 +7,39 @@
   background-position: top 16px left 26px, top 138px right 0;
   background-repeat: no-repeat, no-repeat;
   background-size: 249px 220px, 838px 600px;
+  @include bp-desk(notebook) {
+    background-size: 249px 220px, 580px auto;
+  }
+  @include bp-desk(tablet) {
+    background-position: top 16px left 26px, top 300px right 0;
+  }
+  @include bp-desk(mobile) {
+    padding-top: 70px;
+    padding-bottom: 150px;
+    background-position: top -14px left 26px, top 262px right 0;
+  }
+  @include bp-desk(mobile-sm) {
+    background-size: 200px auto, 480px auto;
+  }
+  @include bp-desk(mobile-l) {
+    background-size: 150px auto, 310px auto;
+    background-position: top 16px left 26px, top 241px right 0;
+  }
   // .intro__title
 
   &__title {
     max-width: 533px;
     margin-bottom: 20px;
+    @include bp-desk(notebook) {
+      font-size: 48px;
+    }
+    @include bp-desk(tablet) {
+      margin-bottom: 350px;
+    }
+    @include bp-desk(mobile-l) {
+      font-size: 37px;
+      margin-bottom: 220px;
+    }
   }
 
   // .intro__subtitle
@@ -21,16 +49,25 @@
     @include font(18px, 30px);
     color: $color-text-base;
     margin-bottom: 34px;
+    @include bp-desk(notebook) {
+      max-width: 350px;
+    }
   }
 
   &__feedback {
     display: flex;
     justify-content: space-between;
+    @include bp-desk(mobile) {
+      flex-direction: column;
+    }
   }
   // .intro__btn
 
   &__btn {
     margin-bottom: 120px;
     padding: 20px 40px;
+    @include bp-desk(mobile) {
+      margin-bottom: 77px;
+    }
   }
 }

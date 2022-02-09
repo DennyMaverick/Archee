@@ -1,20 +1,30 @@
 .benefits {
   padding-top: 113px;
   padding-bottom: 120px;
+  @include bp-desk(tablet) {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
   // .benefits__items
 
   &__items {
     display: flex;
     justify-content: space-between;
+    @include bp-desk(tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   // .benefits__item
   &__item {
     max-width: 291px;
   }
-  // &__item + &__item {
-  //   margin-left: 134px;
-  // }
+  @include bp-desk(tablet) {
+    &__item + &__item {
+      margin-top: 30px;
+    }
+  }
 
   // .benefits__item-img
 

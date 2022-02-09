@@ -9,9 +9,7 @@
   <link rel="icon" href="./img/favicon/favicon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
-  <link rel="stylesheet" href="./css/main.min.css">
-  <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+  <link rel="stylesheet" href="./css/main.css">
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -19,28 +17,28 @@
   <div class="wrapper">
     <header class="header">
       <div class="header__inner container">
-        <a class="logo" href="#">
+        <a id="home" class="header__logo logo" href="#">
           <img src="./img/logo/logo.svg" class="logo" alt="logo">
         </a>
         <nav class="header__menu-nav menu-nav">
           <ul class="menu-nav__list">
             <li class="menu-nav__item">
-              <a href="#" class="menu-nav__link">
+              <a href="#home" class="menu-nav__link">
                 home
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#" class="menu-nav__link">
+              <a href="#project" class="menu-nav__link">
                 project
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#" class="menu-nav__link">
+              <a href="#services" class="menu-nav__link">
                 services
               </a>
             </li>
             <li class="menu-nav__item">
-              <a href="#" class="menu-nav__link">
+              <a href="#about" class="menu-nav__link">
                 about
               </a>
             </li>
@@ -65,7 +63,37 @@
             Contact
           </button>
         </div>
+        <button class="header__burger burger">
+          <span class="burger__line"></span>
+        </button>
       </div>
+      <nav class="header__mobile-nav mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="#home" class="mobile-nav__link">
+              home
+            </a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#project" class="mobile-nav__link">
+              project
+            </a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#services" class="mobile-nav__link">
+              services
+            </a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#about" class="mobile-nav__link">
+              about
+            </a>
+          </li>
+          <button class="mobile-nav__contact-btn btn">
+            Contact
+          </button>
+        </ul>
+      </nav>
     </header>
     <main class="main">
       <section class="intro">
@@ -123,7 +151,7 @@
           </div>
         </form>
       </section>
-      <section class="benefits">
+      <section id="services" class="benefits">
         <div class="container">
           <h2 class="vhidden">our benefits</h2>
           <ul class="benefits__items">
@@ -163,7 +191,7 @@
           </ul>
         </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <div class="about__inner container">
           <img class="about__image" src="./img/about/about-home.jpg" alt="about image">
           <div class="about__content">
@@ -179,7 +207,7 @@
           </div>
         </div>
       </section>
-      <section class="projects">
+      <section id="project" class="projects hide">
         <div class="projects__inner container">
           <h2 class="projects__title title title--section">
             Selected Projects
@@ -232,7 +260,7 @@
           </ul>
         </div>
       </section>
-      <section class="architects">
+      <section class="architects hide">
         <div class="architects__inner container">
           <h2 class="architects__title title title--section title--white">Architects of Archee
           </h2>
@@ -279,7 +307,7 @@
           </div>
         </div>
       </section>
-      <section class="news">
+      <section class="news hide">
         <div class="news__inner container">
           <h2 class="news__title vhidden">Our news</h2>
           <ul class="news__list">
@@ -327,7 +355,7 @@
           </ul>
         </div>
       </section>
-      <footer class="footer">
+      <footer class="footer hide">
         <div class="container">
           <div class="footer__inner">
             <a class="logo" href="#">

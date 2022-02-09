@@ -5,6 +5,9 @@
   &__menu-nav {
     margin-left: 71px;
     margin-top: -9px;
+    @include bp-desk(tablet) {
+      display: none;
+    }
   }
   // .header__inner
 
@@ -20,11 +23,23 @@
     margin-top: -5px;
     display: flex;
     align-items: center;
+    @include bp-desk(tablet) {
+      display: none;
+    }
   }
 
   // .header__lang
 
   &__lang {
     margin-right: 30px;
+  }
+  &__logo {
+    flex-shrink: 0;
+  }
+  &__mobile-nav {
+    position: fixed;
+    top: 5%;
+    left: 0;
+    padding: 30px;
   }
 }

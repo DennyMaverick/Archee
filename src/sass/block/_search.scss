@@ -6,6 +6,9 @@
     box-shadow: 30px 50px 150px rgba(39, 31, 26, 0.2);
     border-radius: 10px;
     max-width: 1140px;
+    @include bp-desk(mobile-sm) {
+      padding: 22px;
+    }
   }
 
   // .search__title
@@ -23,6 +26,9 @@
     max-width: 1040px;
     margin-left: auto;
     margin-right: auto;
+    @include bp-desk(notebook) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -54,6 +60,9 @@
     height: 60px;
     padding-right: 50px;
     transition: outline 0.4s linear;
+    @include bp-desk(notebook) {
+      max-width: 770px;
+    }
     &::placeholder {
       @include font-helvetica-medium();
       @include font(16px, 24px);
@@ -63,11 +72,17 @@
     &:focus {
       outline: 1px solid $primary-color;
     }
+    & + & {
+      margin-top: 20px;
+    }
   }
 
   &__btn {
     padding: 20px 40px;
     flex-shrink: 0;
     width: 166px;
+    @include bp-desk(notebook) {
+      margin-top: 20px;
+    }
   }
 }

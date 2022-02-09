@@ -1,0 +1,56 @@
+.burger {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  @include bp-desk(tablet) {
+    display: flex;
+  }
+}
+
+.burger__line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: $primary-color;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $primary-color;
+  transition: transform 0.3s, top 0.3s;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  top: calc(100% - 2px);
+}
+
+.burger--active::before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.burger--active .burger__line {
+  transform: scale(0);
+}
+
+.burger--active::after {
+  top: 50%;
+  transform: rotate(-45deg);
+}

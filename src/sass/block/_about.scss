@@ -8,6 +8,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include bp-desk(large) {
+      flex-direction: column;
+    }
   }
 
   // .about__image
@@ -18,12 +21,29 @@
     height: 571px;
     max-width: 833px;
     margin-top: -8px;
+    @include bp-desk(large) {
+      align-self: flex-end;
+      margin-left: 0;
+    }
+    @include bp-desk(tablet) {
+      height: 350px;
+      max-width: auto;
+    }
+    @include bp-desk(mobile-sm) {
+      height: 200px;
+      margin-left: 35px;
+    }
   }
 
   // .about__content
 
   &__content {
     margin-top: -44px;
+    @include bp-desk(large) {
+      order: -1;
+      margin-bottom: 30px;
+      align-self: flex-start;
+    }
   }
 
   // .about__title
@@ -31,6 +51,15 @@
   &__title {
     max-width: 388px;
     margin-bottom: 20px;
+    @include bp-desk(large) {
+      max-width: 550px;
+    }
+    @include bp-desk(tablet) {
+      font-size: 37px;
+    }
+    @include bp-desk(mobile) {
+      font-size: 28px;
+    }
   }
 
   // .about__description
@@ -40,6 +69,9 @@
     color: $color-text-base;
     max-width: 419px;
     margin-bottom: 40px;
+    @include bp-desk(large) {
+      max-width: 450px;
+    }
   }
 
   // .about__btn

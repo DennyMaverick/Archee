@@ -8,12 +8,13 @@ $container-padding: 15px;
 
 // Контрольные точки
 $breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px,
+  mobile-xs: 0,
+  mobile-l: 420px,
+  mobile-sm: 576px,
+  mobile: 768px,
+  tablet: 992px,
+  notebook: 1200px,
+  large: 1400px,
 ) !default;
 
 // Шрифт

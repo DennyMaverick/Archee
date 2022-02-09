@@ -1,0 +1,24 @@
+.mobile-nav {
+  transform: translateX(-1000px);
+  opacity: 0;
+  height: 0;
+  transition: transform 1s linear, opacity 1s linear, height 1s linear;
+  background-color: grey;
+  color: $white;
+  border-radius: 0 10px 10px 0;
+  z-index: 1000;
+  &--active {
+    transform: translate(0, 0);
+    opacity: 1;
+    height: auto;
+  }
+  &__item + &__item {
+    margin-top: 20px;
+  }
+  &__contact-btn {
+    margin-top: 30px;
+  }
+  &__link {
+    font-size: 18px;
+  }
+}

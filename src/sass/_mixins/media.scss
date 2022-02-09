@@ -1,16 +1,10 @@
 // Медиа-выражение
+// Для mobile-first
 @mixin media-up($width) {
   @media (min-width: $width) {
     @content;
   }
 }
-
-@mixin media-down($width) {
-  @media (max-width: $width) {
-    @content;
-  }
-}
-
 // Контрольная точка
 // Для mobile-first
 @mixin bp-mobile($name) {
@@ -19,6 +13,16 @@
     @content;
   }
 }
+
+// Медиа-выражение
+// Для desktop-first
+@mixin media-down($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+// Контрольная точка
 // для desktop-first
 @mixin bp-desk($name) {
   $width: map-get($breakpoints, $name);
