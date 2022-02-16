@@ -4,6 +4,7 @@
   height: 25px;
   background-color: transparent;
   border: none;
+  outline: none;
   cursor: pointer;
   display: none;
   @include bp-desk(tablet) {

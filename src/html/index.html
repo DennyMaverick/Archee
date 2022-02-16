@@ -9,7 +9,7 @@
   <link rel="icon" href="./img/favicon/favicon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main.min.css">
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -137,19 +137,21 @@
         </div>
       </section>
       <section class="search main__search">
-        <form class="search__form container">
-          <h2 class="search__title title title--search">
-            Search the price you looking for
-          </h2>
-          <div class="search__items">
-            <input class="search__item search__item-input search__item--location" type="text" placeholder="Location">
-            <input class="search__item search__item-input search__item--type" type="text" placeholder="Type">
-            <input class="search__item search__item-input search__item--budget" type="text" placeholder="Budget">
-            <button class="search__item search__btn btn">
-              Search Now
-            </button>
-          </div>
-        </form>
+        <div class="container">
+          <form class="search__form">
+            <h2 class="search__title title title--search">
+              Search the price you looking for
+            </h2>
+            <div class="search__items">
+              <input class="search__item search__item-input search__item--location" type="text" placeholder="Location">
+              <input class="search__item search__item-input search__item--type" type="text" placeholder="Type">
+              <input class="search__item search__item-input search__item--budget" type="text" placeholder="Budget">
+              <button class="search__item search__btn btn">
+                Search Now
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
       <section id="services" class="benefits">
         <div class="container">
@@ -207,15 +209,17 @@
           </div>
         </div>
       </section>
-      <section id="project" class="projects hide">
+      <section id="project" class="projects">
         <div class="projects__inner container">
           <h2 class="projects__title title title--section">
             Selected Projects
           </h2>
           <ul class=" projects-list projects__items">
             <li class="projects-list__item project">
-              <img class="projects-list__item-img project__photo" src="./img/projects/project-1.jpg" width="770"
-                height="500" alt="Project photo">
+              <div class="project__photo-container">
+                <img class="projects-list__item-img project__photo" src="./img/projects/project-1.jpg" width="770"
+                  height="500" alt="Project photo">
+              </div>
               <div class="project__content">
                 <h3 class="project__title title title--decore">Outdoor structure</h3>
                 <p class="project__description">
@@ -225,8 +229,10 @@
               </div>
             </li>
             <li class="projects-list__item project">
-              <img class="projects-list__item-img project__photo" src="./img/projects/project-2.jpg" width="700"
-                height="500" alt="Project photo">
+              <div class="project__photo-container">
+                <img class="projects-list__item-img project__photo" src="./img/projects/project-2.jpg" width="700"
+                  height="500" alt="Project photo">
+              </div>
               <div class="project__content">
                 <h3 class="project__title title title--decore">Indoor structure</h3>
                 <p class="project__description">
@@ -236,8 +242,10 @@
               </div>
             </li>
             <li class="projects-list__item project">
-              <img class="projects-list__item-img project__photo" src="./img/projects/project-3.jpg" width="770"
-                height="500" alt="Project photo">
+              <div class="project__photo-container">
+                <img class="projects-list__item-img project__photo" src="./img/projects/project-3.jpg" width="770"
+                  height="500" alt="Project photo">
+              </div>
               <div class="project__content">
                 <h3 class="project__title title title--decore">Modern Furniture</h3>
                 <p class="project__description">
@@ -247,8 +255,10 @@
               </div>
             </li>
             <li class="projects-list__item project">
-              <img class="projects-list__item-img project__photo" src="./img/projects/project-4.jpg" width="700"
-                height="500" alt="Project photo">
+              <div class="project__photo-container">
+                <img class="projects-list__item-img project__photo" src="./img/projects/project-4.jpg" width="700"
+                  height="500" alt="Project photo">
+              </div>
               <div class="project__content">
                 <h3 class="project__title title title--decore">Modern Kitchen</h3>
                 <p class="project__description">
@@ -260,7 +270,7 @@
           </ul>
         </div>
       </section>
-      <section class="architects hide">
+      <section class="architects">
         <div class="architects__inner container">
           <h2 class="architects__title title title--section title--white">Architects of Archee
           </h2>
@@ -307,7 +317,7 @@
           </div>
         </div>
       </section>
-      <section class="news hide">
+      <section class="news">
         <div class="news__inner container">
           <h2 class="news__title vhidden">Our news</h2>
           <ul class="news__list">
@@ -355,10 +365,10 @@
           </ul>
         </div>
       </section>
-      <footer class="footer hide">
+      <footer class="footer">
         <div class="container">
           <div class="footer__inner">
-            <a class="logo" href="#">
+            <a class="footer__logo logo" href="#">
               <img src="./img/logo/logo.svg" class="logo" alt="logo">
             </a>
             <address class="footer__address">

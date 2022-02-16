@@ -6,9 +6,20 @@
     padding-top: 40px;
     padding-bottom: 50px;
     border-top: 1px solid $color-text-base;
+    @include bp-desk(mobile) {
+      flex-direction: column;
+    }
   }
 
   &__address {
     font-style: normal;
+    @include bp-desk(mobile) {
+      margin-bottom: 20px;
+    }
+  }
+  &__logo {
+    @include bp-desk(mobile) {
+      margin-bottom: 30px;
+    }
   }
 }

@@ -14,5 +14,12 @@
 
   &__title {
     margin-bottom: 50px;
+    @include bp-desk(mobile) {
+      font-size: 38px;
+    }
+    @include bp-desk(mobile-l) {
+      font-size: 27px;
+      text-transform: uppercase;
+    }
   }
 }

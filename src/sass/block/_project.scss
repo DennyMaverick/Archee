@@ -1,9 +1,11 @@
 .project {
   // .project__photo
-
-  // &__photo {
-  // }
-
+  &__photo-container {
+    @include bp-desk(notebook) {
+      margin-bottom: 40px;
+      align-self: flex-end;
+    }
+  }
   // .project__content
 
   &__content {

@@ -7,4 +7,9 @@
       color: $primary-color;
     }
   }
+  & + & {
+    @include bp-desk(mobile) {
+      margin-top: 20px;
+    }
+  }
 }
