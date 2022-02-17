@@ -1,6 +1,4 @@
 .slide {
-  width: 100%;
-  height: 100%;
   &__title {
     @include font-cabinet-black;
     @include font(24px, 30px);

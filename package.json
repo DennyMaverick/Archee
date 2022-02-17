@@ -13,7 +13,7 @@
     ]
   },
   "browserslist": [
-    "last 8 versions"
+    "last 3 versions"
   ],
   "keywords": [
     "gulp-starter",
