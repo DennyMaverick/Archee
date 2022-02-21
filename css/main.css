@@ -438,6 +438,9 @@ img {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .architects__title {
@@ -451,7 +454,6 @@ img {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   min-height: 440px;
-  max-width: 100%;
 }
 
 .architects__nav {
@@ -1246,18 +1248,8 @@ img {
   padding: 23px 30px;
 }
 
-.slider__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-
 .slider__item {
   position: relative;
-  -ms-flex-preferred-size: 350px;
-  flex-basis: 350px;
-  min-height: 440px;
 }
 
 .title {
@@ -1379,8 +1371,13 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .architects__title {
+    text-align: center;
+  }
+
   .architects__slider-container {
-    max-width: 760px;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
   }
 
   .intro {
@@ -1470,13 +1467,20 @@ img {
     padding-top: 70px;
   }
 
+  .architects__inner {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .architects__title {
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+  }
+
   .architects__title {
     font-size: 36px;
     line-height: 1;
-  }
-
-  .architects__slider-container {
-    max-width: 380px;
   }
 
   .benefits {
@@ -1617,6 +1621,34 @@ img {
   .projects__title {
     font-size: 27px;
     text-transform: uppercase;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 350px) {
+  .architects {
+    padding-bottom: 50px;
+  }
+
+  .architects__nav {
+    bottom: -25px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 320px) {
+  .architects {
+    padding-bottom: 20px;
+  }
+
+  .architects__nav {
+    bottom: 5px;
   }
 
 @supports (-webkit-appearance:none) {
