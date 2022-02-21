@@ -1,10 +1,6 @@
 .slider {
   // .slider__wrapper
 
-  &__wrapper {
-    display: flex;
-    gap: 30px;
-  }
   // &__container {
 
   // }
@@ -12,7 +8,7 @@
 
   &__item {
     position: relative;
-    flex-basis: 350px;
-    min-height: 440px;
+    // flex-basis: 350px;
+    // min-height: 440px;
   }
 }

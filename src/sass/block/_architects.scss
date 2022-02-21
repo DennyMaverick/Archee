@@ -2,6 +2,12 @@
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: $black;
+  @include media-down(350px) {
+    padding-bottom: 50px;
+  }
+  @include media-down(320px) {
+    padding-bottom: 20px;
+  }
   // .architects__inner
   @include bp-desk(tablet) {
     padding-top: 70px;
@@ -12,8 +18,12 @@
   &__inner {
     display: flex;
     position: relative;
+    align-items: flex-start;
     @include bp-desk(large) {
       display: block;
+    }
+    @include bp-desk(tablet) {
+      align-items: center;
     }
   }
 
@@ -26,6 +36,12 @@
     @include bp-desk(large) {
       max-width: 100%;
       margin-bottom: 40px;
+    }
+    @include bp-desk(notebook) {
+      text-align: center;
+    }
+    @include bp-desk(tablet) {
+      flex-shrink: 1;
     }
     @include bp-desk(tablet) {
       @include font(36px, 36px);
@@ -40,12 +56,8 @@
   &__slider-container {
     flex-shrink: 0;
     min-height: 440px;
-    max-width: 100%;
     @include bp-desk(notebook) {
-      max-width: 760px;
-    }
-    @include bp-desk(tablet) {
-      max-width: 380px;
+      flex-shrink: 1;
     }
   }
 
@@ -57,6 +69,12 @@
     bottom: -9px;
     @include bp-desk(large) {
       bottom: -80px;
+    }
+    @include media-down(350px) {
+      bottom: -25px;
+    }
+    @include media-down(320px) {
+      bottom: 5px;
     }
   }
 }
