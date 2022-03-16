@@ -29,4 +29,9 @@
     justify-content: flex-end;
     padding: 23px 30px;
   }
+  &__box {
+    position: relative;
+    max-width: 350px;
+    margin: auto;
+  }
 }

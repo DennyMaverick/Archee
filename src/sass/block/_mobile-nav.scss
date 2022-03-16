@@ -1,11 +1,13 @@
 .mobile-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: translateX(-1000px);
   opacity: 0;
   height: 0;
   transition: transform 1s linear, opacity 1s linear, height 1s linear;
-  background-color: grey;
-  color: $white;
-  border-radius: 0 10px 10px 0;
+  background-color: $white;
+  color: $black;
   z-index: 1000;
   &--active {
     transform: translate(0, 0);

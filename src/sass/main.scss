@@ -39,7 +39,6 @@ html,
 body {
   @include reset-model;
   min-height: 100vh;
-  overflow-x: hidden;
   // background-color: #e5e5e5;
   scroll-behavior: smooth;
   @include font-helvetica-regular;

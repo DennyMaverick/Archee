@@ -3,10 +3,7 @@
   padding-bottom: 120px;
   background-color: $black;
   @include media-down(350px) {
-    padding-bottom: 50px;
-  }
-  @include media-down(320px) {
-    padding-bottom: 20px;
+    padding-bottom: 70px;
   }
   // .architects__inner
   @include bp-desk(tablet) {
@@ -21,9 +18,6 @@
     align-items: flex-start;
     @include bp-desk(large) {
       display: block;
-    }
-    @include bp-desk(tablet) {
-      align-items: center;
     }
   }
 
@@ -55,7 +49,6 @@
 
   &__slider-container {
     flex-shrink: 0;
-    min-height: 440px;
     @include bp-desk(notebook) {
       flex-shrink: 1;
     }
@@ -71,10 +64,7 @@
       bottom: -80px;
     }
     @include media-down(350px) {
-      bottom: -25px;
-    }
-    @include media-down(320px) {
-      bottom: 5px;
+      bottom: -55px;
     }
   }
 }

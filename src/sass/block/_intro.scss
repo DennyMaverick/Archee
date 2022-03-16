@@ -23,8 +23,11 @@
   }
   @include bp-desk(mobile-l) {
     background-size: 150px auto, 310px auto;
-    background-position: top 16px left 26px, top 241px right 0;
+    background-position: top 16px left 26px, top 225px right 0;
   }
+  // @include media-down(300px) {
+  //   background-position: top 16px left 26px, top 273px right 0;
+  // }
   // .intro__title
 
   &__title {
@@ -37,7 +40,7 @@
       margin-bottom: 350px;
     }
     @include bp-desk(mobile-l) {
-      font-size: 37px;
+      font-size: 33px;
       margin-bottom: 220px;
     }
   }

@@ -1,5 +1,11 @@
 .projects {
   padding: 83px 0 120px 0;
+  @include bp-desk(tablet) {
+    padding: 63px 0 100px 0;
+  }
+  @include bp-desk(mobile) {
+    padding: 43px 0 70px 0;
+  }
   // .projects__inner
 
   // &__inner {
@@ -18,7 +24,7 @@
       font-size: 38px;
     }
     @include bp-desk(mobile-l) {
-      font-size: 27px;
+      font-size: 20px;
       text-transform: uppercase;
     }
   }
