@@ -1208,10 +1208,6 @@ img {
   outline: 1px solid #d6680f;
 }
 
-.search__item-input+.search__item-input {
-  margin-top: 20px;
-}
-
 .search__btn {
   padding: 20px 40px;
   -ms-flex-negative: 0;
@@ -1456,6 +1452,10 @@ img {
 
   .search__item-input {
     max-width: 770px;
+  }
+
+  .search__item-input+.search__item-input {
+    margin-top: 20px;
   }
 
   .search__btn {
