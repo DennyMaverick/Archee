@@ -62,6 +62,9 @@
     transition: outline 0.4s linear;
     @include bp-desk(notebook) {
       max-width: 770px;
+      & + & {
+        margin-top: 20px;
+      }
     }
     &::placeholder {
       @include font-helvetica-medium();
@@ -71,9 +74,6 @@
 
     &:focus {
       outline: 1px solid $primary-color;
-    }
-    & + & {
-      margin-top: 20px;
     }
   }
 
