@@ -6,6 +6,7 @@ import './libs/swiper';
 
 import './modules/drop-down';
 import './modules/show-nav';
+import "./modules/lang";
 
 
 

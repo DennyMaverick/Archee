@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Archee project</title>
+  <title class="lang-title">Archee project</title>
   <link rel="icon" href="./img/favicon/favicon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
@@ -48,14 +48,13 @@
           <div class="header__lang lang">
             <div class="lang__lang-choose">
               <span class="lang__name">
-                eng
+                ru
               </span>
               <img class="lang__arrow" id="lang-arrow" src="./img/header/arrow-down.svg" width="12" height="9"
                 alt="arrow down">
               <ul class="lang-list">
-                <li class="lang-list__item">ru</li>
-                <li class="lang-list__item">fr</li>
-                <li class="lang-list__item">es</li>
+                <li class="lang-list__item" data-lang="en">en</li>
+                <li class="lang-list__item" data-lang="ru">ru</li>
               </ul>
             </div>
           </div>
@@ -98,8 +97,8 @@
     <main class="main">
       <section class="intro">
         <div class="intro__inner container">
-          <h1 class="intro__title title title--promo">Architecture that recognizes all your sensibilities</h1>
-          <p class="intro__subtitle">Welcome to Archee, a reliable business partner on your path to building a better
+          <h1 class="intro__title title title--promo lang-intro-title">Architecture that recognizes all your sensibilities</h1>
+          <p class="intro__subtitle lang-intro-description">Welcome to Archee, a reliable business partner on your path to building a better
             looking future for all.
           </p>
           <button class="intro__btn btn">Make An Enquiry</button>
