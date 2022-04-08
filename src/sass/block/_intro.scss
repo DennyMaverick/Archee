@@ -67,6 +67,7 @@
   // .intro__btn
 
   &__btn {
+    text-transform: capitalize;
     margin-bottom: 120px;
     padding: 20px 40px;
     @include bp-desk(mobile) {

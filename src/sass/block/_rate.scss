@@ -1,6 +1,7 @@
 .rate {
   // .rate__desc
   &__desc {
+    text-transform: capitalize;
     @include font(16px, 24px);
     letter-spacing: 0.02em;
     color: #61594d;
@@ -16,8 +17,9 @@
     color: $black;
     margin-bottom: 7px;
     margin-top: -2px;
-    span {
-      margin-left: 25px;
+    }
+  &__value {
+    margin-left: 25px;
       position: relative;
       &::before {
         content: '';
@@ -29,9 +31,7 @@
         width: 15px;
         height: 15px;
       }
-    }
   }
-
   // .rate__list
 
   &-list {

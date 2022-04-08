@@ -9,8 +9,64 @@ const langs = {
     en: "Architecture that recognizes all your sensibilities",
   },
   "intro-description": {
-    ru: "",
-    en: "",
+    ru: "Добро пожаловать в Archee, надежного делового партнера на вашем пути к построению лучшего будущего для всех",
+    en: "Welcome to Archee, a reliable business partner on your path to building a better looking future for all.",
+  },
+  "nav-home": {
+    ru: "домой",
+    en: "home",
+  },
+  "nav-project": {
+    ru: "проекты",
+    en: "project",
+  },
+  "nav-services": {
+    ru: "сервисы",
+    en: "services",
+  },
+  "nav-about": {
+    ru: "о нас",
+    en: "about",
+  },
+  "nav-contact": {
+    ru: "контакты",
+    en: "contact",
+  },
+  "nav-mobile-home": {
+    ru: "домой",
+    en: "home",
+  },
+  "nav-mobile-project": {
+    ru: "проекты",
+    en: "project",
+  },
+  "nav-mobile-services": {
+    ru: "сервисы",
+    en: "services",
+  },
+  "nav-mobile-home": {
+    ru: "о нас",
+    en: "about",
+  },
+  "nav-mobile-home": {
+    ru: "контакты",
+    en: "contact",
+  },
+  "intro-btn": {
+    ru: "подать запрос",
+    en: "make an enquiry",
+  },
+  rate: {
+    ru: "Рейтинги",
+    en: "Ratings",
+  },
+  "rate-desc": {
+    ru: "Нам доверяют клиенты со всего мира",
+    en: "Trusted by Clients From Worldwide",
+  },
+  "contact-desc": {
+    ru: "Если вы спешите, позвоните нам. Мы здесь 24/7, чтобы помочь вам как можно скорее",
+    en: "If you're in a hurry, quick call for us. We are here 24/7 to help you asap.",
   },
 };
 
