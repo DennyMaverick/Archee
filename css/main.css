@@ -752,6 +752,7 @@ img {
 }
 
 .intro__btn {
+  text-transform: capitalize;
   margin-bottom: 120px;
   padding: 20px 40px;
 }
@@ -1030,6 +1031,7 @@ img {
 }
 
 .rate__desc {
+  text-transform: capitalize;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: .02em;
@@ -1050,12 +1052,12 @@ img {
   margin-top: -2px;
 }
 
-.rate__title span {
+.rate__value {
   margin-left: 25px;
   position: relative;
 }
 
-.rate__title span::before {
+.rate__value::before {
   content: "";
   background-image: url("../img/rating/star.png");
   position: absolute;
@@ -1314,7 +1316,7 @@ img {
     background-image: url("../img/intro/blur.svg"),url("../img/intro/modern-house.webp");
   }
 
-  .rate__title span::before {
+  .rate__value::before {
     background-image: url("../img/rating/star.webp");
   }
 
