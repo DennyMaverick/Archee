@@ -409,6 +409,7 @@ img {
 }
 
 .about__btn {
+  text-transform: capitalize;
   padding: 20px 40px;
 }
 
@@ -1214,7 +1215,8 @@ img {
   padding: 20px 40px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  width: 166px;
+  min-width: 166px;
+  text-transform: capitalize;
 }
 
 .slide__title {
