@@ -1,9 +1,13 @@
-// Массив языков
+// =========== Объект с переводом страницы ==============
+
 const langs = {
   title: {
     ru: "Проект Archee",
     en: "Archee Project",
   },
+
+  // ======= Секция Intro
+
   "intro-title": {
     ru: "Архитектура, которая знает о чем вы мечтаете",
     en: "Architecture that recognizes all your sensibilities",
@@ -12,6 +16,25 @@ const langs = {
     ru: "Добро пожаловать в Archee, надежного делового партнера на вашем пути к построению лучшего будущего для всех",
     en: "Welcome to Archee, a reliable business partner on your path to building a better looking future for all.",
   },
+  "intro-btn": {
+    ru: "подать запрос",
+    en: "make an enquiry",
+  },
+  rate: {
+    ru: "Рейтинги",
+    en: "Ratings",
+  },
+  "rate-desc": {
+    ru: "Нам доверяют клиенты со всего мира",
+    en: "Trusted by Clients From Worldwide",
+  },
+  "contact-desc": {
+    ru: "Если вы спешите, позвоните нам. Мы здесь 24/7, чтобы помочь вам как можно скорее",
+    en: "If you're in a hurry, quick call for us. We are here 24/7 to help you asap.",
+  },
+
+  // ========== Навигационное меню ==========
+
   "nav-home": {
     ru: "домой",
     en: "home",
@@ -52,63 +75,218 @@ const langs = {
     ru: "контакты",
     en: "contact",
   },
-  "intro-btn": {
-    ru: "подать запрос",
-    en: "make an enquiry",
-  },
-  rate: {
-    ru: "Рейтинги",
-    en: "Ratings",
-  },
-  "rate-desc": {
-    ru: "Нам доверяют клиенты со всего мира",
-    en: "Trusted by Clients From Worldwide",
-  },
-  "contact-desc": {
-    ru: "Если вы спешите, позвоните нам. Мы здесь 24/7, чтобы помочь вам как можно скорее",
-    en: "If you're in a hurry, quick call for us. We are here 24/7 to help you asap.",
-  },
-};
 
-const langListItems = document.querySelectorAll(".lang-list__item");
+  // ======== Секция Search =========
+
+  "search-title": {
+    ru: "Найди цену, которая тебе подходит",
+    en: "Search the price you looking for",
+  },
+  "search-btn": {
+    ru: "найти сейчас",
+    en: "search now",
+  },
+
+  // ======== Секция преимуществ ========
+
+  "hidden-benefits": {
+    ru: "Наши преимущества",
+    en: "Our benefits",
+  },
+  "benefits-title-one": {
+    ru: "Арка и Интерьер",
+    en: "Arch & Interior",
+  },
+  "benefits-desc-one": {
+    ru: "Мы привносим волшебство в здание и интерьер, чтобы воплотить в жизнь дом вашей мечты.",
+    en: "We bring magic in the building and interior to fulfill your dream home.",
+  },
+  "benefits-title-two": {
+    ru: "Дизайн",
+    en: "Design",
+  },
+  "benefits-desc-two": {
+    ru: "Креативный дизайн с использованием цифровых продуктов, которые помогут вам продвигать свой бизнес.",
+    en: "Creative design with digital products that help you promote your business.",
+  },
+  "benefits-title-three": {
+    ru: "Продукт",
+    en: "Product",
+  },
+  "benefits-desc-three": {
+    ru: "Мы сосдаем самые красивые вещи для дома вашей мечты",
+    en: "We create the most beautiful things for your dream home",
+  },
+
+  // ======== Секция About =========
+
+  "about-title": {
+    ru: "Мы стремимся задавать тенденции вашей современной жизни.",
+    en: "We aim to set the trends of your modern living.",
+  },
+  "about-description": {
+    ru: "Более 39 000 человек работают на нас в более чем 70 странах по всему миру. Этот всеобщий охват сочетается со специализированными услугами. Archee позволяет вам создавать неограниченное количество панелей и пользовательских форм недвижимости для сбора потенциальных клиентов и ведения учета всей информации.",
+    en: "Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage, combined with specialist services. Archee allow you to design unlimited panels and real estate custom forms to capture leads and keep record of all information.",
+  },
+  "about-btn": {
+    ru: "Связаться сейчас",
+    en: "Contact Now",
+  },
+
+  // ========== Проекты ===========
+
+  "projects-title": {
+    ru: "Выбранные проекты",
+    en: "Selected Projects",
+  },
+  "project-outdoor-title": {
+    ru: "Наружная структура",
+    en: "Outdoor structure",
+  },
+  "project-outdoor-desc": {
+    ru: "Проекты данного типа занимают особое внимание. Так как мы знаем, что большие сооружения могут сделать мир красивее.",
+    en: "Projects of this type has unusual attention for us. Cause of we know that big buildings can make the world better.",
+  },
+  "project-indoor-title": {
+    ru: "Внутренняя структура",
+    en: "Indoor structure",
+  },
+  "project-indoor-desс": {
+    ru: "Мы гордимся данными проектами. Мы делаем ваш декор лучше и необычнее.",
+    en: "This projects we pride. We make your decor better and unusual.",
+  },
+  "project-furniture-title": {
+    ru: "Современная Фурнитура",
+    en: "Modern Furniture",
+  },
+  "project-furniture-desс": {
+    ru: "Мы исполняем ваши желания. Теперь доступно увидеть этот восторг своими глазами!",
+    en: "We make your wishes. Now is available to feel it unreal admiration with your eyes!",
+  },
+  "project-kitchen-title": {
+    ru: "Современная Кухня",
+    en: "Modern Kitchen",
+  },
+  "project-kitchen-desс": {
+    ru: "Мы можем помочь сделать вашу кухню более красивой. И мы знаем как это воплотить в жизнь.",
+    en: "We can help to make your kitchen more beautiful. And we know how to do it.",
+  },
+
+  // Заголовок секции Architects
+
+  "architects-title": {
+    ru: "Архитекторы Archee",
+    en: "Architects of Archee",
+  },
+}
+
+const repeatElems = {
+  "benefits-projects": {
+    ru: "Проектов",
+    en: "Projects",
+  },
+
+  // ====== Секция Architects of Archee / Slider ======
+
+  "title-archee": {
+    ru: "Ральф Эдвардс",
+    en: "Ralph Edwards",
+  },
+  "desc-archee": {
+    ru: "Архитектор",
+    en: "Architect",
+  },
+  "title-designer": {
+    ru: "Коди Фишер",
+    en: "Cody Fisher",
+  },
+  "desc-designer": {
+    ru: "Дизайнер по интерьеру",
+    en: "Interior Designer",
+  },
+  "title-manager": {
+    ru: "Стюрд Энеки",
+    en: "Stewrd Enaky",
+  },
+  "desc-manager": {
+    ru: "Проектный Менеджер",
+    en: "Project Manager",
+  },
+}
+
+// ====== Секция Search / placeholders
+
+const placeholders = {
+  location: {
+    ru: "Местоположение",
+    en: "Location",
+  },
+  type: {
+    ru: "Тип",
+    en: "Type",
+  },
+  budget: {
+    ru: "Бюджет",
+    en: "Budget",
+  },
+}
+
+const langListItems = document.querySelectorAll(".lang-list__item")
 // Массив всех доступных языков
-const allLangs = ["ru", "en"];
+const allLangs = ["ru", "en"]
 
 langListItems.forEach(function (item) {
   item.addEventListener("click", function () {
     // получение значения атрибута data-lang (ru или en)
-    let lang = this.dataset.lang;
+    let lang = this.dataset.lang
     // добавление в строку браузера #ru или #en
-    location.href = window.location.pathname + "#" + lang;
+    location.href = window.location.pathname + "#" + lang
     // перезагрузка страницы
-    location.reload();
-  });
-});
+    location.reload()
+  })
+})
 function changeLang() {
   // Надпись языка по умолчанию
-  const langName = document.querySelector(".lang__name");
+  const langName = document.querySelector(".lang__name")
   // получение hash из строки браузера - #ru или #en
-  let hash = window.location.hash;
+  let hash = window.location.hash
   // начало hash массива строки начинается со второго символа - ru или en
-  hash = hash.substr(1);
+  hash = hash.substr(1)
   // проверка - если массив из всех доступных языков не содержит hash
   if (!allLangs.includes(hash)) {
     // принудительно записывать в строку браузера путь с языком
-    location.href = window.location.pathname + "#ru";
+    location.href = window.location.pathname + "#ru"
     // перезагрузка страницы
-    location.reload();
+    location.reload()
   }
   // синхронизация надписи языка по умолчанию со значением hash (ru или en)
-  langName.textContent = hash;
+  langName.textContent = hash
   // перебор массива langs
   for (let key in langs) {
-    // получение элемента в html, который нужно перевести
-    let elem = document.querySelector(".lang-" + key);
+    // получение элементов в html, которые нужно перевести
+    let elem = document.querySelector(".lang-" + key)
     // если элемент существует, то заменить содержание контента в элементе на тот контент, который взят из массива langs
     if (elem) {
-      elem.innerHTML = langs[key][hash];
+      elem.innerHTML = langs[key][hash]
+      elemPlaceholder = langs[key][hash]
     }
+  }
+  // Для плейсхолдеров
+  for (let key in placeholders) {
+    let elemPlaceholder = document.querySelector(".lang-placeholder-" + key)
+    if (elemPlaceholder) {
+      elemPlaceholder.placeholder = placeholders[key][hash]
+    }
+  }
+
+  for (let key in repeatElems) {
+    let elems = document.querySelectorAll(".lang-" + key)
+    elems.forEach(function (elem) {
+      if (elem) {
+        elem.innerHTML = repeatElems[key][hash]
+      }
+    })
   }
 }
 // запуск функции changeLang()
-changeLang();
+changeLang()
