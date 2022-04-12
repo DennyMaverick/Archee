@@ -79,7 +79,7 @@ const langs = {
   //* ======== Секция Search =========
 
   "search-title": {
-    ru: "Найди цену, которая тебе подходит",
+    ru: "Найдите цену, которая вам подходит",
     en: "Search the price you looking for",
   },
   "search-btn": {
@@ -308,7 +308,7 @@ langListItems.forEach(function (item) {
 })
 function changeLang() {
   // Надпись языка по умолчанию
-  const langName = document.querySelector(".lang__name")
+  const langNames = document.querySelectorAll(".lang__name")
   // получение hash из строки браузера - #ru или #en
   let hash = window.location.hash
   // начало hash массива строки начинается со второго символа - ru или en
@@ -321,7 +321,10 @@ function changeLang() {
     location.reload()
   }
   // синхронизация надписи языка по умолчанию со значением hash (ru или en)
-  langName.textContent = hash
+  langNames.forEach((langName) => {
+    langName.textContent = hash
+  })
+
   // перебор массива langs
   for (let key in langs) {
     // получение элементов в html, которые нужно перевести
