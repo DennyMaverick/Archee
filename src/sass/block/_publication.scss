@@ -39,6 +39,7 @@
   // .publication__title
 
   &__title {
+    text-transform: capitalize;
     max-width: 479px;
     margin-bottom: 10px;
   }
@@ -49,5 +50,12 @@
     @include font(16px, 28px);
     color: $color-text-base;
     max-width: 453px;
+  }
+
+  &__link {
+    transition: color .3s ease-in;
+    &:hover {
+      color: $primary-color;
+    }
   }
 }

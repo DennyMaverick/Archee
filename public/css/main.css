@@ -658,6 +658,16 @@ img {
   font-style: normal;
 }
 
+.footer__address-link {
+  -webkit-transition: color .4s ease-in;
+  -o-transition: color .4s ease-in;
+  transition: color .4s ease-in;
+}
+
+.footer__address-link:hover {
+  color: #d6680f;
+}
+
 .header {
   background-color: #f7f7f7;
   padding-top: 30px;
@@ -1020,6 +1030,7 @@ img {
 }
 
 .publication__title {
+  text-transform: capitalize;
   max-width: 479px;
   margin-bottom: 10px;
 }
@@ -1029,6 +1040,16 @@ img {
   line-height: 1.75;
   color: #61594d;
   max-width: 453px;
+}
+
+.publication__link {
+  -webkit-transition: color .3s ease-in;
+  -o-transition: color .3s ease-in;
+  transition: color .3s ease-in;
+}
+
+.publication__link:hover {
+  color: #d6680f;
 }
 
 .rate__desc {

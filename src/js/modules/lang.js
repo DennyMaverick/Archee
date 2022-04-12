@@ -1,4 +1,4 @@
-// =========== Объект с переводом страницы ==============
+//* =========== Объект с переводом страницы ==============
 
 const langs = {
   title: {
@@ -6,7 +6,7 @@ const langs = {
     en: "Archee Project",
   },
 
-  // ======= Секция Intro
+  //* ======= Секция Intro
 
   "intro-title": {
     ru: "Архитектура, которая знает о чем вы мечтаете",
@@ -33,7 +33,7 @@ const langs = {
     en: "If you're in a hurry, quick call for us. We are here 24/7 to help you asap.",
   },
 
-  // ========== Навигационное меню ==========
+  //* ========== Навигационное меню ==========
 
   "nav-home": {
     ru: "домой",
@@ -67,16 +67,16 @@ const langs = {
     ru: "сервисы",
     en: "services",
   },
-  "nav-mobile-home": {
+  "nav-mobile-about": {
     ru: "о нас",
     en: "about",
   },
-  "nav-mobile-home": {
+  "nav-mobile-contact": {
     ru: "контакты",
     en: "contact",
   },
 
-  // ======== Секция Search =========
+  //* ======== Секция Search =========
 
   "search-title": {
     ru: "Найди цену, которая тебе подходит",
@@ -87,7 +87,7 @@ const langs = {
     en: "search now",
   },
 
-  // ======== Секция преимуществ ========
+  //* ======== Секция преимуществ ========
 
   "hidden-benefits": {
     ru: "Наши преимущества",
@@ -118,7 +118,7 @@ const langs = {
     en: "We create the most beautiful things for your dream home",
   },
 
-  // ======== Секция About =========
+  //* ======== Секция About =========
 
   "about-title": {
     ru: "Мы стремимся задавать тенденции вашей современной жизни.",
@@ -133,7 +133,7 @@ const langs = {
     en: "Contact Now",
   },
 
-  // ========== Проекты ===========
+  //* ========== Проекты ===========
 
   "projects-title": {
     ru: "Выбранные проекты",
@@ -172,7 +172,7 @@ const langs = {
     en: "We can help to make your kitchen more beautiful. And we know how to do it.",
   },
 
-  // Заголовок секции Architects
+  //* Заголовок секции Architects
 
   "architects-title": {
     ru: "Архитекторы Archee",
@@ -186,7 +186,7 @@ const repeatElems = {
     en: "Projects",
   },
 
-  // ====== Секция Architects of Archee / Slider ======
+  //* ====== Секция Architects of Archee / Slider ======
 
   "title-archee": {
     ru: "Ральф Эдвардс",
@@ -211,6 +211,67 @@ const repeatElems = {
   "desc-manager": {
     ru: "Проектный Менеджер",
     en: "Project Manager",
+  },
+
+  //* ====== Секция News ======
+  "news-title": {
+    ru: "Наши новости",
+    en: "Our news",
+  },
+  "publication-one-title": {
+    ru: "как выбрать самый лучший наружный декор ",
+    en: "how to choose the best outdoor decor",
+  },
+  "publication-one-time": {
+    ru: "16-е Дек, 2021",
+    en: "16th Dec, 2021",
+  },
+  "publication-one-author": {
+    ru: "Естер Ховард",
+    en: "Esther Howard",
+  },
+  "publication-one-description": {
+    ru: "Лучшие идеи для строительства наружного типа. Лучшие дизайнерские решения для вашего комфорта. Примеры работ наших проектов.",
+    en: "The best ideas for your outdoor building. The best design solutions for your comfort. Demonstrations of our projects. ",
+  },
+  "publication-two-title": {
+    ru: "Чего клиенты хотят от своей кухни: идеальный ассортимент",
+    en: "What Clients Want In Their Kitchen: The Perfect Range",
+  },
+  "publication-two-time": {
+    ru: "20-е Дек, 2021",
+    en: "20th Dec, 2021",
+  },
+  "publication-two-author": {
+    ru: "Лесли Александер",
+    en: "Leslie Alexander",
+  },
+  "publication-two-description": {
+    ru: "Я узнал, что клиенты хотят иметь на своей кухне. Это идеальный ассортимент. Именно потому, что многие из моих клиентов-дизайнеров — любители готовить.",
+    en: "I’ve learned that the number one appliance that clients want in their kitchen is the perfect range. That’s because a number of my design clients are cook lovers.",
+  },
+
+  //* ======= Footer =======
+
+  "footer-address": {
+    ru: "Бахофстрейс 7/1",
+    en: "Bahnhofstrasse 7/1",
+  },
+  "footer-city": {
+    ru: "Зурич, Швейцария",
+    en: "Zürich, Switzerland",
+  },
+  "footer-nav-project": {
+    ru: "Проекты",
+    en: "Project",
+  },
+  "footer-nav-services": {
+    ru: "Сервисы",
+    en: "Services",
+  },
+  "footer-nav-about": {
+    ru: "О нас",
+    en: "About",
   },
 }
 
@@ -265,16 +326,15 @@ function changeLang() {
   for (let key in langs) {
     // получение элементов в html, которые нужно перевести
     let elem = document.querySelector(".lang-" + key)
-    // если элемент существует, то заменить содержание контента в элементе на тот контент, который взят из массива langs
-    if (elem) {
+    // если элемент существует и язык для элемента прописан в объекте с переводом языков, то заменить содержание контента в элементе на тот контент, который взят из массива langs
+    if (elem && langs[key][hash]) {
       elem.innerHTML = langs[key][hash]
-      elemPlaceholder = langs[key][hash]
     }
   }
   // Для плейсхолдеров
   for (let key in placeholders) {
     let elemPlaceholder = document.querySelector(".lang-placeholder-" + key)
-    if (elemPlaceholder) {
+    if (elemPlaceholder && placeholders[key][hash]) {
       elemPlaceholder.placeholder = placeholders[key][hash]
     }
   }
@@ -282,7 +342,7 @@ function changeLang() {
   for (let key in repeatElems) {
     let elems = document.querySelectorAll(".lang-" + key)
     elems.forEach(function (elem) {
-      if (elem) {
+      if (elem && repeatElems[key][hash]) {
         elem.innerHTML = repeatElems[key][hash]
       }
     })
