@@ -15,46 +15,38 @@ const font = require("./task/font.js");
 const favicon = require("./task/favicon.js");
 // const libs = require("./task/libs.js");
 
-
 // Статический сервер
 const server = () => {
   browserSync.init({
     server: {
-      baseDir: path.root
+      baseDir: path.root,
     },
-    browser: "chrome"
-  });
+    browser: "chrome",
+  })
 }
 
 // Отслеживание изменений
 const watcher = () => {
-  watch(path.html.watch, html).on('all', browserSync.reload);
-  watch(path.scss.watch, scss).on('all', browserSync.reload);
-  watch(path.js.watch, js).on('all', browserSync.reload);
-  watch(path.img.watch, img).on('all', browserSync.reload);
-  watch(path.font.watch, font).on('all', browserSync.reload);
-  watch(path.favicon.watch, favicon).on('all', browserSync.reload);
+  watch(path.html.watch, html).on("all", browserSync.reload)
+  watch(path.scss.watch, scss).on("all", browserSync.reload)
+  watch(path.js.watch, js).on("all", browserSync.reload)
+  watch(path.img.watch, img).on("all", browserSync.reload)
+  watch(path.font.watch, font).on("all", browserSync.reload)
+  watch(path.favicon.watch, favicon).on("all", browserSync.reload)
   // watch(path.libs.watch, libs).on('all', browserSync.reload);
 }
 
+const build = series(clear, parallel(html, scss, js, font, img, favicon))
 
-const build = series(
-  clear,
-  parallel(html, scss, js, font, img, favicon)
-);
-
-const dev = series(
-  build,
-  parallel(server, watcher)
-);
+const dev = series(build, parallel(server, watcher))
 
 // Публичные задачи
-exports.html = html;
-exports.scss = scss;
-exports.js = js;
-exports.img = img;
-exports.font = font;
-exports.favicon = favicon;
+exports.html = html
+exports.scss = scss
+exports.js = js
+exports.img = img
+exports.font = font
+exports.favicon = favicon
 // exports.libs = libs;
 
 // Сборка
