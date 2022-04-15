@@ -1189,6 +1189,10 @@ img {
   width: 20px;
   height: 20px;
   stroke: #61594d;
+  stroke-opacity: .6;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
   fill: none;
   -webkit-transition: stroke .4s linear,-webkit-transform .4s linear;
   transition: stroke .4s linear,-webkit-transform .4s linear;

@@ -55,6 +55,8 @@
     width: 20px;
     height: 20px;
     stroke:#61594D;
+    stroke-opacity:0.6; stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
     fill: none;
     transition: transform .4s linear, stroke .4s linear;
     cursor: pointer;
