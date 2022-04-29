@@ -1,14 +1,11 @@
 // Библиотеки
 
-import './libs/swiper';
+import "./libs/swiper"
 
 // Модули
 
-import './modules/drop-down';
-import './modules/show-nav';
-import "./modules/lang";
-
-
-
-
-
+import "./modules/drop-down"
+import "./modules/show-nav"
+import "./modules/lang"
+import "./modules/location"
+import "./modules/location-modal"
