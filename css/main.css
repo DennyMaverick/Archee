@@ -934,6 +934,7 @@ img {
 }
 
 .modal-location {
+  display: none;
   padding: 3rem;
   z-index: 2000;
   position: fixed;
@@ -943,6 +944,9 @@ img {
   width: 100%;
   height: 100%;
   overflow: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -978,6 +982,7 @@ img {
 .modal-location__inner {
   position: relative;
   background-color: #f7f7f7;
+  margin: auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
   -webkit-transform: rotateX(90deg);
@@ -991,8 +996,8 @@ img {
 
 .modal-location__close-btn {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 15px;
+  top: 15px;
   -webkit-transition: -webkit-transform .3s ease-in;
   transition: -webkit-transform .3s ease-in;
   -o-transition: transform .3s ease-in;
@@ -1044,6 +1049,7 @@ img {
   font-size: 19px;
   font-weight: 700;
   color: #2f2f60;
+  text-transform: capitalize;
   cursor: pointer;
   -webkit-transition: color .3s ease-in;
   -o-transition: color .3s ease-in;
@@ -1513,6 +1519,12 @@ img {
   overflow: hidden;
 }
 
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @supports (-webkit-appearance:none) {
   .intro {
     background-image: url("../img/intro/blur.svg"),url("../img/intro/modern-house.webp");
@@ -1733,6 +1745,38 @@ img {
     margin-bottom: 350px;
   }
 
+  .modal-location {
+    padding: 0;
+  }
+
+  .modal-location__description {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .modal-location__image {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .modal-location__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .modal-location__cities {
+    margin-bottom: 45px;
+  }
+
+  .modal-location__image {
+    height: auto;
+  }
+
   .projects {
     padding: 63px 0 100px 0;
   }
@@ -1785,6 +1829,24 @@ img {
 
   .intro__btn {
     margin-bottom: 77px;
+  }
+
+  .modal-location__description {
+    padding: 0;
+    width: 100%;
+  }
+
+  .modal-location__inner {
+    padding-top: 4rem;
+  }
+
+  .modal-location__title {
+    font-size: 24px;
+  }
+
+  .modal-location__cities {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .projects {
@@ -1857,6 +1919,24 @@ img {
 
   .architects__nav {
     bottom: -55px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 340px) {
+  .modal-location__cities {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .modal-location__city+.modal-location__city {
+    margin-left: 0;
+    margin-top: 20px;
   }
 
 @supports (-webkit-appearance:none) {
