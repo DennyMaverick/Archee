@@ -7,7 +7,7 @@ const searchInputLocation = document.querySelector(".search__item--location")
 const modalCloseBtn = document.querySelector(".modal-location__close-btn")
 
 locationIcon.addEventListener("click", () => {
-  modalLocation.classList.remove("hide")
+  modalLocation.classList.add("show")
   bodyEl.classList.add("no-scroll")
   setTimeout(() => {
     modalLocationInner.style.transform = "rotateX(0deg)"
@@ -21,7 +21,7 @@ modalCityNames.forEach((city) => {
     modalLocationInner.style.transform = "rotateX(90deg)"
     bodyEl.classList.remove("no-scroll")
     setTimeout(() => {
-      modalLocation.classList.add("hide")
+      modalLocation.classList.remove("show")
     }, 600)
   })
 })
@@ -30,7 +30,7 @@ modalCloseBtn.addEventListener("click", () => {
   modalLocationInner.style.transform = "rotateX(90deg)"
   bodyEl.classList.remove("no-scroll")
   setTimeout(() => {
-    modalLocation.classList.add("hide")
+    modalLocation.classList.remove("show")
   }, 600)
 })
 
@@ -38,7 +38,7 @@ modalLocation.addEventListener("click", function () {
   modalLocationInner.style.transform = "rotateX(90deg)"
   bodyEl.classList.remove("no-scroll")
   setTimeout(() => {
-    this.classList.add("hide")
+    this.classList.remove("show")
   }, 600)
 })
 

@@ -178,6 +178,40 @@ const langs = {
     ru: "Архитекторы Archee",
     en: "Architects of Archee",
   },
+  //* =============  Модальное окно Modal-location  ==================
+
+  "modal-location-title": {
+    ru: "Выберите город",
+    en: "Choose your city",
+  },
+  "modal-location-city-moskow": {
+    ru: "москва",
+    en: "moskow",
+  },
+  "modal-location-city-tokyo": {
+    ru: "токио",
+    en: "tokyo",
+  },
+  "modal-location-city-new-york": {
+    ru: "нью йорк",
+    en: "new york",
+  },
+  "modal-location-city-paris": {
+    ru: "париж",
+    en: "paris",
+  },
+  "modal-location-city-roma": {
+    ru: "рим",
+    en: "roma",
+  },
+  "modal-location-city-london": {
+    ru: "лондон",
+    en: "london",
+  },
+  "modal-location-description": {
+    ru: "Каждая достопримечательность какой-либо страны когда-то была лишь идеей, записанной на листке. Далее, эта идея развивалась, и в конечном счете превратилась в искусство. Команда Archee придерживается мнению, что если есть проект в в голове, на листке, а также есть большое стремление эту идею воплотить в реальность, то все достижимо. Выберите Ваш город, и мы подберем лучший вариант архитектуры, которая точно способна удивлять.",
+    en: "Each sight place of any country was once only an insignificant idea, a value on a piece of paper. Further, this idea developed, and eventually built into art. The Archee team believes that if there is a project in the head, on a piece of paper, and there is also a great desire to turn this idea into reality, then everything is achievable. Choose your city, and we will select the best option of the architecture that is sure to surprise.",
+  },
 }
 
 const repeatElems = {
