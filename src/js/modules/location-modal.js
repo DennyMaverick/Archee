@@ -1,3 +1,30 @@
+const cityLangs = {
+  "modal-location-city-moskow": {
+    ru: "москва",
+    en: "moskow",
+  },
+  "modal-location-city-tokyo": {
+    ru: "токио",
+    en: "tokyo",
+  },
+  "modal-location-city-new-york": {
+    ru: "нью йорк",
+    en: "new york",
+  },
+  "modal-location-city-paris": {
+    ru: "париж",
+    en: "paris",
+  },
+  "modal-location-city-roma": {
+    ru: "рим",
+    en: "roma",
+  },
+  "modal-location-city-london": {
+    ru: "лондон",
+    en: "london",
+  },
+}
+
 const locationIcon = document.querySelector(".location")
 const modalLocation = document.querySelector(".modal-location")
 const modalLocationInner = document.querySelector(".modal-location__inner")
@@ -16,28 +43,37 @@ locationIcon.addEventListener("click", () => {
 
 modalCityNames.forEach((city) => {
   city.addEventListener("click", function (event) {
-    const cityName = event.target.dataset.city
-    searchInputLocation.value = cityName
+    const dataCity = event.target.dataset.city
+    let hash = window.location.hash
+    hash = hash.substr(1)
+    const currentKey = `modal-location-city-${dataCity}`
+    if (searchInputLocation && cityLangs[currentKey][hash]) {
+      searchInputLocation.value = cityLangs[currentKey][hash]
+    }
+
     modalLocationInner.style.transform = "rotateX(90deg)"
-    bodyEl.classList.remove("no-scroll")
+
     setTimeout(() => {
       modalLocation.classList.remove("show")
-    }, 600)
+      bodyEl.classList.remove("no-scroll")
+    }, 500)
   })
 })
 
 modalCloseBtn.addEventListener("click", () => {
   modalLocationInner.style.transform = "rotateX(90deg)"
-  bodyEl.classList.remove("no-scroll")
+
   setTimeout(() => {
+    bodyEl.classList.remove("no-scroll")
     modalLocation.classList.remove("show")
   }, 600)
 })
 
 modalLocation.addEventListener("click", function () {
   modalLocationInner.style.transform = "rotateX(90deg)"
-  bodyEl.classList.remove("no-scroll")
+
   setTimeout(() => {
+    bodyEl.classList.remove("no-scroll")
     this.classList.remove("show")
   }, 600)
 })

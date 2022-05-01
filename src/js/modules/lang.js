@@ -214,6 +214,7 @@ const langs = {
   },
 }
 
+
 const repeatElems = {
   "benefits-projects": {
     ru: "Проектов",
