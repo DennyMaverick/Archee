@@ -34,14 +34,7 @@
     }
   }
   &__title {
-    @include font-cabinet-black();
-    font-size: 32px;
-    line-height: 1.25;
-    color: $black;
     margin-bottom: 3rem;
-    @include bp-desk(mobile) {
-      font-size: 24px;
-    }
   }
   &__cities {
     padding: 10px 10px;

@@ -35,6 +35,11 @@ h6 {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+  width:100vw;
+}
+
 html,
 body {
   @include reset-model;
@@ -45,6 +50,7 @@ body {
   font-size: $font-size-base;
   line-height: $line-height-base;
 }
+
 
 // Сброс списка, ссылок и кнопки
 ul {
@@ -70,9 +76,10 @@ button {
   color: $white;
   cursor: pointer;
   opacity: 1;
-  transition: opacity 0.4s linear;
+  transition: color 0.4s linear, background-color .4s linear;
   &:hover {
-    opacity: 0.7;
+    color: $primary-color;
+    background-color: $black;
   }
 }
 

@@ -5,7 +5,7 @@ const modalPictureWebp = document.querySelector(".modal-location__image picture 
 modalCities.forEach((item) => {
   item.onmouseenter = (event) => {
     const dataCity = event.target.dataset.city
-    modalPictureImg.src = `./img/modal/${dataCity}.jpg`
-    modalPictureWebp.srcset = `./img/modal/${dataCity}.jpg`
+    modalPictureImg.src = `./img/modals/modal-location/${dataCity}.jpg`
+    modalPictureWebp.srcset = `./img/modals/modal-location/${dataCity}.jpg`
   }
 })

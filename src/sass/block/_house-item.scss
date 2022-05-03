@@ -1,0 +1,52 @@
+.house-item {
+  padding: 10px;
+  transition: box-shadow .3s ease-in, background-color .3s ease-in;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 15px $black;
+    background-color: $house-item-color;
+  }
+  &--active {
+    background-color: $house-item-color;
+    box-shadow: 0 0 15px $primary-color;
+  }
+  &--active &__title {
+    color: $primary-color;
+  }
+  &:hover &__title {
+    color: $primary-color;
+  }
+  &__title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color .3s ease-in;
+    &::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+  }
+  &--indoor {
+    &::before {
+      background: url("../img/modals/modal-type/indoor.png") center / contain no-repeat;
+    }
+  }
+  &--outdoor {
+    &::before {
+      background: url("../img/modals/modal-type/outdoor.png") center / contain no-repeat;
+    }
+  }
+  &--furniture {
+    &::before {
+      background: url("../img/modals/modal-type/furniture.png") center / contain no-repeat;
+    }
+  }
+  &--kitchen {
+    &::before {
+      background: url("../img/modals/modal-type/kitchen.png") center / contain no-repeat;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.modal-type {
+  &__title {
+    margin-bottom: 4rem;
+  }
+  &__houses {
+    display: flex;
+    margin-bottom: 4rem;
+  }
+  &__text, &__image {
+    width: 46%;
+  }
+}

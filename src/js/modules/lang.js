@@ -140,32 +140,32 @@ const langs = {
     en: "Selected Projects",
   },
   "project-outdoor-title": {
-    ru: "Наружная структура",
-    en: "Outdoor structure",
+    ru: "наружная структура",
+    en: "outdoor structure",
   },
   "project-outdoor-desc": {
     ru: "Проекты данного типа занимают особое внимание. Так как мы знаем, что большие сооружения могут сделать мир красивее.",
     en: "Projects of this type has unusual attention for us. Cause of we know that big buildings can make the world better.",
   },
   "project-indoor-title": {
-    ru: "Внутренняя структура",
-    en: "Indoor structure",
+    ru: "внутренняя структура",
+    en: "indoor structure",
   },
   "project-indoor-desс": {
     ru: "Мы гордимся данными проектами. Мы делаем ваш декор лучше и необычнее.",
     en: "This projects we pride. We make your decor better and unusual.",
   },
   "project-furniture-title": {
-    ru: "Современная Фурнитура",
-    en: "Modern Furniture",
+    ru: "современная мебель",
+    en: "modern furniture",
   },
   "project-furniture-desс": {
     ru: "Мы исполняем ваши желания. Теперь доступно увидеть этот восторг своими глазами!",
     en: "We make your wishes. Now is available to feel it unreal admiration with your eyes!",
   },
   "project-kitchen-title": {
-    ru: "Современная Кухня",
-    en: "Modern Kitchen",
+    ru: "современная кухня",
+    en: "modern kitchen",
   },
   "project-kitchen-desс": {
     ru: "Мы можем помочь сделать вашу кухню более красивой. И мы знаем как это воплотить в жизнь.",
@@ -182,7 +182,7 @@ const langs = {
 
   "modal-location-title": {
     ru: "Выберите город",
-    en: "Choose your city",
+    en: "Choose city",
   },
   "modal-location-city-moskow": {
     ru: "москва",
@@ -209,7 +209,7 @@ const langs = {
     en: "london",
   },
   "modal-location-description": {
-    ru: "Каждая достопримечательность какой-либо страны когда-то была лишь идеей, записанной на листке. Далее, эта идея развивалась, и в конечном счете превратилась в искусство. Команда Archee придерживается мнению, что если есть проект в в голове, на листке, а также есть большое стремление эту идею воплотить в реальность, то все достижимо. Выберите Ваш город, и мы подберем лучший вариант архитектуры, которая точно способна удивлять.",
+    ru: "Каждая достопримечательность какой-либо страны когда-то была лишь идеей, записанной на листке. Далее, эта идея развивалась, и в конечном счете превратилась в искусство. Команда Archee придерживается мнению, что если есть проект в голове, на листке, а также есть большое стремление эту идею воплотить в реальность, то все достижимо. Выберите Ваш город, и мы подберем лучший вариант архитектуры, которая точно способна удивлять.",
     en: "Each sight place of any country was once only an insignificant idea, a value on a piece of paper. Further, this idea developed, and eventually built into art. The Archee team believes that if there is a project in the head, on a piece of paper, and there is also a great desire to turn this idea into reality, then everything is achievable. Choose your city, and we will select the best option of the architecture that is sure to surprise.",
   },
 }

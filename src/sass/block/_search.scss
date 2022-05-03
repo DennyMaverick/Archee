@@ -38,7 +38,6 @@
   }
 
   &__item--location {
-    text-transform: capitalize;
     font-size: 15px;
     @include font-helvetica-regular;
   }
@@ -83,6 +82,7 @@
     padding: 18px 20px;
     border: none;
     border-radius: 6px;
+    text-transform: capitalize;
     outline: 1px solid transparent;
     height: 60px;
     padding-right: 50px;
