@@ -277,6 +277,11 @@ h6 {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 html,
 body {
   padding: 0;
@@ -324,13 +329,14 @@ button {
   color: #fff;
   cursor: pointer;
   opacity: 1;
-  -webkit-transition: opacity .4s linear;
-  -o-transition: opacity .4s linear;
-  transition: opacity .4s linear;
+  -webkit-transition: color .4s linear,background-color .4s linear;
+  -o-transition: color .4s linear,background-color .4s linear;
+  transition: color .4s linear,background-color .4s linear;
 }
 
 .btn:hover {
-  opacity: .7;
+  color: #d6680f;
+  background-color: #2c2321;
 }
 
 .vhidden {
@@ -722,6 +728,73 @@ img {
   padding: 30px;
 }
 
+.house-item {
+  padding: 10px;
+  -webkit-transition: background-color .3s ease-in,-webkit-box-shadow .3s ease-in;
+  transition: background-color .3s ease-in,-webkit-box-shadow .3s ease-in;
+  -o-transition: box-shadow .3s ease-in,background-color .3s ease-in;
+  transition: box-shadow .3s ease-in,background-color .3s ease-in;
+  transition: box-shadow .3s ease-in,background-color .3s ease-in,-webkit-box-shadow .3s ease-in;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.house-item:hover {
+  -webkit-box-shadow: 0 0 15px #2c2321;
+  box-shadow: 0 0 15px #2c2321;
+  background-color: bisque;
+}
+
+.house-item--active {
+  background-color: bisque;
+  -webkit-box-shadow: 0 0 15px #d6680f;
+  box-shadow: 0 0 15px #d6680f;
+}
+
+.house-item--active .house-item__title {
+  color: #d6680f;
+}
+
+.house-item:hover .house-item__title {
+  color: #d6680f;
+}
+
+.house-item__title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-transition: color .3s ease-in;
+  -o-transition: color .3s ease-in;
+  transition: color .3s ease-in;
+}
+
+.house-item__title::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.house-item--indoor::before {
+  background: url("../img/modals/modal-type/indoor.png") center/contain no-repeat;
+}
+
+.house-item--outdoor::before {
+  background: url("../img/modals/modal-type/outdoor.png") center/contain no-repeat;
+}
+
+.house-item--furniture::before {
+  background: url("../img/modals/modal-type/furniture.png") center/contain no-repeat;
+}
+
+.house-item--kitchen::before {
+  background: url("../img/modals/modal-type/kitchen.png") center/contain no-repeat;
+}
+
+.house-types__item+.house-types__item {
+  margin-left: 1.5rem;
+}
+
 .intro {
   background-color: #f7f7f7;
   padding-top: 138px;
@@ -949,12 +1022,6 @@ img {
 }
 
 .modal-location__title {
-  font-family: "Cabinet Grotesk",sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 32px;
-  line-height: 1.25;
-  color: #2c2321;
   margin-bottom: 3rem;
 }
 
@@ -1014,6 +1081,31 @@ img {
   object-position: 67% 57%;
 }
 
+.modal-title {
+  font-family: "Cabinet Grotesk",sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 1.25;
+  color: #2c2321;
+}
+
+.modal-type__title {
+  margin-bottom: 4rem;
+}
+
+.modal-type__houses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.modal-type__text,
+.modal-type__image {
+  width: 46%;
+}
+
 .modal {
   display: none;
   padding: 3rem;
@@ -1037,8 +1129,7 @@ img {
   position: relative;
   background-color: #f7f7f7;
   margin: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 3rem;
   -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
   -webkit-transition: -webkit-transform .5s linear;
@@ -1103,6 +1194,7 @@ img {
 
 .project__title {
   margin-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .project__description {
@@ -1308,7 +1400,6 @@ img {
 }
 
 .search__item--location {
-  text-transform: capitalize;
   font-size: 15px;
   font-family: "Helvetica Now Display",sans-serif;
   font-weight: 400;
@@ -1360,6 +1451,7 @@ img {
   padding: 18px 20px;
   border: none;
   border-radius: 6px;
+  text-transform: capitalize;
   outline: 1px solid transparent;
   height: 60px;
   padding-right: 50px;
@@ -1526,6 +1618,22 @@ img {
 }
 
 @supports (-webkit-appearance:none) {
+  .house-item--indoor::before {
+    background: url("../img/modals/modal-type/indoor.webp") center/contain no-repeat;
+  }
+
+  .house-item--outdoor::before {
+    background: url("../img/modals/modal-type/outdoor.webp") center/contain no-repeat;
+  }
+
+  .house-item--furniture::before {
+    background: url("../img/modals/modal-type/furniture.webp") center/contain no-repeat;
+  }
+
+  .house-item--kitchen::before {
+    background: url("../img/modals/modal-type/kitchen.webp") center/contain no-repeat;
+  }
+
   .intro {
     background-image: url("../img/intro/blur.svg"),url("../img/intro/modern-house.webp");
   }
@@ -1840,13 +1948,13 @@ img {
     padding-top: 4rem;
   }
 
-  .modal-location__title {
-    font-size: 24px;
-  }
-
   .modal-location__cities {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+
+  .modal-title {
+    font-size: 24px;
   }
 
   .projects {
