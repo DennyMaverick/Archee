@@ -4,9 +4,17 @@
   }
   &__houses {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 4rem;
+    @include bp-desk(tablet) {
+      flex-wrap: wrap;
+    row-gap: 30px;
+    }
   }
-  &__text, &__image {
-    width: 46%;
+  &__text + * {
+    margin-top: 35px;
+  }
+  &__text {
+    width: 100%;
   }
 }

@@ -355,6 +355,7 @@ function changeLang() {
     // перезагрузка страницы
     location.reload()
   }
+
   // синхронизация надписи языка по умолчанию со значением hash (ru или en)
   langNames.forEach((langName) => {
     langName.textContent = hash

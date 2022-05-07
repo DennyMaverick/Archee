@@ -1,9 +1,12 @@
 .modal-title {
   @include font-cabinet-black();
-    font-size: 32px;
-    line-height: 1.25;
-    color: $black;
-    @include bp-desk(mobile) {
-      font-size: 24px;
-    }
+  font-size: 32px;
+  line-height: 1.25;
+  color: $black;
+  @include bp-desk(mobile) {
+    font-size: 24px;
+  }
+  @include media-down(450px) {
+    font-size: 20px;
+  }
 }

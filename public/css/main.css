@@ -365,9 +365,9 @@ img {
 }
 
 .container {
-  max-width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1180px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -791,6 +791,10 @@ img {
   background: url("../img/modals/modal-type/kitchen.png") center/contain no-repeat;
 }
 
+.house-types__item {
+  text-align: center;
+}
+
 .house-types__item+.house-types__item {
   margin-left: 1.5rem;
 }
@@ -1098,12 +1102,18 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: 4rem;
 }
 
-.modal-type__text,
-.modal-type__image {
-  width: 46%;
+.modal-type__text+* {
+  margin-top: 35px;
+}
+
+.modal-type__text {
+  width: 100%;
 }
 
 .modal {
@@ -1845,6 +1855,14 @@ img {
     display: none;
   }
 
+  .house-types__item {
+    width: 40%;
+  }
+
+  .house-types__item+.house-types__item {
+    margin-left: 0;
+  }
+
   .intro {
     background-position: top 16px left 26px,top 300px right 0;
   }
@@ -1883,6 +1901,12 @@ img {
 
   .modal-location__image {
     height: auto;
+  }
+
+  .modal-type__houses {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    row-gap: 30px;
   }
 
   .projects {
@@ -1957,6 +1981,10 @@ img {
     font-size: 24px;
   }
 
+  .modal__inner {
+    padding: 4rem 1.5rem 2rem;
+  }
+
   .projects {
     padding: 43px 0 70px 0;
   }
@@ -1968,6 +1996,16 @@ img {
   .search__item-input {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 630px) {
+  .house-types__item {
+    width: 100%;
   }
 
 @supports (-webkit-appearance:none) {
@@ -1987,6 +2025,26 @@ img {
 
   .search__form {
     padding: 22px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 500px) {
+  .modal {
+    padding: 0;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media (max-width: 450px) {
+  .modal-title {
+    font-size: 20px;
   }
 
 @supports (-webkit-appearance:none) {

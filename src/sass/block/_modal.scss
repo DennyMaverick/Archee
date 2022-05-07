@@ -11,6 +11,9 @@
   overflow: auto;
   justify-content: center;
   align-items: center;
+  @include media-down(500px) {
+    padding: 0;
+  }
   &__inner {
     position: relative;
     background-color: #F7F7F7;
@@ -18,6 +21,9 @@
     padding: 3rem;
     transform: rotateX(90deg);
     transition: transform .5s linear;
+    @include bp-desk(mobile) {
+      padding: 4rem 1.5rem 2rem;
+    }
   }
   &__close-icon {
     width: 24px;

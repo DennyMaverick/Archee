@@ -1,5 +1,17 @@
 .house-types {
+  &__item {
+    text-align: center;
+    @include bp-desk(tablet) {
+      width: 40%;
+    }
+    @include media-down(630px) {
+      width: 100%;
+    }
+  }
   &__item + &__item {
     margin-left: 1.5rem;
+    @include bp-desk(tablet) {
+      margin-left: 0;
+    }
   }
 }
