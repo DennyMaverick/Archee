@@ -12,6 +12,7 @@
 ![bem-naming](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/4.svg)
 ![swiper.js](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/5.svg)
 ![gulp](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/6.svg)
+![svg-sprites](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/7.svg)
 
 <p>
   User may choose the language and it will be done on all site. All words translate on Russian or English languages, all placeholders in inputs also translate, the text in slider is also correctly translates. To use translation on the page I set the classes, starting with '.lang-' to all elements I want to translate and took the object langs and put there all keys that have the value of according selectors: 
@@ -60,6 +61,10 @@ hash = hash.substr(1)
     }
   }
 ```
+
+<p>
+  You can see the icons in search form. They resize and change the color when you hover. I used the SVG-sprites for it, changing the property fill and using the animation transform(scale()).  
+</p>  
 
 <p>
   The site is adaptive and it looks nice on different screens: 
