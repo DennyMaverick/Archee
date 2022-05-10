@@ -7,3 +7,4 @@
 </p>
 
 ![css/html/javascript](https://github.com/DennyMaverick/Archee/raw/main/img-readme/archee-mobile.png)
+![css/html/javascript](https://github.com/DennyMaverick/Archee/raw/main/img-readme/archee-desktop.png)
