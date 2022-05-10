@@ -63,7 +63,7 @@ hash = hash.substr(1)
 ```
 
 <p>
-  You can see the icons in search form. They resize and change the color when you hover. I used the SVG-sprites for it, changing the property fill and using the animation transform(scale()).  
+  You can see the icons in search form. They resize and change the color when you hover. I used the SVG-sprites for it, changing the property fill and using the animation transform(scale()). When you will click on these icons the modal windows will be opened, where you can change some options:
 </p>  
 
 <p>
