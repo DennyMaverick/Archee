@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" value="notranslate" />
     <title class="lang-title">Archee project</title>
     <link rel="icon" href="./img/favicon/favicon.svg" />
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -121,19 +122,19 @@
               <h2 class="search__title title title--search lang-search-title">Search the price you looking for</h2>
               <div class="search__items">
                 <div class="search__item">
-                  <input class="search__item-input search__item--location lang-placeholder-location" type="text" placeholder="Location" />
+                  <input class="search__item-input search__item--location lang-placeholder-location" type="text" placeholder="Location" required />
                   <svg class="search__icon location">
                     <use xlink:href="img/sprite/symbol/sprite.svg#location" />
                   </svg>
                 </div>
                 <div class="search__item">
-                  <input class="search__item-input search__item--type lang-placeholder-type" type="text" placeholder="Type" />
+                  <input class="search__item-input search__item--type lang-placeholder-type" type="text" placeholder="Type" required />
                   <svg class="search__icon type">
                     <use xlink:href="img/sprite/symbol/sprite.svg#type" />
                   </svg>
                 </div>
                 <div class="search__item">
-                  <input class="search__item-input search__item--budget lang-placeholder-budget" type="text" placeholder="Budget" />
+                  <input class="search__item-input search__item--budget lang-placeholder-budget" type="text" placeholder="Budget" required />
                   <svg class="search__icon budget">
                     <use xlink:href="img/sprite/symbol/sprite.svg#budget" />
                   </svg>
@@ -343,7 +344,7 @@
         <div class="modal__inner modal-location__inner container">
           <button class="modal__close-btn">
             <svg class="modal__close-icon">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close"/>
+              <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
             </svg>
           </button>
           <h2 class="modal-location__title modal-title lang-modal-location-title">Выберите город</h2>
@@ -367,61 +368,36 @@
         <div class="modal__inner modal-type__inner container">
           <button class="modal__close-btn">
             <svg class="modal__close-icon">
-              <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close"/>
+              <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
             </svg>
           </button>
           <h2 class="modal-type__title modal-title lang-modal-type-title">Выберите тип работ</h2>
           <ul class="modal-type__houses house-types">
             <li class="house-types__item house-item" data-type="outdoor">
-              <h3 class="house-item__title house-item--outdoor">
-                Наружная структура
-              </h3>
+              <h3 class="house-item__title house-item--outdoor">Наружная структура</h3>
             </li>
             <li class="house-types__item house-item" data-type="indoor">
-              <h3 class="house-item__title house-item--indoor">
-                Внутренняя структура
-              </h3>
+              <h3 class="house-item__title house-item--indoor">Внутренняя структура</h3>
             </li>
             <li class="house-types__item house-item" data-type="furniture">
-              <h3 class="house-item__title house-item--furniture">
-                Современная мебель
-              </h3>
+              <h3 class="house-item__title house-item--furniture">Современная мебель</h3>
             </li>
             <li class="house-types__item house-item" data-type="kitchen">
-              <h3 class="house-item__title house-item--kitchen">
-                Современная кухня
-              </h3>
+              <h3 class="house-item__title house-item--kitchen">Современная кухня</h3>
             </li>
           </ul>
           <div class="modal-type__content">
             <div class="modal-type__text-content">
-              <p class="modal-type__text">
-              first text
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe porro explicabo eaque, illum nemo unde consequatur, animi ab, aspernatur perferendis? Laboriosam voluptates maiores, ullam inventore placeat sunt earum cum odit voluptatibus possimus, nulla officia fugiat at magnam. Accusantium itaque veritatis molestias dolorem exercitationem sed voluptatibus, ad quae harum iusto doloribus quia sint sit nobis eligendi vero corrupti enim cumque perferendis fugiat deleniti odit architecto. Nisi odit voluptate dolorum magni pariatur suscipit ducimus mollitia quia earum quo quibusdam commodi ratione aperiam, nesciunt inventore. Fugit veniam ipsum voluptatibus facilis atque unde aliquid rerum fugiat nobis nulla! Repudiandae esse delectus fugit beatae.
-            </p>
+              <p class="modal-type__text">first text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione saepe porro explicabo eaque, illum nemo unde consequatur, animi ab, aspernatur perferendis? Laboriosam voluptates maiores, ullam inventore placeat sunt earum cum odit voluptatibus possimus, nulla officia fugiat at magnam. Accusantium itaque veritatis molestias dolorem exercitationem sed voluptatibus, ad quae harum iusto doloribus quia sint sit nobis eligendi vero corrupti enim cumque perferendis fugiat deleniti odit architecto. Nisi odit voluptate dolorum magni pariatur suscipit ducimus mollitia quia earum quo quibusdam commodi ratione aperiam, nesciunt inventore. Fugit veniam ipsum voluptatibus facilis atque unde aliquid rerum fugiat nobis nulla! Repudiandae esse delectus fugit beatae.</p>
 
-            <p class="modal-type__text modal-type__tab hide" id="outdoor">
-              text 1
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam magni quibusdam nemo quidem ut ratione rerum, illo praesentium, illum voluptatibus itaque, odit aliquid. Doloremque sunt, quod est laborum dolore libero! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore adipisci nisi sequi incidunt officiis quia! Ratione atque, repellat praesentium veritatis impedit eveniet excepturi itaque laborum modi cupiditate tempora molestias. Nulla, dolor!
-            </p>
-            <p class="modal-type__text modal-type__tab hide" id="indoor">
-              text 2
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam magni quibusdam nemo quidem ut ratione rerum, illo praesentium, illum voluptatibus itaque, odit aliquid. Doloremque sunt, quod est laborum dolore libero! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore adipisci nisi sequi incidunt officiis quia! Ratione atque, repellat praesentium veritatis impedit eveniet excepturi itaque laborum modi cupiditate tempora molestias. Nulla, dolor!
-            </p>
-            <p class="modal-type__text modal-type__tab hide" id="furniture">
-              text 3
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam magni quibusdam nemo quidem ut ratione rerum, illo praesentium, illum voluptatibus itaque, odit aliquid. Doloremque sunt, quod est laborum dolore libero! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore adipisci nisi sequi incidunt officiis quia! Ratione atque, repellat praesentium veritatis impedit eveniet excepturi itaque laborum modi cupiditate tempora molestias. Nulla, dolor!
-            </p>
-            <p class="modal-type__text modal-type__tab hide" id="kitchen">
-              text 4
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam magni quibusdam nemo quidem ut ratione rerum, illo praesentium, illum voluptatibus itaque, odit aliquid. Doloremque sunt, quod est laborum dolore libero! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore adipisci nisi sequi incidunt officiis quia! Ratione atque, repellat praesentium veritatis impedit eveniet excepturi itaque laborum modi cupiditate tempora molestias. Nulla, dolor!
-            </p>
-            <button class="modal-type__btn btn hide">Принять</button>
+              <p class="modal-type__text modal-type__tab hide" id="outdoor">text 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam magni quibusdam nemo quidem ut ratione rerum, illo praesentium, illum voluptatibus itaque, odit aliquid. Doloremque sunt, quod est laborum dolore libero! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore adipisci nisi sequi incidunt officiis quia! Ratione atque, repellat praesentium veritatis impedit eveniet excepturi itaque laborum modi cupiditate tempora molestias. Nulla, dolor!</p>
+              <p class="modal-type__text modal-type__tab hide" id="indoor">text 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam magni quibusdam nemo quidem ut ratione rerum, illo praesentium, illum voluptatibus itaque, odit aliquid. Doloremque sunt, quod est laborum dolore libero! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore adipisci nisi sequi incidunt officiis quia! Ratione atque, repellat praesentium veritatis impedit eveniet excepturi itaque laborum modi cupiditate tempora molestias. Nulla, dolor!</p>
+              <p class="modal-type__text modal-type__tab hide" id="furniture">text 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam magni quibusdam nemo quidem ut ratione rerum, illo praesentium, illum voluptatibus itaque, odit aliquid. Doloremque sunt, quod est laborum dolore libero! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore adipisci nisi sequi incidunt officiis quia! Ratione atque, repellat praesentium veritatis impedit eveniet excepturi itaque laborum modi cupiditate tempora molestias. Nulla, dolor!</p>
+              <p class="modal-type__text modal-type__tab hide" id="kitchen">text 4 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam magni quibusdam nemo quidem ut ratione rerum, illo praesentium, illum voluptatibus itaque, odit aliquid. Doloremque sunt, quod est laborum dolore libero! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore adipisci nisi sequi incidunt officiis quia! Ratione atque, repellat praesentium veritatis impedit eveniet excepturi itaque laborum modi cupiditate tempora molestias. Nulla, dolor!</p>
+              <button class="modal-type__btn btn hide">Принять</button>
             </div>
 
-            <div class="modal-type__image">
-
-            </div>
+            <div class="modal-type__image"></div>
           </div>
         </div>
       </div>
