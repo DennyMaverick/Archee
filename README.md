@@ -47,6 +47,21 @@ hash = hash.substr(1)
 ```
 
 <p>
+  And next I iterate through the object and set in each element the value that is in object langs:
+</p>
+
+```
+// iterate through the object
+  for (let key in langs) {
+    let elem = document.querySelector(".lang-" + key)
+    
+    if (elem && langs[key][hash]) {
+      elem.innerHTML = langs[key][hash]
+    }
+  }
+```
+
+<p>
   The site is adaptive and it looks nice on different screens: 
 </p>  
 
