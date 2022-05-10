@@ -14,6 +14,29 @@
 ![gulp](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/6.svg)
 
 <p>
+  User may choose the language and it will be done on all site. All words translate on Russian or English languages, all placeholders in inputs also translate, the text in slider is also correctly translates. To use translation on the page I took the object lang and put there all keys that have the value of according selectors: 
+</p>  
+
+```
+const langs = {
+  title: {
+    ru: "Проект Archee",
+    en: "Archee Project",
+  },
+
+  //* ======= Section Intro
+
+  "intro-title": {
+    ru: "Архитектура, которая знает о чем вы мечтаете",
+    en: "Architecture that recognizes all your sensibilities",
+  },
+  "intro-description": {
+    ru: "Добро пожаловать в Archee, надежного делового партнера на вашем пути к построению лучшего будущего для всех",
+    en: "Welcome to Archee, a reliable business partner on your path to building a better looking future for all.",
+  },
+```
+
+<p>
   The site is adaptive and it looks nice on different screens: 
 </p>  
 
