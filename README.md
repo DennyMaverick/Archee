@@ -14,7 +14,7 @@
 ![gulp](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/6.svg)
 
 <p>
-  User may choose the language and it will be done on all site. All words translate on Russian or English languages, all placeholders in inputs also translate, the text in slider is also correctly translates. To use translation on the page I took the object lang and put there all keys that have the value of according selectors: 
+  User may choose the language and it will be done on all site. All words translate on Russian or English languages, all placeholders in inputs also translate, the text in slider is also correctly translates. To use translation on the page I set the classes, starting with '.lang-' to all elements I want to translate and took the object langs and put there all keys that have the value of according selectors: 
 </p>  
 
 ```
