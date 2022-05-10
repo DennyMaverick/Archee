@@ -3,7 +3,7 @@
 ![css/html/javascript](https://github.com/DennyMaverick/Archee/raw/main/img-readme/archee.png)
 
 <p>
-  This project was created for about 1 month. And I pride that I have it in my portfolio. All the technologies I use:
+  This project was created for about 1 month. And I pride that I have it in my portfolio. All the technologies I used:
 </p>
 
 ![sass](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/1.svg)
@@ -14,7 +14,7 @@
 ![gulp](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/6.svg)
 
 <p>
-  The site is adaptive and looks nice on different screens: 
+  The site is adaptive and it looks nice on different screens: 
 </p>  
 
 ![css/html/javascript](https://github.com/DennyMaverick/Archee/raw/main/img-readme/archee-mobile.png)
