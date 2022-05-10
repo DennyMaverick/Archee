@@ -37,6 +37,16 @@ const langs = {
 ```
 
 <p>
+  Next I get the value of hash (value = ru or en ) using this code: 
+</p>  
+
+```
+let hash = window.location.hash
+
+hash = hash.substr(1)
+```
+
+<p>
   The site is adaptive and it looks nice on different screens: 
 </p>  
 
