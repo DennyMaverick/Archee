@@ -9,3 +9,5 @@ modalCities.forEach((item) => {
     modalPictureWebp.srcset = `./img/modals/modal-location/${dataCity}.jpg`
   }
 })
+
+

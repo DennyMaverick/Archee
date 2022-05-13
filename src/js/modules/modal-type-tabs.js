@@ -18,6 +18,6 @@ houseItems.forEach((item) => {
     })
     this.classList.add("house-item--active")
 
-    modalTypeBtn.classList.remove("hide")
+    modalTypeBtn.classList.remove("hide-btn")
   })
 })

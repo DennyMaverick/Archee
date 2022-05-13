@@ -8,13 +8,18 @@
     margin-bottom: 4rem;
     @include bp-desk(tablet) {
       flex-wrap: wrap;
-    row-gap: 30px;
+      row-gap: 30px;
     }
   }
   &__text + * {
     margin-top: 35px;
   }
   &__text {
+    min-height: 195px;
+    border-radius: 15px;
+    background-color: $color-text;
+    padding: 20px;
     width: 100%;
+    max-width: 390px;
   }
 }

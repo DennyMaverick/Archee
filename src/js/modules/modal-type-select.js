@@ -66,13 +66,14 @@ modalTypeBtn.addEventListener("click", (event) => {
     modalType.classList.remove("show")
     bodyEl.classList.remove("no-scroll")
   }, 500)
+
+  resetModalType()
 })
 
 //* Плавный скролл вниз при клике на иконки типов работ
 
 houseItems.forEach((item) => {
   item.addEventListener("click", function () {
-    const modalType = document.querySelector(".modal-type")
     const scrollHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight)
     modalType.scrollTo({
       top: scrollHeight,
@@ -80,3 +81,18 @@ houseItems.forEach((item) => {
     })
   })
 })
+
+function resetModalType() {
+  const modalTypeTexts = document.querySelectorAll(".modal-type__text")
+  const modalTypeStart = document.querySelector(".modal-type__text-start")
+  setTimeout(() => {
+    modalTypeTexts.forEach((text) => {
+      text.classList.add("hide")
+    })
+    modalTypeStart.classList.remove("hide")
+
+    houseItems.forEach((item) => {
+      item.classList.remove("house-item--active")
+    })
+  }, 500)
+}

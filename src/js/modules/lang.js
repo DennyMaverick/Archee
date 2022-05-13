@@ -182,7 +182,7 @@ const langs = {
 
   "modal-location-title": {
     ru: "Выберите город",
-    en: "Choose city",
+    en: "Choose the city",
   },
   "modal-location-city-moskow": {
     ru: "москва",
@@ -212,8 +212,51 @@ const langs = {
     ru: "Каждая достопримечательность какой-либо страны когда-то была лишь идеей, записанной на листке. Далее, эта идея развивалась, и в конечном счете превратилась в искусство. Команда Archee придерживается мнению, что если есть проект в голове, на листке, а также есть большое стремление эту идею воплотить в реальность, то все достижимо. Выберите Ваш город, и мы подберем лучший вариант архитектуры, которая точно способна удивлять.",
     en: "Each sight place of any country was once only an insignificant idea, a value on a piece of paper. Further, this idea developed, and eventually built into art. The Archee team believes that if there is a project in the head, on a piece of paper, and there is also a great desire to turn this idea into reality, then everything is achievable. Choose your city, and we will select the best option of the architecture that is sure to surprise.",
   },
+  "modal-type-title": {
+    ru: "Выберите тип работ",
+    en: "Choose the type of works",
+  },
+  "modal-type-outdoor-title": {
+    ru: "Наружная структура",
+    en: "Outdoor structure",
+  },
+  "modal-type-indoor-title": {
+    ru: "Внутренняя структура",
+    en: "indoor structure",
+  },
+  "modal-type-furniture-title": {
+    ru: "Современная мебель",
+    en: "Modern furniture",
+  },
+  "modal-type-kitchen-title": {
+    ru: "Современная кухня",
+    en: "Modern kitchen",
+  },
+  "modal-type-start-text": {
+    ru: "Выберите тип необходимых Вам работ, и мы подберем лучший вариант, что способен удивить каждого. Наши архитекторы позаботятся о том, чтобы Вы остались довольны!",
+    en: "Choose the type of needed works and we make the best variant for you. You will be plesantly wondered. Our architects will care about you will like it!",
+  },
+  "modal-type-outdoor": {
+    ru: "Работы в стиле наружной структуры завораживают. Если Вам необходимо построить здание для ваших идей: бизнес, отдых, семейный дом, - мы поможем достигнуть Вашей мечты!",
+    en: "The works in style of outdure structure are amazing. If you need the building for your ideas: business, rest, family house, - we can help to reach your dream!",
+  },
+  "modal-type-indoor": {
+    ru: "Работы в данном стиле подойдут, если Вам нужно сделать свой дом уютней. Мы подберем лучший вариант для Вашей прихожей, спальни или гостиной.",
+    en: "The works in this style will be the greatest solution if you need to do your home more comfortable. We will help to choose the best variant for your hallway, bedroom or living room",
+  },
+  "modal-type-furniture": {
+    ru: "Подобрать красивую мебель для дома - это искусство. И наши архитекторы знают как с этим работать.",
+    en: "To choose the beautiful furniture for your home is the art. And our architects know how  to work with it.",
+  },
+  "modal-type-kitchen": {
+    ru: "Если Вы всегда мечтали о том, чтобы сделать свою кухню местом радости, выберите данный тип работ, и наша команда поможет Вам в этом, доверьтесь профессионалам.",
+    en: "If you always dreamt of making your kitchen a place of joy choose this type of works and our team will help you with it. Trust the professionals.",
+  },
+  "modal-type-btn": {
+    ru: "Выбрать",
+    en: "Select",
+  },
 }
-
 
 const repeatElems = {
   "benefits-projects": {

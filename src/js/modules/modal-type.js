@@ -17,7 +17,7 @@ typeIcon.addEventListener("click", () => {
 modalCloseBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     modalTypeInner.style.transform = "rotateX(90deg)"
-
+    resetModalType()
     setTimeout(() => {
       bodyEl.classList.remove("no-scroll")
       modalType.classList.remove("show")
@@ -27,7 +27,7 @@ modalCloseBtns.forEach((btn) => {
 
 modalType.addEventListener("click", function () {
   modalTypeInner.style.transform = "rotateX(90deg)"
-
+  resetModalType()
   setTimeout(() => {
     bodyEl.classList.remove("no-scroll")
     this.classList.remove("show")
@@ -37,3 +37,19 @@ modalType.addEventListener("click", function () {
 modalTypeInner.addEventListener("click", (event) => {
   event.stopPropagation()
 })
+
+function resetModalType() {
+  const modalTypeTexts = document.querySelectorAll(".modal-type__text")
+  const houseItems = document.querySelectorAll(".house-item")
+  const modalTypeStart = document.querySelector(".modal-type__text-start")
+  setTimeout(() => {
+    modalTypeTexts.forEach((text) => {
+      text.classList.add("hide")
+    })
+    modalTypeStart.classList.remove("hide")
+
+    houseItems.forEach((item) => {
+      item.classList.remove("house-item--active")
+    })
+  }, 500)
+}

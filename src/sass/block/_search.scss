@@ -17,6 +17,12 @@
     }
   }
 
+  &__budget-popup {
+    position: absolute;
+    right: 0;
+    top: -50px;
+  }
+
   // .search__title
 
   &__title {
@@ -50,6 +56,9 @@
       & + & {
         margin-top: 20px;
       }
+    }
+    &--budget {
+      position: relative;
     }
   }
   &__icon {
