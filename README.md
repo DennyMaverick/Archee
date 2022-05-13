@@ -1,6 +1,6 @@
 # Archee
 
-![css/html/javascript](https://github.com/DennyMaverick/Archee/raw/main/img-readme/archee.png)
+![css/html/javascript](https://github.com/DennyMaverick/Archee/raw/main/src/img/intro/archee.png)
 
 <p>
   This project was created for about 1 month. And I pride that I have it in my portfolio. All the technologies I used:
