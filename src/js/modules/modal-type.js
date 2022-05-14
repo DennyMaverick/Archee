@@ -5,6 +5,7 @@ const bodyEl = document.querySelector("body")
 const modalTypeNames = document.querySelectorAll(".modal-type__city-type")
 const searchInputType = document.querySelector(".search__item--type")
 const modalCloseBtns = document.querySelectorAll(".modal__close-btn")
+const modalTypeBtn = document.querySelector(".modal-type__btn")
 
 typeIcon.addEventListener("click", () => {
   modalType.classList.add("show")
@@ -51,5 +52,6 @@ function resetModalType() {
     houseItems.forEach((item) => {
       item.classList.remove("house-item--active")
     })
+    modalTypeBtn.classList.add("hide-btn")
   }, 500)
 }

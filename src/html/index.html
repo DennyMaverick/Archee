@@ -133,15 +133,13 @@
                     <use xlink:href="img/sprite/symbol/sprite.svg#type" />
                   </svg>
                 </div>
-                <div class="search__item search__item--budget">
-                  <input class="search__item-input search__item--budget lang-placeholder-budget" type="text" placeholder="Budget" required maxlength = "7" minlength = "4" />
+                <div class="search__item">
+                  <input data-rules="number" class="search__item-input search__item--budget lang-placeholder-budget" type="text" placeholder="Budget" required maxlength="7" minlength="4"/>
                   <svg class="search__icon budget">
                     <use xlink:href="img/sprite/symbol/sprite.svg#budget" />
                   </svg>
                   <div class="search__budget-popup budget-popup">
-                    <p class="budget-popup__text">
-                      Введите Ваш бюджет
-                    </p>
+                    <p class="budget-popup__text">Введите Ваш бюджет</p>
                   </div>
                 </div>
                 <button type="submit" class="search__btn btn lang-search-btn">Search Now</button>
@@ -393,22 +391,12 @@
           </ul>
           <div class="modal-type__content">
             <div class="modal-type__text-content">
-              <p class="modal-type__text modal-type__text-start lang-modal-type-start-text">
-                Выберите тип необходимых Вам работ, и мы подберем лучший вариант, что способен удивить каждого. Наши архитекторы позаботятся о том, чтобы Вы остались довольны!
-              </p>
+              <p class="modal-type__text modal-type__text-start lang-modal-type-start-text">Выберите тип необходимых Вам работ, и мы подберем лучший вариант, что способен удивить каждого. Наши архитекторы позаботятся о том, чтобы Вы остались довольны!</p>
 
-              <p class="modal-type__text modal-type__tab lang-modal-type-outdoor hide" id="outdoor">
-                Работы в стиле наружной структуры завораживают. Если Вам необходимо построить здание для ваших идей: бизнес, отдых, семейный дом, - мы поможем достигнуть Вашей мечты!
-              </p>
-              <p class="modal-type__text modal-type__tab lang-modal-type-indoor hide" id="indoor">
-                Работы в данном стиле подойдут, если Вам нужно сделать свой дом уютней. Мы подберем лучший вариант для Вашей прихожей, спальни или гостиной.
-              </p>
-              <p class="modal-type__text modal-type__tab lang-modal-type-furniture hide" id="furniture">
-                Подобрать красивую мебель для дома - это искусство. И наши архитекторы знают как с этим работать.
-              </p>
-              <p class="modal-type__text modal-type__tab lang-modal-type-kitchen hide" id="kitchen">
-                Если Вы всегда мечтали о том, чтобы сделать свою кухню местом радости, выберите данный тип работ, и наша команда поможет Вам в этом, доверьтесь профессионалам.
-              </p>
+              <p class="modal-type__text modal-type__tab lang-modal-type-outdoor hide" id="outdoor">Работы в стиле наружной структуры завораживают. Если Вам необходимо построить здание для ваших идей: бизнес, отдых, семейный дом, - мы поможем достигнуть Вашей мечты!</p>
+              <p class="modal-type__text modal-type__tab lang-modal-type-indoor hide" id="indoor">Работы в данном стиле подойдут, если Вам нужно сделать свой дом уютней. Мы подберем лучший вариант для Вашей прихожей, спальни или гостиной.</p>
+              <p class="modal-type__text modal-type__tab lang-modal-type-furniture hide" id="furniture">Подобрать красивую мебель для дома - это искусство. И наши архитекторы знают как с этим работать.</p>
+              <p class="modal-type__text modal-type__tab lang-modal-type-kitchen hide" id="kitchen">Если Вы всегда мечтали о том, чтобы сделать свою кухню местом радости, выберите данный тип работ, и наша команда поможет Вам в этом, доверьтесь профессионалам.</p>
               <button class="modal-type__btn btn hide-btn lang-modal-type-btn">Выбрать</button>
             </div>
 
@@ -416,16 +404,21 @@
           </div>
         </div>
       </div>
-      <div class="modal modal-search-success" data-modal="location">
-        <div class="modal__inner modal-search__inner container">
-          <button class="modal__close-btn">
+      <div class="modal modal-search-success">
+        <div class="modal-search__inner container">
+          <button class="modal-search-success__close modal__close-btn">
             <svg class="modal__close-icon">
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
             </svg>
           </button>
-          <h2 class="modal-search__title modal-title lang-modal-search-title">Спасибо за успешное заполнение формы! </h2>
+          <h2 class="modal-search__title modal-title lang-modal-search-title">Спасибо за успешное заполнение формы!</h2>
           <div class="modal-search__content">
-            <p class="modal-search__description lang-modal-search-description">Каждая достопримечательность какой-либо страны когда-то была лишь идеей, записанной на листке. Далее, эта идея развивалась, и в конечном счете превратилась в искусство. Команда Archee придерживается мнению, что если есть проект в голове, на листке, а также есть большое стремление эту идею воплотить в реальность, то все достижимо. Выберите город, и мы подберем лучший вариант для решения Вашей задачи.</p>
+            <p class="modal-search__description lang-modal-search-description">Чтобы начать работу над проектом, нужно уточнить некоторые детали. Напишите пожалуйста Ваш номер телефона в поле ниже. Наши менеджеры свяжутся с Вами в скором времени.</p>
+            <form class="modal-search__form">
+              <input data-rules="tel" class="modal-search__input" type="tel" placeholder="Введите номер телефона" name="tel" maxlength="12" />
+              <button type="submit" class="modal-search__btn btn">Отправить</button>
+              <div class="modal-search__popup hide-elem">Ответ успешно записан</div>
+            </form>
           </div>
         </div>
       </div>

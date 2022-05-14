@@ -112,6 +112,10 @@ img {
   @include container;
 }
 
+// Titles
+
+@import 'helpers/titles/modal-title';
+
 // Подключение блоков
 @import 'block/*.scss';
 @import 'helpers/_helpers.scss';

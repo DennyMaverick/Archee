@@ -2,6 +2,11 @@
   display: none;
 }
 
+.hide-elem {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -12,4 +17,12 @@
 
 .hide-btn {
   visibility: hidden;
+}
+
+.valid {
+  outline: 1px solid $success-color;
+}
+
+.invalid {
+  outline: 1px solid $red-color;
 }

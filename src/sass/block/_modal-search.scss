@@ -1,0 +1,59 @@
+.modal-search {
+  &__title {
+    margin-bottom: 50px;
+    color: $success-color;
+  }
+  &__inner {
+    position: relative;
+    margin: auto;
+    padding: 3rem;
+    background-color: $bg-light;
+    transform: rotateX(90deg);
+    transition: transform 0.5s linear;
+    @include bp-desk(mobile) {
+      padding: 4rem 1.5rem 2rem;
+    }
+  }
+  &__description {
+    background-color: $color-text;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+
+    max-width: 500px;
+    margin-bottom: 35px;
+  }
+  &__input {
+    display: block;
+    background-color: $color-bg-third;
+    width: 100%;
+    max-width: 271px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: 1px solid transparent;
+    padding-right: 50px;
+    transition: outline 0.4s linear;
+    margin-bottom: 25px;
+    &::placeholder {
+      @include font-helvetica-medium();
+      @include font(16px, 24px);
+      color: rgba(97, 89, 77, 0.6);
+    }
+  }
+  &__popup {
+    transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color: $success-second-color;
+    width: fit-content;
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 20px;
+  }
+}

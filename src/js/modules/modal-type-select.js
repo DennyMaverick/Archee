@@ -26,6 +26,8 @@ const modalTypeInner = document.querySelector(".modal-type__inner")
 const modalType = document.querySelector(".modal-type")
 const bodyEl = document.querySelector("body")
 
+
+
 //* При клике на кнопку 'Принять' в модальном окне modal-type происходит закрытие модального окна с отображением значения выбранного типа работ в поле input в секции === search ===
 
 //* При смене языка все работает корректно, когда hash в строке браузера изменен на якорь ссылки, значение типа работ в поле input отображается корректно
@@ -94,5 +96,6 @@ function resetModalType() {
     houseItems.forEach((item) => {
       item.classList.remove("house-item--active")
     })
+    modalTypeBtn.classList.add("hide-btn")
   }, 500)
 }
