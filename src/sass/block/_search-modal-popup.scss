@@ -1,0 +1,11 @@
+.search-modal-popup {
+  display: inline-block;
+  opacity: 0;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: $white;
+  transition: opacity 0.3s ease-in;
+  &--active {
+    opacity: 1;
+  }
+}

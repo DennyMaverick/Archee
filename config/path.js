@@ -11,12 +11,6 @@ module.exports = {
     dest: pathDest,
   },
 
-  css: {
-    src: pathSrc + "/css/*.css",
-    watch: pathSrc + "/css/**/*.css",
-    dest: pathDest + "/css/",
-  },
-
   scss: {
     src: pathSrc + "/sass/*.{sass,scss}",
     watch: pathSrc + "/sass/**/*.{sass,scss}",
@@ -29,12 +23,6 @@ module.exports = {
     dest: pathDest + "/js/",
   },
 
-  libs: {
-    src: pathSrc + "/libs/**/*.js",
-    watch: pathSrc + "/libs/**/*.js",
-    dest: pathDest + "/libs/",
-  },
-
   img: {
     src: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
     watch: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
@@ -45,12 +33,6 @@ module.exports = {
     src: pathSrc + "/font/**/*.{eot,ttf,otf,otc,ttc,woff,woof2,svg}",
     watch: pathSrc + "/font/**/*.{eot,ttf,otf,otc,ttc,woff,woof2,svg}",
     dest: pathDest + "/font/",
-  },
-
-  favicon: {
-    src: pathSrc + "/img/favicon/favicon.svg",
-    watch: pathSrc + "/img/favicon/favicon.svg",
-    dest: pathDest + "/img/favicon/",
   },
 
   svgsprite: {

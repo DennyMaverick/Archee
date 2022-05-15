@@ -134,12 +134,15 @@
                   </svg>
                 </div>
                 <div class="search__item">
-                  <input data-rules="number" class="search__item-input search__item--budget lang-placeholder-budget" type="text" placeholder="Budget" required maxlength="7" minlength="4"/>
+                  <input data-rules="number" class="search__item-input search__item--budget lang-placeholder-budget" type="text" placeholder="Budget" required maxlength="7" minlength="4" />
                   <svg class="search__icon budget">
                     <use xlink:href="img/sprite/symbol/sprite.svg#budget" />
                   </svg>
                   <div class="search__budget-popup budget-popup">
                     <p class="budget-popup__text">Введите Ваш бюджет</p>
+                  </div>
+                  <div class="search__budget-popup search__budget-popup--unsuccess budget-popup budget-popup--unsuccess">
+                    <p class="budget-popup__text">Неверные значения</p>
                   </div>
                 </div>
                 <button type="submit" class="search__btn btn lang-search-btn">Search Now</button>
@@ -416,6 +419,9 @@
             <p class="modal-search__description lang-modal-search-description">Чтобы начать работу над проектом, нужно уточнить некоторые детали. Напишите пожалуйста Ваш номер телефона в поле ниже. Наши менеджеры свяжутся с Вами в скором времени.</p>
             <form class="modal-search__form">
               <input data-rules="tel" class="modal-search__input" type="tel" placeholder="Введите номер телефона" name="tel" maxlength="12" />
+              <div class="modal-search__popup--unsuccess search-modal-popup">
+                <p class="modal-search__popup-text">Неверные значения</p>
+              </div>
               <button type="submit" class="modal-search__btn btn">Отправить</button>
               <div class="modal-search__popup hide-elem">Ответ успешно записан</div>
             </form>

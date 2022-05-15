@@ -24,7 +24,8 @@
     margin-bottom: 35px;
   }
   &__input {
-    display: block;
+    display: inline-block;
+    margin-right: 20px;
     background-color: $color-bg-third;
     width: 100%;
     max-width: 271px;
@@ -51,9 +52,13 @@
       opacity: 1;
       visibility: visible;
     }
+    &--unsuccess {
+      background-color: $error-color;
+    }
   }
 
   &__btn {
     margin-bottom: 20px;
+    display: flex;
   }
 }
