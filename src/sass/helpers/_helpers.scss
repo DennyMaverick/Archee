@@ -20,9 +20,16 @@
 }
 
 .valid {
-  outline: 1px solid $success-color;
+  border: 1px solid $success-color;
+}
+.valid:focus {
+  outline: 1px solid transparent;
 }
 
 .invalid {
-  outline: 1px solid $red-color;
+  border: 1px solid $red-color;
+}
+
+.invalid:focus {
+  outline: 1px solid transparent;
 }

@@ -11,7 +11,7 @@
   overflow: auto;
   justify-content: center;
   align-items: center;
-  @include media-down(500px) {
+  @include bp-desk(mobile) {
     padding: 0;
   }
   &__inner {
@@ -22,7 +22,7 @@
     transform: rotateX(90deg);
     transition: transform .5s linear;
     @include bp-desk(mobile) {
-      padding: 4rem 1.5rem 2rem;
+      padding: 6rem 1.5rem 2rem;
     }
   }
   &__close-icon {

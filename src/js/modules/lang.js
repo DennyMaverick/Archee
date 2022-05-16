@@ -351,6 +351,30 @@ const repeatElems = {
     ru: "О нас",
     en: "About",
   },
+  "search-modal-popup-unsuccess": {
+    ru: "Неверные значения",
+    en: "Incorrect values",
+  },
+  "search-form-unsuccess-popup": {
+    ru: "Неверные значения",
+    en: "Incorrect values",
+  },
+  "modal-search-success-popup": {
+    ru: "Ответ успешно записан",
+    en: "Your answer is successfully written",
+  },
+  "modal-search-title": {
+    ru: "Спасибо за успешное заполнение формы",
+    en: "Thank you for the successful filling the form",
+  },
+  "modal-search-description": {
+    ru: "Чтобы начать работу над проектом, нужно уточнить некоторые детали. Напишите пожалуйста Ваш номер телефона в поле ниже. Наши менеджеры свяжутся с Вами в скором времени.",
+    en: "For start the project we need to clarify some details. Write your number's phone bellow, please. Our menegers will contact with you as soon as possible.",
+  },
+  "search-budget": {
+    ru: "Введите Ваш бюджет",
+    en: "Insert your budget",
+  },
 }
 
 // ====== Секция Search / placeholders

@@ -12,6 +12,11 @@
     transition: transform 0.5s linear;
     @include bp-desk(mobile) {
       padding: 4rem 1.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      min-height: 100vh;
     }
   }
   &__description {
@@ -54,6 +59,13 @@
     }
     &--unsuccess {
       background-color: $error-color;
+    }
+  }
+  &__unsuccessful-popup {
+    @include bp-desk(mobile) {
+      & + * {
+        margin-top: 15px;
+      }
     }
   }
 

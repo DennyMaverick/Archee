@@ -75,11 +75,13 @@ button {
   line-height: 20px;
   color: $white;
   cursor: pointer;
+  border: 1px solid transparent;
   opacity: 1;
-  transition: color 0.4s linear, background-color .4s linear;
+  transition: color 0.4s linear, background-color .4s linear, border .4s linear;
   &:hover {
-    color: $primary-color;
-    background-color: $black;
+    color: $white;
+    background-color: $bg-light;
+    border: 1px solid $white;
   }
 }
 
