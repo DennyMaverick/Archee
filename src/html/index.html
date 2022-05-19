@@ -121,28 +121,57 @@
             <form class="search__form">
               <h2 class="search__title title title--search lang-search-title">Search the price you looking for</h2>
               <div class="search__items">
-                <div class="search__item">
-                  <input class="search__item-input search__item--location lang-placeholder-location" type="text" placeholder="Location" required />
+                <div class="search__item search__item-location">
+                  <input data-type = "location" data-modal="location" id="location-input" class="search__item-input search__item-input-location lang-placeholder-location" type="text" placeholder="Location" autocomplete="off" />
                   <svg class="search__icon location">
                     <use xlink:href="img/sprite/symbol/sprite.svg#location" />
                   </svg>
+                  <div class="search__location-popup search__location-popup--success search-popup search-popup--success">
+                    <p class="location-popup__text lang-search-location-popup-success">Успешное заполнение</p>
+                  </div>
+                  <div class="search__location-popup search__location-popup--unsuccess search-popup search-popup--unsuccess">
+                    <p class="location-popup__text lang-search-location-popup-unsuccess">Совпадений не найдено, кликните на иконку в текстовом поле</p>
+                  </div>
                 </div>
-                <div class="search__item">
-                  <input class="search__item-input search__item--type lang-placeholder-type" type="text" placeholder="Type" required />
+                <div class="search__item search__item-type">
+                  <input data-rules="type-input" data-type = "type" data-modal="type" id="type-input" class="search__item-input search__item-input-type lang-placeholder-type" type="text" placeholder="Type" autocomplete="off" />
                   <svg class="search__icon type">
                     <use xlink:href="img/sprite/symbol/sprite.svg#type" />
                   </svg>
+                  <div class="search__type-popup search__type-popup--unsuccess search-popup search-popup--unsuccess">
+                    <p class="search-popup__text lang-search-type-popup-unsuccess">Выберите значение из списка или нажмите на иконку, чтобы узнать подробней</p>
+                  </div>
+                  <nav class="search__type-menu menu-type">
+                    <div class="menu-type__close">
+                      <span class="menu-type__close-line"></span>
+                      <span class="menu-type__close-line"></span>
+                    </div>
+                    <ul class="search__type-list search-type-list">
+                      <li class="search-type-list__item">
+                        <a class="search-type-list__text lang-search-type-list-outdoor">Наружняя Структура </a>
+                      </li>
+                      <li class="search-type-list__item">
+                        <a class="search-type-list__text lang-search-type-list-indoor">Внутренняя Структура </a>
+                      </li>
+                      <li class="search-type-list__item">
+                        <a class="search-type-list__text lang-search-type-list-furniture">Современная Мебель </a>
+                      </li>
+                      <li class="search-type-list__item">
+                        <a class="search-type-list__text lang-search-type-list-kitchen">Современная Кухня </a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
-                <div class="search__item">
-                  <input data-rules="number" class="search__item-input search__item--budget lang-placeholder-budget" type="text" placeholder="Budget" required maxlength="7" minlength="4" />
+                <div class="search__item search__item-budget">
+                  <input data-type = "budget" data-rules="budget-input" class="search__item-input search__item-input-budget lang-placeholder-budget" type="text" placeholder="Budget" autocomplete="off" />
                   <svg class="search__icon budget">
                     <use xlink:href="img/sprite/symbol/sprite.svg#budget" />
                   </svg>
-                  <div class="search__budget-popup budget-popup">
+                  <div class="search__budget-popup search-popup search__budget-popup-natification">
                     <p class="budget-popup__text lang-search-budget">Введите Ваш бюджет</p>
                   </div>
-                  <div class="search__budget-popup search__budget-popup--unsuccess budget-popup budget-popup--unsuccess">
-                    <p class="budget-popup__text lang-search-form-unsuccess-popup">Неверные значения</p>
+                  <div class="search__budget-popup search__budget-popup--unsuccess search-popup search-popup--unsuccess">
+                    <p class="search-popup__text lang-search-form-unsuccess-popup-budget">Только цифры в диапозоне от 4 до 7 символов</p>
                   </div>
                 </div>
                 <button type="submit" class="search__btn btn lang-search-btn">Search Now</button>
@@ -346,7 +375,7 @@
           </div>
         </div>
       </footer>
-      <div class="modal modal-location" data-modal="location">
+      <div class="modal modal-location" id="location">
         <div class="modal__inner modal-location__inner container">
           <button class="modal__close-btn">
             <svg class="modal__close-icon">
@@ -370,7 +399,7 @@
           </div>
         </div>
       </div>
-      <div class="modal modal-type" data-modal="type">
+      <div class="modal modal-type" id="type">
         <div class="modal__inner modal-type__inner container">
           <button class="modal__close-btn">
             <svg class="modal__close-icon">
@@ -418,12 +447,12 @@
           <div class="modal-search__content">
             <p class="modal-search__description lang-modal-search-description">Чтобы начать работу над проектом, нужно уточнить некоторые детали. Напишите пожалуйста Ваш номер телефона в поле ниже. Наши менеджеры свяжутся с Вами в скором времени.</p>
             <form class="modal-search__form">
-              <input data-rules="tel" class="modal-search__input" type="tel" placeholder="Введите номер телефона" name="tel" maxlength="12" />
+              <input data-rules="tel" class="modal-search__input lang-placeholder-modal-search-phone" type="tel" placeholder="Введите номер телефона" name="tel" maxlength="12" />
               <div class="modal-search__popup--unsuccess modal-search__unsuccessful-popup search-modal-popup">
                 <p class="modal-search__popup-text lang-search-modal-popup-unsuccess">Неверные значения</p>
               </div>
               <button type="submit" class="modal-search__btn btn">Отправить</button>
-              <div class="modal-search__popup hide-elem lang-modal-search-success-popup">Ответ успешно записан</div>
+              <div class="modal-search__popup hide-elem lang-search-modal-popup-success">Ответ успешно записан</div>
             </form>
           </div>
         </div>

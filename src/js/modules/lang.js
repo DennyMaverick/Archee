@@ -351,29 +351,80 @@ const repeatElems = {
     ru: "О нас",
     en: "About",
   },
+
+  //* Search popups
+
+  //* Budget-popups
+
+  "search-form-unsuccess-popup-budget": {
+    ru: "Только цифры в диапозоне от 4 до 7 символов",
+    en: "Only digits in a range from 4 to 7 symbols",
+  },
+
+  "search-budget": {
+    ru: "Введите Ваш бюджет",
+    en: "Insert your budget",
+  },
+
+  //* Location-popups
+
+  "search-location-popup-success": {
+    ru: "Успешное заполнение",
+    en: "Successful filling",
+  },
+
+  "search-location-popup-unsuccess": {
+    ru: "Совпадений не найдено, кликните на иконку в текстовом поле",
+    en: "No matches, click on the icon in this text field",
+  },
+
+  //* Type-popups
+
+  "search-type-popup-unsuccess": {
+    ru: "Выберите значение из списка или нажмите на иконку справа, чтобы узнать подробней",
+    en: "Choose the value from the list bellow or click on the icon right to know more",
+  },
+
+  //* Modal-search-popup
+
+  "search-modal-popup-success": {
+    ru: "Ответ успешно записан",
+    en: "Your answer is successfully written",
+  },
+
   "search-modal-popup-unsuccess": {
     ru: "Неверные значения",
     en: "Incorrect values",
   },
-  "search-form-unsuccess-popup": {
-    ru: "Неверные значения",
-    en: "Incorrect values",
-  },
-  "modal-search-success-popup": {
-    ru: "Ответ успешно записан",
-    en: "Your answer is successfully written",
-  },
+
+  //* Modal-search
+
   "modal-search-title": {
     ru: "Спасибо за успешное заполнение формы",
     en: "Thank you for the successful filling the form",
   },
   "modal-search-description": {
     ru: "Чтобы начать работу над проектом, нужно уточнить некоторые детали. Напишите пожалуйста Ваш номер телефона в поле ниже. Наши менеджеры свяжутся с Вами в скором времени.",
-    en: "For start the project we need to clarify some details. Write your number's phone bellow, please. Our menegers will contact with you as soon as possible.",
+    en: "For start the project we need to clarify some details. Write your phone number bellow, please. Our menegers will contact with you as soon as possible.",
   },
-  "search-budget": {
-    ru: "Введите Ваш бюджет",
-    en: "Insert your budget",
+
+  //* search-type-list
+
+  "search-type-list-outdoor": {
+    ru: "Наружняя Структура",
+    en: "Outdoor Structure",
+  },
+  "search-type-list-indoor": {
+    ru: "Внутренняя Структура",
+    en: "Indoor Structure",
+  },
+  "search-type-list-furniture": {
+    ru: "Современная Мебель",
+    en: "Modern Furniture",
+  },
+  "search-type-list-kitchen": {
+    ru: "Современная Кухня",
+    en: "Modern Kitchen",
   },
 }
 
@@ -391,6 +442,10 @@ const placeholders = {
   budget: {
     ru: "Бюджет",
     en: "Budget",
+  },
+  "modal-search-phone": {
+    ru: "Введите номер телефона",
+    en: "Insert your phone number",
   },
 }
 

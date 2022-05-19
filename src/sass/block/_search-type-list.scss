@@ -1,0 +1,27 @@
+.search-type-list {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: $primary-color;
+  box-shadow: 0 0 20px white;
+  border-radius: 10px;
+  color: $white;
+  padding: 20px;
+
+
+  &::before {
+    position: absolute;
+    left: 28px;
+    top: -10px;
+    width: 5px;
+    height: 10px;
+    content: "";
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid #d6680f;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+  &__text {
+    cursor: pointer;
+  }
+}

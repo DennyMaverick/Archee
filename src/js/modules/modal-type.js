@@ -3,9 +3,14 @@ const modalType = document.querySelector(".modal-type")
 const modalTypeInner = document.querySelector(".modal-type__inner")
 const bodyEl = document.querySelector("body")
 const modalTypeNames = document.querySelectorAll(".modal-type__city-type")
-const searchInputType = document.querySelector(".search__item--type")
+const searchInputType = document.querySelector(".search__item-input-type")
 const modalCloseBtns = document.querySelectorAll(".modal__close-btn")
 const modalTypeBtn = document.querySelector(".modal-type__btn")
+const searchTypeMenu = document.querySelector(".search__type-menu")
+const searchTypeListItems = document.querySelectorAll(".search-type-list__text")
+const menuTypeList = document.querySelector(".menu-type")
+const menuTypeClose = document.querySelector(".menu-type__close")
+const modals = document.querySelectorAll(".modal")
 
 typeIcon.addEventListener("click", () => {
   modalType.classList.add("show")
@@ -17,6 +22,7 @@ typeIcon.addEventListener("click", () => {
 
 modalCloseBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
+    menuTypeList.classList.remove("show")
     modalTypeInner.style.transform = "rotateX(90deg)"
     resetModalType()
     setTimeout(() => {
@@ -28,6 +34,7 @@ modalCloseBtns.forEach((btn) => {
 
 modalType.addEventListener("click", function () {
   modalTypeInner.style.transform = "rotateX(90deg)"
+  menuTypeList.classList.remove("show")
   resetModalType()
   setTimeout(() => {
     bodyEl.classList.remove("no-scroll")
@@ -55,3 +62,37 @@ function resetModalType() {
     modalTypeBtn.classList.add("hide-btn")
   }, 500)
 }
+
+searchInputType.addEventListener("focus", function () {
+  searchTypeMenu.classList.add("show")
+  menuTypeClose.classList.add("show")
+})
+
+searchTypeListItems.forEach(function (item) {
+  item.addEventListener("click", function () {
+    searchTypeMenu.classList.remove("show")
+    menuTypeClose.classList.remove("show")
+    searchInputType.value = this.innerHTML
+    searchInputType.classList.add("valid")
+    searchInputType.classList.remove("invalid")
+  })
+})
+
+menuTypeClose.addEventListener("click", function () {
+  searchTypeMenu.classList.remove("show")
+  menuTypeClose.classList.remove("show")
+})
+
+searchInputType.addEventListener("input", function (event) {
+  event.target.value = ""
+})
+
+searchInputType.addEventListener("blur", function () {
+  menuTypeList.classList.remove("show")
+})
+
+modals.forEach((item) => {
+  item.addEventListener("click", function () {
+    menuTypeList.classList.remove("show")
+  })
+})

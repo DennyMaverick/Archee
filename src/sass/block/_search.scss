@@ -19,8 +19,46 @@
 
   &__budget-popup {
     position: absolute;
-    right: 0;
-    top: -50px;
+    left: 0;
+    bottom: 50px;
+  }
+
+  &__location-popup {
+    position: absolute;
+    left: 0;
+    &--unsuccess {
+      bottom: 50px;
+    }
+    &--success {
+      bottom: 50px;
+    }
+  }
+
+  &__type-popup {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+  }
+
+  &__location-popup {
+    &--active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__budget-popup {
+    &--active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__type-popup {
+    &--active {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   // .search__title
@@ -43,11 +81,6 @@
     }
   }
 
-  &__item--location {
-    font-size: 15px;
-    @include font-helvetica-regular;
-  }
-
   &__item {
     position: relative;
     flex-grow: 1;
@@ -56,9 +89,6 @@
       & + & {
         margin-top: 20px;
       }
-    }
-    &--budget {
-      position: relative;
     }
   }
   &__icon {
@@ -87,11 +117,12 @@
   &__item-input {
     background-color: $color-bg-third;
     width: 100%;
+    font-size: 14px;
+    @include font-helvetica-regular;
     max-width: 271px;
     padding: 18px 20px;
     border: none;
     border-radius: 6px;
-    text-transform: capitalize;
     outline: 1px solid transparent;
     height: 60px;
     padding-right: 50px;
@@ -120,6 +151,20 @@
     text-transform: capitalize;
     @include bp-desk(notebook) {
       margin-top: 20px;
+    }
+  }
+
+  &__type-menu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 50px;
+    transition: opacity 0.4s ease-in, visibility 0.4s ease-in;
+    &.show {
+      opacity: 1;
+      visibility: visible;
     }
   }
 }

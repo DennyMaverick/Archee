@@ -5,15 +5,20 @@ for (let input of inputs) {
     let rules = this.dataset.rules
     let value = this.value
     let check
+    let checkType
+    let checkBudget
 
     switch (rules) {
       //* === Phone ===
 
       case "tel":
-        check = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/.test(value)
+        check = !!(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/.test(value) && value.search(/\s/) === -1)
         break
-      case "number":
-        check = /^\d+$/.test(value)
+      case "budget-input":
+        check = !!(/^[0-9]+$/.test(value) && value.length > 3 && value.length <= 7 && value.search(/\s/) === -1)
+        break
+      case "type-input":
+        check = !!(/^[а-яА-Яa-zA-Z]+\s/.test(value) && this.value !== "")
         break
     }
     if (check) {
@@ -25,5 +30,3 @@ for (let input of inputs) {
     }
   })
 }
-
-

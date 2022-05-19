@@ -1,32 +1,31 @@
 const cityTypes = {
   "modal-type-indoor": {
-    ru: "внутренняя структура",
-    en: "indoor structure",
+    ru: "Внутренняя Структура",
+    en: "Indoor Structure",
   },
   "modal-type-outdoor": {
-    ru: "наружняя структура",
-    en: "outdoor structure",
+    ru: "Наружняя Структура",
+    en: "Outdoor Structure",
   },
   "modal-type-furniture": {
-    ru: "современная мебель",
-    en: "modern furniture",
+    ru: "Современная Мебель",
+    en: "Modern Furniture",
   },
   "modal-type-kitchen": {
-    ru: "современная кухня",
-    en: "modern kitchen",
+    ru: "Современная Кухня",
+    en: "Modern Kitchen",
   },
 }
 
 const houseItems = document.querySelectorAll(".house-item")
 const modalTabs = document.querySelectorAll(".modal-type__text")
 const modalTypeBtn = document.querySelector(".modal-type__btn")
-const searchInputType = document.querySelector(".search__item--type")
+const searchInputType = document.querySelector(".search__item-input-type")
 const langName = document.querySelector(".lang__name")
 const modalTypeInner = document.querySelector(".modal-type__inner")
 const modalType = document.querySelector(".modal-type")
 const bodyEl = document.querySelector("body")
-
-
+const menuTypeList = document.querySelector(".menu-type")
 
 //* При клике на кнопку 'Принять' в модальном окне modal-type происходит закрытие модального окна с отображением значения выбранного типа работ в поле input в секции === search ===
 
@@ -70,6 +69,7 @@ modalTypeBtn.addEventListener("click", (event) => {
   }, 500)
 
   resetModalType()
+  menuTypeList.classList.remove("show")
 })
 
 //* Плавный скролл вниз при клике на иконки типов работ
@@ -98,4 +98,6 @@ function resetModalType() {
     })
     modalTypeBtn.classList.add("hide-btn")
   }, 500)
+  searchInputType.classList.add("valid")
+  searchInputType.classList.remove("invalid")
 }

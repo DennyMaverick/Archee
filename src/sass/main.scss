@@ -79,9 +79,9 @@ button {
   opacity: 1;
   transition: color 0.4s linear, background-color .4s linear, border .4s linear;
   &:hover {
-    color: $white;
-    background-color: $bg-light;
-    border: 1px solid $white;
+    color: $primary-color;
+    background-color: $white;
+    border: 1px solid $primary-color;
   }
 }
 

@@ -33,3 +33,8 @@
 .invalid:focus {
   outline: 1px solid transparent;
 }
+
+.active-icon {
+  transform: scale(1.3) translateY(-40%);
+  stroke: #d6680f;
+}
