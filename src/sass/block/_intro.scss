@@ -1,29 +1,29 @@
 .intro {
   background-color: $color-bg-second;
-  padding-top: 138px;
+  padding-top: 220px;
   padding-bottom: 181px;
   background-image: url('../img/intro/blur.svg'),
     url('../img/intro/modern-house.png');
-  background-position: top 16px left 26px, top 138px right 0;
+  background-position: top 98px left 26px, top 220px right 0;
   background-repeat: no-repeat, no-repeat;
   background-size: 249px 220px, 838px 600px;
   @include bp-desk(notebook) {
     background-size: 249px 220px, 580px auto;
   }
   @include bp-desk(tablet) {
-    background-position: top 16px left 26px, top 300px right 0;
+    background-position: top 98px left 26px, top 382px right 0;
   }
   @include bp-desk(mobile) {
-    padding-top: 70px;
+    padding-top: 152px;
     padding-bottom: 150px;
-    background-position: top -14px left 26px, top 262px right 0;
+    background-position: top 68px left 26px, top 344px right 0;
   }
   @include bp-desk(mobile-sm) {
     background-size: 200px auto, 480px auto;
   }
   @include bp-desk(mobile-l) {
     background-size: 150px auto, 310px auto;
-    background-position: top 16px left 26px, top 225px right 0;
+    background-position: top 98px left 26px, top 307px right 0;
   }
   // @include media-down(300px) {
   //   background-position: top 16px left 26px, top 273px right 0;

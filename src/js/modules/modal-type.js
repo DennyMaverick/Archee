@@ -4,7 +4,7 @@ const modalTypeInner = document.querySelector(".modal-type__inner")
 const bodyEl = document.querySelector("body")
 const modalTypeNames = document.querySelectorAll(".modal-type__city-type")
 const searchInputType = document.querySelector(".search__item-input-type")
-const modalCloseBtns = document.querySelectorAll(".modal__close-btn")
+const modalTypeCloseBtn = document.querySelector(".modal-type .modal__close-btn")
 const modalTypeBtn = document.querySelector(".modal-type__btn")
 const searchTypeMenu = document.querySelector(".search__type-menu")
 const searchTypeListItems = document.querySelectorAll(".search-type-list__text")
@@ -20,30 +20,14 @@ typeIcon.addEventListener("click", () => {
   }, 300)
 })
 
-modalCloseBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    menuTypeList.classList.remove("show")
-    modalTypeInner.style.transform = "rotateX(90deg)"
-    resetModalType()
-    setTimeout(() => {
-      bodyEl.classList.remove("no-scroll")
-      modalType.classList.remove("show")
-    }, 600)
-  })
+modalTypeCloseBtn.addEventListener("click", () => {
+  menuTypeList.classList.remove("show")
+  resetModalType()
 })
 
 modalType.addEventListener("click", function () {
-  modalTypeInner.style.transform = "rotateX(90deg)"
   menuTypeList.classList.remove("show")
   resetModalType()
-  setTimeout(() => {
-    bodyEl.classList.remove("no-scroll")
-    this.classList.remove("show")
-  }, 600)
-})
-
-modalTypeInner.addEventListener("click", (event) => {
-  event.stopPropagation()
 })
 
 function resetModalType() {

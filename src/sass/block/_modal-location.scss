@@ -1,4 +1,7 @@
 .modal-location {
+  &__inner {
+    background-color: $modal-bg-color;
+  }
   @include bp-desk(tablet) {
       padding: 0;
     }

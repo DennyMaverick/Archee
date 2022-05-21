@@ -20,18 +20,11 @@
 }
 
 .valid {
-  border: 1px solid $success-color;
-}
-.valid:focus {
-  outline: 1px solid transparent;
+  outline: 1px solid $success-color;
 }
 
 .invalid {
-  border: 1px solid $red-color;
-}
-
-.invalid:focus {
-  outline: 1px solid transparent;
+  outline: 1px solid $error-color;
 }
 
 .active-icon {

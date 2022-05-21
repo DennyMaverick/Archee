@@ -6,7 +6,6 @@ const modalSearchInner = document.querySelector(".modal-search__inner")
 const modalSearchForm = document.querySelector(".modal-search__form")
 const modalSearchInput = document.querySelector(".modal-search__input")
 const modalSearchPopup = document.querySelector(".modal-search__popup")
-const modalSearchCloseBtn = document.querySelector(".modal-search-success__close")
 const searchItemLocation = document.querySelector(".search__item--location")
 const searchItemBudget = document.querySelector(".search__item-input-budget")
 let inputsValid = document.querySelectorAll("input[data-rules]")
@@ -61,55 +60,33 @@ function showPopupErrorBudget() {
   }, 1200)
 }
 
-modalSearchForm.addEventListener("submit", function (event) {
-  //* для тестирования можно оставить event.preventDefault() чтобы форма не отправлялась на сервер и не было перезагрузки страницы ===>
+// modalSearchForm.addEventListener("submit", function (event) {
+//   //* для тестирования можно оставить event.preventDefault() чтобы форма не отправлялась на сервер и не было перезагрузки страницы ===>
 
-  event.preventDefault()
+//   event.preventDefault()
 
-  if (modalSearchInput.classList.contains("valid")) {
-    modalSearchPopup.classList.add("show")
-    resetInputStyles()
+//   if (modalSearchInput.classList.contains("valid")) {
+//     modalSearchPopup.classList.add("show")
+//     resetInputStyles()
 
-    setTimeout(() => {
-      modalSearchPopup.classList.remove("show")
-    }, 2000)
-    setTimeout(() => {
-      modalSearchInner.style.transform = "rotateX(90deg)"
-    }, 7000)
-    setTimeout(() => {
-      modalSearchSuccess.classList.remove("show")
-      bodyEl.classList.remove("no-scroll")
-    }, 7500)
-  } else {
-    modalSearchUnsuccessPopup.classList.add("search-modal-popup--active")
+//     setTimeout(() => {
+//       modalSearchPopup.classList.remove("show")
+//     }, 2000)
+//     setTimeout(() => {
+//       modalSearchInner.style.transform = "rotateX(90deg)"
+//     }, 7000)
+//     setTimeout(() => {
+//       modalSearchSuccess.classList.remove("show")
+//       bodyEl.classList.remove("no-scroll")
+//     }, 7500)
+//   } else {
+//     modalSearchUnsuccessPopup.classList.add("search-modal-popup--active")
 
-    setTimeout(() => {
-      modalSearchUnsuccessPopup.classList.remove("search-modal-popup--active")
-    }, 1200)
-
-    return false
-  }
-})
-
-modalSearchCloseBtn.addEventListener("click", function () {
-  modalSearchInner.style.transform = "rotateX(90deg)"
-  setTimeout(() => {
-    bodyEl.classList.remove("no-scroll")
-    modalSearchSuccess.classList.remove("show")
-  }, 700)
-})
-
-modalSearchSuccess.addEventListener("click", function () {
-  modalSearchInner.style.transform = "rotateX(90deg)"
-  setTimeout(() => {
-    bodyEl.classList.remove("no-scroll")
-    modalSearchSuccess.classList.remove("show")
-  }, 700)
-})
-
-modalSearchInner.addEventListener("click", function (e) {
-  e.stopPropagation()
-})
+//     setTimeout(() => {
+//       modalSearchUnsuccessPopup.classList.remove("search-modal-popup--active")
+//     }, 1200)
+//   }
+// })
 
 function resetInputStyles() {
   inputsValid.forEach((input) => {
@@ -122,5 +99,3 @@ function resetInputStyles() {
     input.classList.remove("valid")
   })
 }
-
-// searchItems

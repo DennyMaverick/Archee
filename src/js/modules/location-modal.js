@@ -8,8 +8,8 @@ const cityLangs = {
     en: "Tokyo",
   },
   "modal-location-city-new-york": {
-    ru: "Нью Йорк",
-    en: "New York",
+    ru: "Нью-Йорк",
+    en: "New-York",
   },
   "modal-location-city-paris": {
     ru: "Париж",
@@ -25,12 +25,13 @@ const cityLangs = {
   },
 }
 
-const citiesRuLang = ["Москва", "Токио", "Рим", "Лондон", "Париж", "Нью Йорк"]
+const citiesRuLang = ["Москва", "Токио", "Рим", "Лондон", "Париж", "Нью-Йорк"]
 
-const citiesEnLang = ["Moskow", "Tokio", "Roma", "London", "Paris", "New York"]
+const citiesEnLang = ["Moskow", "Tokio", "Roma", "London", "Paris", "New-York"]
 
 const locationIcon = document.querySelector(".location")
 const modalLocation = document.querySelector(".modal-location")
+const modalLocationCloseBtn = document.querySelector(".modal-location .modal__close-btn")
 const modalLocationInner = document.querySelector(".modal-location__inner")
 const bodyEl = document.querySelector("body")
 const modalCityNames = document.querySelectorAll(".modal-location__city-name")
@@ -84,32 +85,12 @@ modalCityNames.forEach((city) => {
   })
 })
 
-modalCloseBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    modalLocationInner.style.transform = "rotateX(90deg)"
-
-    setTimeout(() => {
-      bodyEl.classList.remove("no-scroll")
-      modalLocation.classList.remove("show")
-    }, 600)
-
-    resetPicture()
-  })
-})
-
-modalLocation.addEventListener("click", function () {
-  modalLocationInner.style.transform = "rotateX(90deg)"
-
-  setTimeout(() => {
-    bodyEl.classList.remove("no-scroll")
-    this.classList.remove("show")
-  }, 600)
-
+modalLocationCloseBtn.addEventListener("click", () => {
   resetPicture()
 })
 
-modalLocationInner.addEventListener("click", (event) => {
-  event.stopPropagation()
+modalLocation.addEventListener("click", function () {
+  resetPicture()
 })
 
 function resetPicture() {
@@ -122,9 +103,8 @@ function resetPicture() {
 }
 
 locationInput.addEventListener("change", function () {
-  let hash = window.location.hash
-  hash = hash.substr(1)
-  currentArray = eval(`cities${hash.charAt(0).toUpperCase() + hash.slice(1)}Lang`)
+  let currentLangValue = document.querySelector(".lang__name").innerHTML
+  let currentArray = eval(`cities${currentLangValue.charAt(0).toUpperCase() + currentLangValue.slice(1).toLowerCase()}Lang`)
   checkUpperCase = !!(this.value.charAt(0).toUpperCase() == this.value.charAt(0))
 
   if (!currentArray.includes(this.value)) {

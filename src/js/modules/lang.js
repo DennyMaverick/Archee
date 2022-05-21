@@ -114,8 +114,8 @@ const langs = {
     en: "Product",
   },
   "benefits-desc-three": {
-    ru: "Мы сосдаем самые красивые вещи для дома вашей мечты",
-    en: "We create the most beautiful things for your dream home",
+    ru: "Мы создаем самые красивые вещи для дома вашей мечты.",
+    en: "We create the most beautiful things for your dream home.",
   },
 
   //* ======== Секция About =========
@@ -193,8 +193,8 @@ const langs = {
     en: "tokyo",
   },
   "modal-location-city-new-york": {
-    ru: "нью йорк",
-    en: "new york",
+    ru: "Нью-Йорк",
+    en: "New-York",
   },
   "modal-location-city-paris": {
     ru: "париж",
@@ -256,39 +256,16 @@ const langs = {
     ru: "Выбрать",
     en: "Select",
   },
-}
 
-const repeatElems = {
-  "benefits-projects": {
-    ru: "Проектов",
-    en: "Projects",
-  },
+  //* Modal-search
 
-  //* ====== Секция Architects of Archee / Slider ======
-
-  "title-archee": {
-    ru: "Ральф Эдвардс",
-    en: "Ralph Edwards",
+  "modal-search-title": {
+    ru: "Спасибо за успешное заполнение формы",
+    en: "Thank you for the successful filling the form",
   },
-  "desc-archee": {
-    ru: "Архитектор",
-    en: "Architect",
-  },
-  "title-designer": {
-    ru: "Коди Фишер",
-    en: "Cody Fisher",
-  },
-  "desc-designer": {
-    ru: "Дизайнер по интерьеру",
-    en: "Interior Designer",
-  },
-  "title-manager": {
-    ru: "Стюрд Энеки",
-    en: "Stewrd Enaky",
-  },
-  "desc-manager": {
-    ru: "Проектный Менеджер",
-    en: "Project Manager",
+  "modal-search-description": {
+    ru: "Чтобы начать работу над проектом, нужно уточнить некоторые детали. Напишите пожалуйста Ваш номер телефона в поле ниже. Наши менеджеры свяжутся с Вами в скором времени.",
+    en: "For start the project we need to clarify some details. Write your phone number bellow, please. Our menegers will contact with you as soon as possible.",
   },
 
   //* ====== Секция News ======
@@ -385,29 +362,6 @@ const repeatElems = {
     en: "Choose the value from the list bellow or click on the icon right to know more",
   },
 
-  //* Modal-search-popup
-
-  "search-modal-popup-success": {
-    ru: "Ответ успешно записан",
-    en: "Your answer is successfully written",
-  },
-
-  "search-modal-popup-unsuccess": {
-    ru: "Неверные значения",
-    en: "Incorrect values",
-  },
-
-  //* Modal-search
-
-  "modal-search-title": {
-    ru: "Спасибо за успешное заполнение формы",
-    en: "Thank you for the successful filling the form",
-  },
-  "modal-search-description": {
-    ru: "Чтобы начать работу над проектом, нужно уточнить некоторые детали. Напишите пожалуйста Ваш номер телефона в поле ниже. Наши менеджеры свяжутся с Вами в скором времени.",
-    en: "For start the project we need to clarify some details. Write your phone number bellow, please. Our menegers will contact with you as soon as possible.",
-  },
-
   //* search-type-list
 
   "search-type-list-outdoor": {
@@ -425,6 +379,52 @@ const repeatElems = {
   "search-type-list-kitchen": {
     ru: "Современная Кухня",
     en: "Modern Kitchen",
+  },
+}
+
+const repeatElems = {
+  "benefits-projects": {
+    ru: "Проектов",
+    en: "Projects",
+  },
+
+  //* ====== Секция Architects of Archee / Slider ======
+
+  "title-archee": {
+    ru: "Ральф Эдвардс",
+    en: "Ralph Edwards",
+  },
+  "desc-archee": {
+    ru: "Архитектор",
+    en: "Architect",
+  },
+  "title-designer": {
+    ru: "Коди Фишер",
+    en: "Cody Fisher",
+  },
+  "desc-designer": {
+    ru: "Дизайнер по интерьеру",
+    en: "Interior Designer",
+  },
+  "title-manager": {
+    ru: "Стюрд Энеки",
+    en: "Stewrd Enaky",
+  },
+  "desc-manager": {
+    ru: "Проектный Менеджер",
+    en: "Project Manager",
+  },
+
+  //* Modal-search-popup
+
+  "search-modal-popup-success": {
+    ru: "Ответ успешно записан",
+    en: "Your answer is successfully written",
+  },
+
+  "search-modal-popup-unsuccess": {
+    ru: "Неверные значения",
+    en: "Incorrect values",
   },
 }
 
@@ -455,8 +455,11 @@ const allLangs = ["ru", "en"]
 
 langListItems.forEach(function (item) {
   item.addEventListener("click", function () {
+    // получение hash из строки браузера - #ru или #en
+
     // получение значения атрибута data-lang (ru или en)
     let lang = this.dataset.lang
+
     // добавление в строку браузера #ru или #en
     location.href = window.location.pathname + "#" + lang
     // перезагрузка страницы

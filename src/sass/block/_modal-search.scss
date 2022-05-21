@@ -4,12 +4,7 @@
     color: $success-color;
   }
   &__inner {
-    position: relative;
-    margin: auto;
-    padding: 3rem;
     background-color: $bg-light;
-    transform: rotateX(90deg);
-    transition: transform 0.5s linear;
     @include bp-desk(mobile) {
       padding: 4rem 1.5rem 2rem;
       display: flex;
@@ -28,49 +23,5 @@
     max-width: 500px;
     margin-bottom: 35px;
   }
-  &__input {
-    display: inline-block;
-    margin-right: 20px;
-    background-color: $color-bg-third;
-    width: 100%;
-    max-width: 271px;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    outline: 1px solid transparent;
-    padding-right: 50px;
-    transition: outline 0.4s linear;
-    margin-bottom: 25px;
-    &::placeholder {
-      @include font-helvetica-medium();
-      @include font(16px, 24px);
-      color: rgba(97, 89, 77, 0.6);
-    }
-  }
-  &__popup {
-    transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
-    padding: 3px 10px;
-    border-radius: 5px;
-    background-color: $success-second-color;
-    width: fit-content;
-    &.show {
-      opacity: 1;
-      visibility: visible;
-    }
-    &--unsuccess {
-      background-color: $error-color;
-    }
-  }
-  &__unsuccessful-popup {
-    @include bp-desk(mobile) {
-      & + * {
-        margin-top: 15px;
-      }
-    }
-  }
 
-  &__btn {
-    margin-bottom: 20px;
-    display: flex;
-  }
 }

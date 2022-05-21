@@ -1,6 +1,11 @@
 .header {
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
   background-color: $color-bg-second;
   padding-top: 30px;
+  padding-bottom: 15px;
   // .header__menu-nav
   &__menu-nav {
     margin-left: 71px;
@@ -19,6 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
   }
 
   // .header__tool-bar
