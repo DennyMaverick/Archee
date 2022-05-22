@@ -6,6 +6,8 @@
   background-color: $color-bg-second;
   padding-top: 30px;
   padding-bottom: 15px;
+  // динамический padding для корректного отображения модальных окон
+  padding-right: calc(20px - (100vw - 100%));
   // .header__menu-nav
   &__menu-nav {
     margin-left: 71px;

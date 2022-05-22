@@ -1,4 +1,4 @@
-import {resetInputFormStyles} from "./modal-form"
+import {resetInputFormStyles} from "./modalForm"
 
 const modalCloseBtns = document.querySelectorAll(".modal__close-btn")
 const modals = document.querySelectorAll(".modal")

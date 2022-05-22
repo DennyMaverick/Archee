@@ -3,6 +3,9 @@
 let hash = window.location.hash
 // начало hash массива строки начинается со второго символа - ru или en
 hash = hash.substr(1)
-const currentLangListItem = document.querySelector(`.lang-list__${hash}`)
+const currentLangListItems = document.querySelectorAll(`.lang-list__${hash}`)
 
-currentLangListItem.classList.add("hide")
+currentLangListItems.forEach((item) => {
+  item.classList.add("hide")
+})
+

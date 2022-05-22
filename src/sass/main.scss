@@ -65,6 +65,10 @@ button {
   @include reset-button();
 }
 
+blockquote {
+  margin: 0;
+}
+
 .btn {
   padding: 10px 30px;
   background-color: $primary-color;

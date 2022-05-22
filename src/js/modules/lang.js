@@ -52,7 +52,7 @@ const langs = {
     en: "about",
   },
   "nav-contact": {
-    ru: "контакты",
+    ru: "связаться",
     en: "contact",
   },
   "nav-mobile-home": {
@@ -72,7 +72,7 @@ const langs = {
     en: "about",
   },
   "nav-mobile-contact": {
-    ru: "контакты",
+    ru: "связаться",
     en: "contact",
   },
 
@@ -380,6 +380,25 @@ const langs = {
     ru: "Современная Кухня",
     en: "Modern Kitchen",
   },
+
+  //* Modal-contact"
+
+  "modal-contact-title": {
+    ru: "Рады приветствовать!",
+    en: "Welcome!",
+  },
+  "modal-contact-description": {
+    ru: "Мы ценим Ваш интерес к архитектуре. Напишите пожалуйста ниже номер Вашего телефона, и мы перезвоним как только сможем.",
+    en: "We appreciate your interest in architecture. Please write your phone number below and we'll call you back as soon as posible.",
+  },
+  "modal-contact-signature": {
+    ru: "C любовью к архитектуре, команда Archee.",
+    en: "With love to architecture, team Archee.",
+  },
+  "modal-contact-btn": {
+    ru: "Отправить",
+    en: "Send",
+  },
 }
 
 const repeatElems = {
@@ -444,6 +463,10 @@ const placeholders = {
     en: "Budget",
   },
   "modal-search-phone": {
+    ru: "Введите номер телефона",
+    en: "Insert your phone number",
+  },
+  "modal-contact-phone": {
     ru: "Введите номер телефона",
     en: "Insert your phone number",
   },

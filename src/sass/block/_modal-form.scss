@@ -6,22 +6,22 @@
     width: 100%;
     max-width: 271px;
     padding: 10px;
-    border: none;
     border-radius: 6px;
-    outline: 1px solid transparent;
+    outline: 0;
+    border: 1px solid transparent;
     padding-right: 50px;
-    transition: outline 0.4s linear;
+    transition: border 0.4s linear;
     margin-bottom: 25px;
     &::placeholder {
       @include font-helvetica-medium();
       @include font(16px, 24px);
       color: rgba(97, 89, 77, 0.6);
     }
+    &:focus {
+      border: 1px solid $primary-color;
+    }
   }
   &__successful-popup-text {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: $success-color;
     @include font-helvetica-medium();
     @include font(14px, 17px);
     color: $modal-bg-color;
@@ -35,6 +35,9 @@
     }
   }
   &__successful-popup {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $success-color;
     transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
     width: fit-content;
     &.show {

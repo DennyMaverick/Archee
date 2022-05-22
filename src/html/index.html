@@ -38,14 +38,16 @@
             <div class="header__lang lang">
               <div class="lang__lang-choose">
                 <span class="lang__name"> ru </span>
-                <img class="lang__arrow" src="./img/header/arrow-down.svg" width="12" height="9" alt="arrow down" />
+                <button class="lang__arrow-btn">
+                  <img class="lang__arrow" src="./img/header/arrow-down.svg" width="12" height="9" alt="arrow down" />
+                </button>
                 <ul class="lang-list">
                   <li class="lang-list__item lang-list__en" data-lang="en">en</li>
                   <li class="lang-list__item lang-list__ru" data-lang="ru">ru</li>
                 </ul>
               </div>
             </div>
-            <button data-modal="#modal-contact" class="header__contact-btn btn lang-nav-contact">контакты</button>
+            <button data-modal="#modal-contact" class="header__contact-btn btn lang-nav-contact">связаться</button>
           </div>
           <button class="header__burger burger">
             <span class="burger__line"></span>
@@ -70,14 +72,16 @@
             <div class="mobile-nav__lang lang">
               <div class="lang__lang-choose">
                 <span class="lang__name"> ru </span>
-                <img class="lang__arrow" src="./img/header/arrow-down.svg" width="12" height="9" alt="arrow down" />
+                <button class="lang__arrow-btn">
+                  <img class="lang__arrow" src="./img/header/arrow-down.svg" width="12" height="9" alt="arrow down" />
+                </button>
                 <ul class="lang-list">
-                  <li class="lang-list__item" data-lang="en">en</li>
-                  <li class="lang-list__item" data-lang="ru">ru</li>
+                  <li class="lang-list__item lang-list__en" data-lang="en">en</li>
+                  <li class="lang-list__item lang-list__ru" data-lang="ru">ru</li>
                 </ul>
               </div>
             </div>
-            <button data-modal="#modal-contact" class="mobile-nav__contact-btn btn lang-nav-mobile-contact">контакты</button>
+            <button data-modal="#modal-contact" class="mobile-nav__contact-btn btn lang-nav-mobile-contact">связаться</button>
           </div>
         </nav>
       </header>
@@ -466,16 +470,23 @@
               <use xlink:href="./img/sprite/symbol/sprite.svg#modal-close" />
             </svg>
           </button>
-          <h2 class="modal-contact__title modal-title">Привет, мир!</h2>
+          <h2 class="modal-contact__title modal-title lang-modal-contact-title">Рады приветствовать!</h2>
           <div class="modal-contact__content">
-            <p class="modal-contact__description">Спасибо!</p>
+            <blockquote class="modal-contact__quote">
+              <p class="modal-contact__description lang-modal-contact-description">Мы ценим Ваш интерес к архитектуре. Напишите пожалуйста ниже номер Вашего телефона, и мы перезвоним как только сможем.</p>
+              <footer class="modal-contact__footer">
+                <cite class="modal-contact__signature lang-modal-contact-signature">С любовью к архитектуре, команда Archee.</cite>
+              </footer>
+            </blockquote>
             <form data-form="contact-form" class="modal__form modal-form">
-              <input data-rules="tel" class="modal-form__input lang-placeholder-modal-search-phone" type="tel" placeholder="Введите номер телефона" name="tel" maxlength="12" />
+              <input data-rules="tel" class="modal-form__input lang-placeholder-modal-contact-phone" type="tel" placeholder="Введите номер телефона" name="tel" maxlength="12" />
               <div class="modal-form__unsuccessful-popup modal-form-popup">
                 <p class="modal-form__popup-text lang-search-modal-popup-unsuccess">Неверные значения</p>
               </div>
-              <button type="submit" class="modal-form__btn btn">Отправить</button>
-              <div class="modal-form__successful-popup hide-elem lang-search-modal-popup-success">Ответ успешно записан</div>
+              <button type="submit" class="modal-form__btn btn lang-modal-contact-btn">Отправить</button>
+              <div class="modal-form__successful-popup hide-elem">
+                <p class="modal-form__successful-popup-text lang-search-modal-popup-success">Ответ успешно записан</p>
+              </div>
             </form>
           </div>
         </div>

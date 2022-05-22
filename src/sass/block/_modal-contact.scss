@@ -1,5 +1,27 @@
 .modal-contact {
   &__inner {
-    background-color: $modal-bg-color;
+    background-color: $bg-light;
+    @include bp-desk(mobile) {
+      width: 100%;
+      min-height: 100%;
+    }
+  }
+  &__title {
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+  &__description {
+    font-size: 20px;
+    line-height: 1.4;
+    max-width: 500px;
+    margin-bottom: 25px;
+  }
+  &__signature {
+    font-size: 18px;
+    font-style: italic;
+    color: $white;
+  }
+  &__quote {
+    margin-bottom: 30px;
   }
 }

@@ -121,12 +121,12 @@
     @include font-helvetica-regular;
     max-width: 271px;
     padding: 18px 20px;
-    border: none;
+    outline: 0;
     border-radius: 6px;
-    outline: 1px solid transparent;
+    border: 1px solid transparent;
     height: 60px;
     padding-right: 50px;
-    transition: outline 0.4s linear;
+    transition: border 0.4s linear;
     @include bp-desk(notebook) {
       max-width: 100%;
     }
@@ -140,7 +140,7 @@
       color: rgba(97, 89, 77, 0.6);
     }
     &:focus {
-      outline: 1px solid $primary-color;
+      border: 1px solid $primary-color;
     }
   }
 
