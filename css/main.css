@@ -318,6 +318,10 @@ button {
   cursor: pointer;
 }
 
+blockquote {
+  margin: 0;
+}
+
 .btn {
   padding: 10px 30px;
   background-color: #d6680f;
@@ -733,6 +737,7 @@ img {
   background-color: #f7f7f7;
   padding-top: 30px;
   padding-bottom: 15px;
+  padding-right: calc(20px - (100vw - 100%));
 }
 
 .header__menu-nav {
@@ -1117,7 +1122,29 @@ img {
 }
 
 .modal-contact__inner {
-  background-color: #f7f7f7;
+  background-color: #5f9ea0;
+}
+
+.modal-contact__title {
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+.modal-contact__description {
+  font-size: 20px;
+  line-height: 1.4;
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+
+.modal-contact__signature {
+  font-size: 18px;
+  font-style: italic;
+  color: #fff;
+}
+
+.modal-contact__quote {
+  margin-bottom: 30px;
 }
 
 .modal-form-popup {
@@ -1142,13 +1169,13 @@ img {
   width: 100%;
   max-width: 271px;
   padding: 10px;
-  border: none;
   border-radius: 6px;
-  outline: 1px solid transparent;
+  outline: 0;
+  border: 1px solid transparent;
   padding-right: 50px;
-  -webkit-transition: outline .4s linear;
-  -o-transition: outline .4s linear;
-  transition: outline .4s linear;
+  -webkit-transition: border .4s linear;
+  -o-transition: border .4s linear;
+  transition: border .4s linear;
   margin-bottom: 25px;
 }
 
@@ -1197,10 +1224,11 @@ img {
   color: rgba(97,89,77,.6);
 }
 
+.modal-form__input:focus {
+  border: 1px solid #d6680f;
+}
+
 .modal-form__successful-popup-text {
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #1cff1c;
   font-family: "Helvetica Now Display",sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -1214,6 +1242,9 @@ img {
 }
 
 .modal-form__successful-popup {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #1cff1c;
   -webkit-transition: opacity .3s ease-in,visibility .3s ease-in;
   -o-transition: opacity .3s ease-in,visibility .3s ease-in;
   transition: opacity .3s ease-in,visibility .3s ease-in;
@@ -1827,14 +1858,14 @@ img {
   font-style: normal;
   max-width: 271px;
   padding: 18px 20px;
-  border: none;
+  outline: 0;
   border-radius: 6px;
-  outline: 1px solid transparent;
+  border: 1px solid transparent;
   height: 60px;
   padding-right: 50px;
-  -webkit-transition: outline .4s linear;
-  -o-transition: outline .4s linear;
-  transition: outline .4s linear;
+  -webkit-transition: border .4s linear;
+  -o-transition: border .4s linear;
+  transition: border .4s linear;
 }
 
 .search__item-input::-webkit-input-placeholder {
@@ -1883,7 +1914,7 @@ img {
 }
 
 .search__item-input:focus {
-  outline: 1px solid #d6680f;
+  border: 1px solid #d6680f;
 }
 
 .search__btn {
@@ -1982,11 +2013,11 @@ img {
 }
 
 .valid {
-  outline: 1px solid #1cff1c;
+  border: 1px solid #1cff1c;
 }
 
 .invalid {
-  outline: 1px solid #e71515;
+  border: 1px solid #e71515;
 }
 
 .active-icon {
@@ -2334,6 +2365,11 @@ img {
 
   .intro__btn {
     margin-bottom: 77px;
+  }
+
+  .modal-contact__inner {
+    width: 100%;
+    min-height: 100%;
   }
 
   .modal-form-popup {
