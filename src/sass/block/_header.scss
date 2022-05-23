@@ -47,6 +47,8 @@
   }
   &__logo {
     flex-shrink: 0;
+    cursor: pointer;
+    z-index: 1001;
   }
   &__mobile-nav {
     position: fixed;

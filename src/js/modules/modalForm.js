@@ -36,6 +36,7 @@ modalForms.forEach((form) => {
       setTimeout(() => {
         currentModalFormUnSuccessfulPopup.classList.remove("modal-form-popup--active")
       }, 1200)
+      currentFormInput.classList.add("invalid")
     }
   })
 })
