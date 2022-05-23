@@ -779,6 +779,8 @@ img {
 .header__logo {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .header__mobile-nav {
