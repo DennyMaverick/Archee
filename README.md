@@ -2,8 +2,28 @@
 
 ![css/html/javascript](https://github.com/DennyMaverick/Archee/raw/main/src/img/intro/archee.png)
 
+RU:
+
 <p>
-  This project was created for about 1 month. And I pride that I have it in my portfolio. All the technologies I used:
+  Представляю вашему вниманию проект Archee! Он был создан за 1 месяц работы. И я горжусь, что у меня есть данный сайт в моем портфолио. Технологии, что я использовал:
+</p>
+
+![sass](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/1.svg)
+![css/html/javascript](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/2.svg)
+![pixel-perfect](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/3.svg)
+![bem-naming](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/4.svg)
+![swiper.js](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/5.svg)
+![gulp](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/6.svg)
+![svg-sprites](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/7.svg)
+
+***
+
+EN: 
+
+***
+
+<p>
+  I'm glad to present the project Archee! This project was created for about 1 month. And I pride that I have it in my portfolio. The technologies I used:
 </p>
 
 ![sass](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/1.svg)
