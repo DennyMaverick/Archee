@@ -14,9 +14,11 @@
 ![gulp](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/6.svg)
 ![svg-sprites](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/7.svg)
 
-***
+
 
 ### Languages
+
+***
 
 <p>
   User may choose the language and it will be done on all site. All words translate on Russian or English languages, all placeholders in inputs also translate, the text in slider is also correctly translates. To use translation on the page I set the classes, starting with '.lang-' to all elements I want to translate and took the object langs and put there all keys that have the value of according selectors: 
@@ -66,9 +68,10 @@ hash = hash.substr(1)
   }
 ``` 
 
-***
 
 ## Adaptive
+
+***
 
 <p>
   The site is adaptive and it looks nice on different screens: 
@@ -79,17 +82,20 @@ hash = hash.substr(1)
 
 ![search-form](https://github.com/DennyMaverick/Archee/raw/main/img-readme/search-form.png)
 
-***
+
 
 ## Search Form Validation
+
+***
 
 В проекте добавлена валидация форм. В секции Search выбора услуг, если одно из полей формы заполнено неверно, появляется всплывающее окно:
 
 ![search-form](https://github.com/DennyMaverick/Archee/raw/main/img-readme/search-form-invalid.gif)
 
-***
 
 ## Modal windows
+
+***
 
 <p>
   You can see the icons in search form. They resize and change the color when you hover. I used the SVG-sprites for it, changing the property fill and using the animation transform(scale()). When you will click on these icons the modal windows will be opened, where you can change some options:
