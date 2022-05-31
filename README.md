@@ -70,5 +70,11 @@ hash = hash.substr(1)
   The site is adaptive and it looks nice on different screens: 
 </p>  
 
-![css/html/javascript](https://github.com/DennyMaverick/Archee/raw/main/img-readme/archee-mobile.png)
-![css/html/javascript](https://github.com/DennyMaverick/Archee/raw/main/img-readme/archee-desktop.png)
+![mobile](https://github.com/DennyMaverick/Archee/raw/main/img-readme/archee-mobile.png)
+![desktop](https://github.com/DennyMaverick/Archee/raw/main/img-readme/archee-desktop.png)
+
+![search-form](https://github.com/DennyMaverick/Archee/raw/main/img-readme/search-form.png)
+
+***
+
+В проекте добавлена валидация форм. В секции Search выбора услуг, если одно из полей формы заполнено неверно, появляется всплывающее окно:
