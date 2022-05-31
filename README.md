@@ -18,7 +18,6 @@
 
 ### Languages
 
-***
 
 <p>
   User may choose the language and it will be done on all site. All words translate on Russian or English languages, all placeholders in inputs also translate, the text in slider is also correctly translates. To use translation on the page I set the classes, starting with '.lang-' to all elements I want to translate and took the object langs and put there all keys that have the value of according selectors: 
@@ -71,7 +70,6 @@ hash = hash.substr(1)
 
 ## Adaptive
 
-***
 
 <p>
   The site is adaptive and it looks nice on different screens: 
@@ -86,16 +84,36 @@ hash = hash.substr(1)
 
 ## Search Form Validation
 
-***
 
 В проекте добавлена валидация форм. В секции Search выбора услуг, если одно из полей формы заполнено неверно, появляется всплывающее окно:
 
 ![search-form](https://github.com/DennyMaverick/Archee/raw/main/img-readme/search-form-invalid.gif)
 
+Всплывающие окна появляются поочередно. Это достигнуто с помощью данного кода:
+
+```
+
+for (let i = 0; i < searchItems.length; i++) {
+      if (!searchItems[i].classList.contains("valid")) {
+        searchItems.forEach((item) => {
+          item.classList.remove("invalid")
+        })
+        searchItems[i].classList.add("invalid")
+        searchItems[i].focus()
+        const inputTypeId = searchItems[i].dataset.type
+        const searchPopup = document.querySelector(`.search__${inputTypeId}-popup--unsuccess`)
+        searchPopup.classList.add(`search__${inputTypeId}-popup--active`)
+        setTimeout(() => {
+          searchPopup.classList.remove(`search__${inputTypeId}-popup--active`)
+        }, 4000)
+        break
+      }
+    }
+
+```
 
 ## Modal windows
 
-***
 
 <p>
   You can see the icons in search form. They resize and change the color when you hover. I used the SVG-sprites for it, changing the property fill and using the animation transform(scale()). When you will click on these icons the modal windows will be opened, where you can change some options:
