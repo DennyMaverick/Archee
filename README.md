@@ -6,10 +6,12 @@ RU:
 
 <p>
   Представляю вашему вниманию проект Archee, что был создан за 1 месяц работы. И я горжусь, что у меня есть данный сайт в моем портфолио. Основные причины, почему я люблю данный проект:
+</p>
+
 <ul>
-  <li>Я приобрел ценный опыт, работая над проектом: cтал лучше понимать систему сборки gulp на уровне подключения всех нужных плагинов и понимая других тонкостей работы с данным менеджером проектов.</li>
+  <li>Я приобрел ценный опыт, работая над проектом: cтал лучше понимать систему сборки gulp на уровне подключения всех нужных плагинов и понимания других тонкостей работы с данным менеджером проектов.</li>
   <li>Получил опыт работы с Pixel Perfect</li>
-  <li>Улучшил навык работы с git</li>
+  <li>Улучшил навык работы с Git</li>
   <li>Открыл несколько новых для меня методов в JavaScript</li>
   <li>Открыл один из способов добавления иностанных языков на сайт</li>
   <li>Улучшил навыки flex-box и адаптивной верстки</li>
@@ -34,7 +36,21 @@ EN:
 ***
 
 <p>
-  I'm glad to present the project Archee! This project was created for about 1 month. And I pride that I have it in my portfolio. The technologies I used:
+  I'm glad to present the project Archee! This project was created for about 1 month. And I pride that I have it in my portfolio. The main reasons why I love this project:
+</p>  
+
+<ul>
+  <li>I had got the big experience, working the project: I have become to understand gulp on level of adding all needed plugins and understanding other details with gulp.</li>
+  <li>I had got the experience of working with Pixel Perfect</li>
+  <li>I had improved the skill of working with Git</li>
+  <li>I had opened a few new methods in JavaScript</li>
+  <li>I had opened one of the ways how to add foreign languages on a site</li>
+  <li>I had improved the skills of flex-box and adaptive layout</li>
+  <li>After each commit I felt the inpire, looking the result of work on my smartphone:)</li>
+</ul>  
+  
+<p>  
+  The technologies I used:
 </p>
 
 ![sass](https://github.com/DennyMaverick/Archee/raw/main/img-readme/bages/1.svg)
