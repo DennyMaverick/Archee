@@ -66,8 +66,20 @@ EN:
 ### Languages
 
 
+RU:
+
+***
+
 <p>
-  User may choose the language and it will be done on all site. All words translate on Russian or English languages, all placeholders in inputs also translate, the text in slider is also correctly translates. To use translation on the page I set the classes, starting with '.lang-' to all elements I want to translate and took the object langs and put there all keys that have the value of according selectors: 
+  Пользователь может выбрать язык и он будет применен на сайте. Все слова переводятся на русский и английский языки, все плэйсхолдеры в полях input также переводятся, текст в слайдере также корректно переводится. Чтобы использовать перевод на странице сайта я установил классы, начиная с  '.lang-' ко всем элементам, которым требовался перевод. Далее нужно взять объект 'langs' и положить туда все ключи, что имеют значение соответствующим селекторам: 
+</p>
+
+EN:
+
+***
+
+<p>
+  User may choose the language and it will be done on all site. All words translate on Russian or English languages, all placeholders in inputs also translate, the text in slider is also correctly translates. To use translation on the landing page I set the classes, starting with '.lang-' to all elements I want to take the object 'langs' and put there all keys that have the value of according selectors: 
 </p>  
 
 ```
