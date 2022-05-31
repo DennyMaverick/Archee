@@ -78,3 +78,5 @@ hash = hash.substr(1)
 ***
 
 В проекте добавлена валидация форм. В секции Search выбора услуг, если одно из полей формы заполнено неверно, появляется всплывающее окно:
+
+![search-form](https://github.com/DennyMaverick/Archee/raw/main/img-readme/search-form-invalid.gif)
