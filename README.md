@@ -101,6 +101,18 @@ const langs = {
   },
 ```
 
+RU:
+
+***
+
+<p>
+  Дальше нужно получить значение хэш (value = ru или en ) используя следующий код: 
+</p> 
+
+EN:
+
+***
+
 <p>
   Next I get the value of hash (value = ru or en ) using this code: 
 </p>  
@@ -111,8 +123,20 @@ let hash = window.location.hash
 hash = hash.substr(1)
 ```
 
+RU:
+
+***
+
 <p>
-  And next I iterate through the object and set in each element the value that is in the object langs:
+  Затем я прохожу по объекту и устанавливаю  каждому элементу значение, которое лежит в объекте 'langs':
+</p>
+
+EN:
+
+***
+
+<p>
+  And next I iterate through the object and set to each element the value that is in the object 'langs':
 </p>
 
 ```
@@ -129,9 +153,20 @@ hash = hash.substr(1)
 
 ## Adaptive
 
+RU:
+
+***
 
 <p>
-  The site is adaptive and it looks nice on different screens: 
+  Сайт адаптивен и смотрится красиво на различных устройствах (начиная с Galaxy Fold и заканчивая настольными ПК): 
+</p> 
+
+EN:
+
+***
+
+<p>
+  The site is adaptive and it looks nice on different screens (starting with Galaxy Fold and ending PC): 
 </p>  
 
 ![mobile](https://github.com/DennyMaverick/Archee/raw/main/img-readme/archee-mobile.png)
