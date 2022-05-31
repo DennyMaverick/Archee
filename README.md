@@ -114,10 +114,44 @@ for (let i = 0; i < searchItems.length; i++) {
 
 ## Modal windows
 
+Существует определенный список городов в массивах (на русском и английском языках), и если совпадение найдено над полем 'Местоположение' в форме при успешном вводе города высвечивается всплывающее окно:
+
+```
+
+const citiesRuLang = ["Москва", "Токио", "Рим", "Лондон", "Париж", "Нью-Йорк"]
+
+const citiesEnLang = ["Moskow", "Tokio", "Roma", "London", "Paris", "New-York"]
+
+let currentArray = eval(`cities${currentLangValue.charAt(0).toUpperCase() + currentLangValue.slice(1).toLowerCase()}Lang`)
+  checkUpperCase = !!(this.value.charAt(0).toUpperCase() == this.value.charAt(0))
+
+  if (!currentArray.includes(this.value)) {
+    locationIcon.classList.add("active-icon")
+    setTimeout(() => {
+    locationIcon.classList.remove("active-icon")
+  }, 4000)
+     searchLocationPopupUnSuccess.classList.add("search-popup--active")
+     setTimeout(() => {
+     searchLocationPopupUnSuccess.classList.remove("search-popup--active")
+  }, 3000)
+     this.classList.add("invalid")
+     this.classList.remove("valid")    
+  } else if (currentArray.includes(this.value) && checkUpperCase) {
+    searchLocationPopupSuccess.classList.add("search-popup--active")
+    this.classList.remove("invalid")
+    this.classList.add("valid")
+    setTimeout(() => {
+    searchLocationPopupSuccess.classList.remove("search-popup--active")
+  }, 3000)
+ }
+
+```
 
 <p>
   You can see the icons in search form. They resize and change the color when you hover. I used the SVG-sprites for it, changing the property fill and using the animation transform(scale()). When you will click on these icons the modal windows will be opened, where you can change some options:
 </p> 
 
 ![modal-windows](https://github.com/DennyMaverick/Archee/raw/main/img-readme/modal-windows.gif)
+
+
 
