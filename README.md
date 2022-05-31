@@ -74,6 +74,25 @@ RU:
   Пользователь может выбрать язык и он будет применен на сайте. Все слова переводятся на русский и английский языки, все плэйсхолдеры в полях input также переводятся, текст в слайдере также корректно переводится. Чтобы использовать перевод на странице сайта я установил классы, начиная с  '.lang-' ко всем элементам, которым требовался перевод. Далее нужно взять объект 'langs' и положить туда все ключи, что имеют значение соответствующим селекторам: 
 </p>
 
+```
+const langs = {
+  title: {
+    ru: "Проект Archee",
+    en: "Archee Project",
+  },
+
+  //* ======= Section Intro
+
+  "intro-title": {
+    ru: "Архитектура, которая знает о чем вы мечтаете",
+    en: "Architecture that recognizes all your sensibilities",
+  },
+  "intro-description": {
+    ru: "Добро пожаловать в Archee, надежного делового партнера на вашем пути к построению лучшего будущего для всех",
+    en: "Welcome to Archee, a reliable business partner on your path to building a better looking future for all.",
+  },
+```
+
 EN:
 
 ***
@@ -109,6 +128,12 @@ RU:
   Дальше нужно получить значение хэш (value = ru или en ) используя следующий код: 
 </p> 
 
+```
+let hash = window.location.hash
+
+hash = hash.substr(1)
+```
+
 EN:
 
 ***
@@ -130,6 +155,17 @@ RU:
 <p>
   Затем я прохожу по объекту и устанавливаю  каждому элементу значение, которое лежит в объекте 'langs':
 </p>
+
+```
+// iterate through the object
+  for (let key in langs) {
+    let elem = document.querySelector(".lang-" + key)
+    
+    if (elem && langs[key][hash]) {
+      elem.innerHTML = langs[key][hash]
+    }
+  }
+``` 
 
 EN:
 
