@@ -122,28 +122,31 @@ const citiesRuLang = ["Москва", "Токио", "Рим", "Лондон", "�
 
 const citiesEnLang = ["Moskow", "Tokio", "Roma", "London", "Paris", "New-York"]
 
-let currentArray = eval(`cities${currentLangValue.charAt(0).toUpperCase() + currentLangValue.slice(1).toLowerCase()}Lang`)
-  checkUpperCase = !!(this.value.charAt(0).toUpperCase() == this.value.charAt(0))
+locationInput.addEventListener("change", function () {
+   let currentLangValue = document.querySelector(".lang__name").innerHTML
+   let currentArray = eval(`cities${currentLangValue.charAt(0).toUpperCase() + currentLangValue.slice(1).toLowerCase()}Lang`)
+   checkUpperCase = !!(this.value.charAt(0).toUpperCase() == this.value.charAt(0))
 
-  if (!currentArray.includes(this.value)) {
-    locationIcon.classList.add("active-icon")
-    setTimeout(() => {
-    locationIcon.classList.remove("active-icon")
-  }, 4000)
-     searchLocationPopupUnSuccess.classList.add("search-popup--active")
+   if (!currentArray.includes(this.value)) {
+     locationIcon.classList.add("active-icon")
      setTimeout(() => {
-     searchLocationPopupUnSuccess.classList.remove("search-popup--active")
-  }, 3000)
-     this.classList.add("invalid")
-     this.classList.remove("valid")    
-  } else if (currentArray.includes(this.value) && checkUpperCase) {
-    searchLocationPopupSuccess.classList.add("search-popup--active")
-    this.classList.remove("invalid")
-    this.classList.add("valid")
-    setTimeout(() => {
-    searchLocationPopupSuccess.classList.remove("search-popup--active")
-  }, 3000)
- }
+     locationIcon.classList.remove("active-icon")
+   }, 4000)
+      searchLocationPopupUnSuccess.classList.add("search-popup--active")
+      setTimeout(() => {
+      searchLocationPopupUnSuccess.classList.remove("search-popup--active")
+   }, 3000)
+      this.classList.add("invalid")
+      this.classList.remove("valid")    
+   } else if (currentArray.includes(this.value) && checkUpperCase) {
+     searchLocationPopupSuccess.classList.add("search-popup--active")
+     this.classList.remove("invalid")
+     this.classList.add("valid")
+     setTimeout(() => {
+     searchLocationPopupSuccess.classList.remove("search-popup--active")
+   }, 3000)
+  }
+ })
 
 ```
 
