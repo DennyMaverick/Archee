@@ -331,7 +331,7 @@ EN:
 
 ***
 
-The list of the cities exists in the Arrays (in English and in Russian), and if the accordance is found and user successfully has entered the city, the pop-up window appears above the fiel 'Location':
+The list of the cities exists in the Arrays (in English and in Russian), and if the accordance has found the pop-up window appears above the field 'Location':
 
 ```
 
