@@ -5,7 +5,7 @@
 RU:
 
 <p>
-  Представляю вашему вниманию проект Archee, что был создан за 1 месяц работы. И я горжусь, что у меня есть данный сайт в моем портфолио. Основные причины, почему я люблю данный проект:
+  Представляю вашему вниманию проект Archee, что был создан за 1 месяц работы. И я горжусь, что у меня есть данный сайт в портфолио. Основные причины, почему я люблю данный проект:
 </p>
 
 <ul>
@@ -80,13 +80,14 @@ const langs = {
     ru: "Проект Archee",
     en: "Archee Project",
   },
-
+  //
   //* ======= Section Intro
-
+  //
   "intro-title": {
     ru: "Архитектура, которая знает о чем вы мечтаете",
     en: "Architecture that recognizes all your sensibilities",
   },
+  //
   "intro-description": {
     ru: "Добро пожаловать в Archee, надежного делового партнера на вашем пути к построению лучшего будущего для всех",
     en: "Welcome to Archee, a reliable business partner on your path to building a better looking future for all.",
@@ -107,13 +108,14 @@ const langs = {
     ru: "Проект Archee",
     en: "Archee Project",
   },
-
+  //
   //* ======= Section Intro
-
+  //
   "intro-title": {
     ru: "Архитектура, которая знает о чем вы мечтаете",
     en: "Architecture that recognizes all your sensibilities",
   },
+  //
   "intro-description": {
     ru: "Добро пожаловать в Archee, надежного делового партнера на вашем пути к построению лучшего будущего для всех",
     en: "Welcome to Archee, a reliable business partner on your path to building a better looking future for all.",
@@ -130,7 +132,7 @@ RU:
 
 ```
 let hash = window.location.hash
-
+//
 hash = hash.substr(1)
 ```
 
@@ -144,7 +146,7 @@ EN:
 
 ```
 let hash = window.location.hash
-
+//
 hash = hash.substr(1)
 ```
 
@@ -160,7 +162,7 @@ RU:
 // iterate through the object
   for (let key in langs) {
     let elem = document.querySelector(".lang-" + key)
-    
+    //
     if (elem && langs[key][hash]) {
       elem.innerHTML = langs[key][hash]
     }
@@ -179,7 +181,7 @@ EN:
 // iterate through the object
   for (let key in langs) {
     let elem = document.querySelector(".lang-" + key)
-    
+    //
     if (elem && langs[key][hash]) {
       elem.innerHTML = langs[key][hash]
     }
@@ -214,12 +216,49 @@ EN:
 
 ## Search Form Validation
 
+RU:
+
+***
 
 В проекте добавлена валидация форм. В секции Search выбора услуг, если одно из полей формы заполнено неверно, появляется всплывающее окно:
 
 ![search-form](https://github.com/DennyMaverick/Archee/raw/main/img-readme/search-form-invalid.gif)
 
 Всплывающие окна появляются поочередно. Это достигнуто с помощью данного кода:
+
+```
+
+for (let i = 0; i < searchItems.length; i++) {
+      if (!searchItems[i].classList.contains("valid")) {
+        searchItems.forEach((item) => {
+          item.classList.remove("invalid")
+        })
+        //
+        searchItems[i].classList.add("invalid")
+        searchItems[i].focus()
+        //
+        const inputTypeId = searchItems[i].dataset.type
+        const searchPopup = document.querySelector(`.search__${inputTypeId}-popup--unsuccess`)
+        searchPopup.classList.add(`search__${inputTypeId}-popup--active`)
+        //
+        setTimeout(() => {
+          searchPopup.classList.remove(`search__${inputTypeId}-popup--active`)
+        }, 4000)
+        break
+      }
+    }
+
+```
+
+EN:
+
+***
+
+The validation of forms also have added to the project. The pop-up window in a section Search appears if one of the field of the form is filled incorrectly:
+
+![search-form](https://github.com/DennyMaverick/Archee/raw/main/img-readme/search-form-invalid.gif)
+
+The pop-up windows appear for each other. It has reached for this code:
 
 ```
 
@@ -244,6 +283,10 @@ for (let i = 0; i < searchItems.length; i++) {
 
 ## Modal windows
 
+RU:
+
+***
+
 Существует определенный список городов в массивах (на русском и английском языках), и если совпадение найдено над полем 'Местоположение' в форме при успешном вводе города высвечивается всплывающее окно:
 
 ```
@@ -256,18 +299,21 @@ locationInput.addEventListener("change", function () {
    let currentLangValue = document.querySelector(".lang__name").innerHTML
    let currentArray = eval(`cities${currentLangValue.charAt(0).toUpperCase() + currentLangValue.slice(1).toLowerCase()}Lang`)
    checkUpperCase = !!(this.value.charAt(0).toUpperCase() == this.value.charAt(0))
-
+  //
    if (!currentArray.includes(this.value)) {
      locationIcon.classList.add("active-icon")
      setTimeout(() => {
      locationIcon.classList.remove("active-icon")
    }, 4000)
+   //
       searchLocationPopupUnSuccess.classList.add("search-popup--active")
       setTimeout(() => {
       searchLocationPopupUnSuccess.classList.remove("search-popup--active")
    }, 3000)
+   //
       this.classList.add("invalid")
-      this.classList.remove("valid")    
+      this.classList.remove("valid")  
+   //
    } else if (currentArray.includes(this.value) && checkUpperCase) {
      searchLocationPopupSuccess.classList.add("search-popup--active")
      this.classList.remove("invalid")
@@ -275,6 +321,51 @@ locationInput.addEventListener("change", function () {
      setTimeout(() => {
      searchLocationPopupSuccess.classList.remove("search-popup--active")
    }, 3000)
+   //
+  }
+ })
+
+```
+
+EN:
+
+***
+
+The list of the cities exists in the Arrays (in English and in Russian), and if the accordance is found and user successfully has entered the city, the pop-up window appears above the fiel 'Location':
+
+```
+
+const citiesRuLang = ["Москва", "Токио", "Рим", "Лондон", "Париж", "Нью-Йорк"]
+
+const citiesEnLang = ["Moskow", "Tokio", "Roma", "London", "Paris", "New-York"]
+
+locationInput.addEventListener("change", function () {
+   let currentLangValue = document.querySelector(".lang__name").innerHTML
+   let currentArray = eval(`cities${currentLangValue.charAt(0).toUpperCase() + currentLangValue.slice(1).toLowerCase()}Lang`)
+   checkUpperCase = !!(this.value.charAt(0).toUpperCase() == this.value.charAt(0))
+  //
+   if (!currentArray.includes(this.value)) {
+     locationIcon.classList.add("active-icon")
+     setTimeout(() => {
+     locationIcon.classList.remove("active-icon")
+   }, 4000)
+   //
+      searchLocationPopupUnSuccess.classList.add("search-popup--active")
+      setTimeout(() => {
+      searchLocationPopupUnSuccess.classList.remove("search-popup--active")
+   }, 3000)
+   //
+      this.classList.add("invalid")
+      this.classList.remove("valid")  
+   //
+   } else if (currentArray.includes(this.value) && checkUpperCase) {
+     searchLocationPopupSuccess.classList.add("search-popup--active")
+     this.classList.remove("invalid")
+     this.classList.add("valid")
+     setTimeout(() => {
+     searchLocationPopupSuccess.classList.remove("search-popup--active")
+   }, 3000)
+   //
   }
  })
 
