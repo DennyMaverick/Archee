@@ -469,5 +469,5 @@ module.exports = svgsprite;
   В начале возникли сложности с генерированием  SVG-спрайта: все работало как нужно, однако gulp формировал кроме SVG-спрайта все изображения svg:
 </p>
 
-![svg-sprite](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite.jpeg)
+![svg-sprite](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite.jpg)
 
