@@ -396,6 +396,41 @@ RU:
 
 ***
 
+Проект имеет следующую структуру:
+
+<ul>
+  <li>![file config](https://github.com/DennyMaverick/Archee/raw/main/img-readme/config.png) config</li>
+    <ul>
+      <li>![js file](https://github.com/DennyMaverick/Archee/raw/main/img-readme/js.png) app.js</li>
+      <li>![js file](https://github.com/DennyMaverick/Archee/raw/main/img-readme/js.png) path.js</li>
+    </ul>
+  <li>node_modules</li>
+  <li>public</li>
+  <li>src</li>
+    <li>font</li>
+    <li>html</li>
+    <li>img</li>
+    <li>js</li>
+    <li>sass</li>
+  <li>task</li>
+    <ul>
+      <li>clear.js</li>
+      <li>css.js</li>
+      <li>favicon.js</li>
+      <li>font.js</li>
+      <li>html.js</li>
+      <li>img.js</li>
+      <li>js.js</li>
+      <li>libs.js</li>
+      <li>scss.js</li>
+      <li>server.js</li>
+      <li>svgsprite.js</li>
+    </ul>
+  <li>.gitignore</li>
+  <li>gulpfile.js</li>
+  <li>package.json</li>
+</ul>
+
 SVG-sprite был сгенерирован с помощью gulp. Использовалась следующая задача:
 
 ```
@@ -470,4 +505,8 @@ module.exports = svgsprite;
 </p>
 
 ![svg-sprite](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite.jpg)
+
+Это решилось, добавив эти изображения в исключение в задаче img:
+
+
 
