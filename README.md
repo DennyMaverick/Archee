@@ -390,6 +390,84 @@ EN:
 
 ![modal-windows](https://github.com/DennyMaverick/Archee/raw/main/img-readme/modal-windows.gif)
 
-## Modal location
+### Gulp
 
+RU:
+
+***
+
+SVG-sprite был сгенерирован с помощью gulp. Использовалась следующая задача:
+
+```
+
+const { src, dest } = require("gulp");
+
+// Конфигурация
+// Configuration
+
+const path = require("../config/path.js");
+const app = require("../config/app.js");
+
+// Плагины
+// Plugins
+
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
+const svgSprite = require('gulp-svg-sprite');
+const svgcheerio = require('gulp-cheerio');
+const svgmin = require('gulp-svgmin');
+const replace = require('gulp-replace');
+
+// Обработка JavaScript
+// JavaScript processing
+
+const svgsprite = () => {
+  return src(path.svgsprite.src)
+    .pipe(
+      plumber({
+        errorHandler: notify.onError((error) => ({
+          title: "JavaScript",
+          message: error.message,
+        })),
+      })
+    )
+    .pipe(
+      svgmin({
+        js2svg: {
+          pretty: true,
+        },
+      })
+    )
+    .pipe(
+      svgcheerio({
+        run: function ($) {
+          $("[fill]").removeAttr("fill")
+          $("[stroke]").removeAttr("stroke")
+          $("[style]").removeAttr("style")
+        },
+        parserOptions: {xmlMode: true},
+      })
+    )
+    .pipe(replace("&gt;", ">"))
+    .pipe(
+      svgSprite({
+        mode: {
+          symbol: {
+            sprite: "sprite.svg",
+          },
+        },
+      })
+    )
+    .pipe(dest(path.svgsprite.dest))
+}
+
+module.exports = svgsprite;
+
+```
+
+<p>
+  В начале возникли сложности с генерированием  SVG-спрайта: все работало как нужно, однако gulp формировал кроме SVG-спрайта все изображения svg:
+</p>
+
+![svg-sprite](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite.jpeg)
 
