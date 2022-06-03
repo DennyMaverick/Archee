@@ -407,11 +407,13 @@ RU:
   <li> <img src="./img-readme/node.png" alt="" width="14" height="15"> node_modules</li>
   <li> <img src="./img-readme/public.png" alt="" width="14" height="15"> public</li>
   <li> <img src="./img-readme/src-folder.png" alt="" width="14" height="15"> src</li>
-    <li> <img src="./img-readme/font.png" alt="" width="14" height="15"> font</li>
-    <li> <img src="./img-readme/html.png" alt="" width="14" height="15"> html</li>
-    <li> <img src="./img-readme/img.png" alt="" width="14" height="15"> img</li>
-    <li> <img src="./img-readme/js-folder.png" alt="" width="14" height="15"> js</li>
-    <li> <img src="./img-readme/sass.png" alt="" width="14" height="15"> sass</li>
+    <ul>
+      <li> <img src="./img-readme/font.png" alt="" width="14" height="15"> font</li>
+      <li> <img src="./img-readme/html.png" alt="" width="14" height="15"> html</li>
+      <li> <img src="./img-readme/img.png" alt="" width="14" height="15"> img</li>
+      <li> <img src="./img-readme/js-folder.png" alt="" width="14" height="15"> js</li>
+      <li> <img src="./img-readme/sass.png" alt="" width="14" height="15"> sass</li>
+    </ul>  
   <li> <img src="./img-readme/task.png" alt="" width="14" height="15"> task</li>
     <ul>
       <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> clear.js</li>
