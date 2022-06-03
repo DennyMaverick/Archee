@@ -401,34 +401,34 @@ RU:
 <ul>
   <li>config</li>
     <ul>
-      <li> <img src="./img-readme/js-file.png" alt="app.js"> app.js </li>
-      <li> <img src="./img-readme/js-file.png" alt="path.js"> path.js </li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> app.js </li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> path.js </li>
     </ul>
-  <li>node_modules</li>
-  <li>public</li>
-  <li>src</li>
-    <li>font</li>
-    <li>html</li>
-    <li>img</li>
-    <li>js</li>
-    <li>sass</li>
+  <li> <img src="./img-readme/node.png" alt="" width="14" height="15"> node_modules</li>
+  <li> <img src="./img-readme/public.png" alt="" width="14" height="15"> public</li>
+  <li> <img src="./img-readme/src.png" alt="" width="14" height="15"> src</li>
+    <li> <img src="./img-readme/font.png" alt="" width="14" height="15"> font</li>
+    <li> <img src="./img-readme/html.png" alt="" width="14" height="15"> html</li>
+    <li> <img src="./img-readme/img.png" alt="" width="14" height="15"> img</li>
+    <li> <img src="./img-readme/js-folder.png" alt="" width="14" height="15"> js</li>
+    <li> <img src="./img-readme/sass.png" alt="" width="14" height="15"> sass</li>
   <li>task</li>
     <ul>
-      <li>clear.js</li>
-      <li>css.js</li>
-      <li>favicon.js</li>
-      <li>font.js</li>
-      <li>html.js</li>
-      <li>img.js</li>
-      <li>js.js</li>
-      <li>libs.js</li>
-      <li>scss.js</li>
-      <li>server.js</li>
-      <li>svgsprite.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> clear.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> css.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> favicon.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> font.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> html.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> img.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> js.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> libs.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> scss.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> server.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> svgsprite.js</li>
     </ul>
-  <li>.gitignore</li>
-  <li>gulpfile.js</li>
-  <li>package.json</li>
+  <li> <img src="./img-readme/git.png" alt="" width="14" height="15"> .gitignore</li>
+  <li> <img src="./img-readme/gulp.png" alt="" width="14" height="15"> gulpfile.js</li>
+  <li> <img src="./img-readme/package-json.png" alt="" width="14" height="15"> package.json</li>
 </ul>
 
 SVG-sprite был сгенерирован с помощью gulp. Использовалась следующая задача:
