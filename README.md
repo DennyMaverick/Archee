@@ -399,10 +399,10 @@ RU:
 Проект имеет следующую структуру:
 
 <ul>
-  <li>![file config](https://github.com/DennyMaverick/Archee/raw/main/img-readme/config.png) config</li>
+  <li>config</li>
     <ul>
-      <li>![js file](https://github.com/DennyMaverick/Archee/raw/main/img-readme/js.png) app.js</li>
-      <li>![js file](https://github.com/DennyMaverick/Archee/raw/main/img-readme/js.png) path.js</li>
+      <li> <img src="./img/img-readme/js.png" alt="app.js"> app.js</li>
+      <li> <img src="./img/img-readme/js.png" alt="path.js"> path.js</li>
     </ul>
   <li>node_modules</li>
   <li>public</li>
