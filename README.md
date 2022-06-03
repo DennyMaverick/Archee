@@ -402,10 +402,18 @@ RU:
   <li>config</li>
     <ul>
       <li> 
-        <img src="./img/img-readme/js.png" alt="app.js"> app.js
+        
+        <img src="./img/img-readme/js.png" alt="app.js"> 
+        
+        app.js
+        
       </li>
       <li>
-        <img src="./img/img-readme/js.png" alt="path.js"> path.js
+        
+        <img src="./img/img-readme/js.png" alt="path.js">
+        
+        path.js
+        
       </li>
     </ul>
   <li>node_modules</li>
