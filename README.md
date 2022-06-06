@@ -327,6 +327,8 @@ locationInput.addEventListener("change", function () {
 
 ```
 
+В проекте во всех модальных реализован универсальный скрипт закрытия модальных окон (вне модального окна или на крестик). И если есть повторяющиеся модальные окна... 
+
 EN:
 
 ***
@@ -510,5 +512,6 @@ module.exports = svgsprite;
 
 Это решилось, добавив эти изображения в исключение в задаче img:
 
+![sprite-img](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite-img.jpg)
 
 
