@@ -15,8 +15,17 @@
     <div class="wrapper">
       <header id="home" class="header">
         <div class="header__inner container">
+          <div class="header__theme theme">
+            <svg class="switcher theme__icon theme__dark" data-theme="dark">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#dark-icon" />
+            </svg>
+            <svg class="switcher theme__icon theme__light" data-theme="light">
+              <use xlink:href="./img/sprite/symbol/sprite.svg#light-icon" />
+            </svg>
+            <span class="theme__popup"> Switch to light theme </span>
+          </div>
           <a class="header__logo logo" href="#">
-            <img src="./img/logo/logo.svg" class="logo__image" alt="logo" />
+            <img src="./img/logo/logo.svg" class="logo__image" alt="logo" /><span class="logo__text">Archee</span>
           </a>
           <nav class="header__menu-nav menu-nav">
             <ul class="menu-nav__list">
@@ -39,7 +48,9 @@
               <div class="lang__lang-choose">
                 <span class="lang__name"> ru </span>
                 <button class="lang__arrow-btn">
-                  <img class="lang__arrow" src="./img/header/arrow-down.svg" width="12" height="9" alt="arrow down" />
+                  <svg class="lang__arrow" width="12" height="9" alt="arrow down">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#arrow-down" />
+                  </svg>
                 </button>
                 <ul class="lang-list">
                   <li class="lang-list__item lang-list__en" data-lang="en">en</li>
@@ -73,7 +84,9 @@
               <div class="lang__lang-choose">
                 <span class="lang__name"> ru </span>
                 <button class="lang__arrow-btn">
-                  <img class="lang__arrow" src="./img/header/arrow-down.svg" width="12" height="9" alt="arrow down" />
+                  <svg class="lang__arrow" width="12" height="9" alt="arrow down">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#arrow-down" />
+                  </svg>
                 </button>
                 <ul class="lang-list">
                   <li class="lang-list__item lang-list__en" data-lang="en">en</li>
@@ -188,19 +201,25 @@
             <h2 class="vhidden lang-hidden-benefits">Наши преимущества</h2>
             <ul class="benefits__items">
               <li class="benefits__item">
-                <img class="benefits__item-img" src="./img/benefits/arch-interior.svg" alt="benefit image" />
+                <svg class="benefits__item-img" alt="benefit image">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#arch-interior" />
+                  </svg>
                 <h3 class="benefits__item-title title lang-benefits-title-one">Арка и Интерьер</h3>
                 <p class="benefits__item-desc lang-benefits-desc-one">Мы привносим волшебство в здание и интерьер, чтобы воплотить в жизнь дом вашей мечты.</p>
                 <a class="benefits__projects lang-benefits-projects-one"> 120 <span class="lang-benefits-projects">Проекты</span> </a>
               </li>
               <li class="benefits__item">
-                <img class="benefits__item-img" src="./img/benefits/design.svg" alt="benefit image" />
+                <svg class="benefits__item-img" alt="benefit image">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#design" />
+                  </svg>
                 <h3 class="benefits__item-title title lang-benefits-title-two">Дизайн</h3>
                 <p class="benefits__item-desc lang-benefits-desc-two">Креативный дизайн с использованием цифровых продуктов, которые помогут вам продвигать свой бизнес.</p>
                 <a class="benefits__projects lang-benefits-projects-two"> 50 <span class="lang-benefits-projects">Проекты</span> </a>
               </li>
               <li class="benefits__item">
-                <img class="benefits__item-img" src="./img/benefits/product.svg" alt="benefit image" />
+                <svg class="benefits__item-img" alt="benefit image">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#product" />
+                  </svg>
                 <h3 class="benefits__item-title title lang-benefits-title-three">Продукт</h3>
                 <p class="benefits__item-desc lang-benefits-desc-three">Мы создаем самые красивые вещи для дома вашей мечты.</p>
                 <a class="benefits__projects lang-benefits-projects-three"> 310 <span class="lang-benefits-projects">Проекты</span> </a>
@@ -210,7 +229,7 @@
         </section>
         <section id="about" class="about">
           <div class="about__inner container">
-            <img class="about__image" src="./img/about/about-home.jpg" alt="about image" />
+            <img class="about__image" src="./img/about/about-home.png" alt="about image" />
             <div class="about__content">
               <h2 class="about__title title title--section lang-about-title">Мы стремимся задавать тенденции вашей современной жизни.</h2>
               <p class="about__description lang-about-description">Более 39 000 человек работают на нас в более чем 70 странах по всему миру. Этот всеобщий охват сочетается со специализированными услугами. Archee позволяет вам создавать неограниченное количество панелей и пользовательских форм недвижимости для сбора потенциальных клиентов и ведения учета всей информации.</p>
@@ -347,7 +366,7 @@
         <div class="container">
           <div class="footer__inner">
             <a class="footer__logo logo" href="#">
-              <img src="./img/logo/logo.svg" class="logo" alt="logo" />
+              <img src="./img/logo/logo.svg" class="logo__image" alt="logo" /><span class="logo__text">Archee</span>
             </a>
             <address class="footer__address">
               <span class="lang-footer-city">Зурич, Швейцария</span><br />

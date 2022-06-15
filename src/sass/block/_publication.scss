@@ -4,8 +4,14 @@
   &__info {
     font-weight: 700;
     @include font(14px, 28px);
-    color: $color-text-base;
     margin-bottom: 9px;
+    transition: color .3s ease-in;
+    &--light {
+      color: $color-text-base;
+    }
+    &--dark {
+      color: $white;
+    }
   }
   // .publication__content
 
@@ -48,12 +54,24 @@
 
   &__description {
     @include font(16px, 28px);
-    color: $color-text-base;
     max-width: 453px;
+    transition: color .3s ease-in;
+    &--light {
+      color: $color-text-base;
+    }
+    &--dark {
+      color: $white;
+    }
   }
 
   &__link {
     transition: color .3s ease-in;
+    &--light {
+      color: $black;
+    }
+    &--dark {
+      color: $white;
+    }
     &:hover {
       color: $primary-color;
     }

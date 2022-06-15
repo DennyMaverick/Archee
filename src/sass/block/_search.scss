@@ -8,12 +8,18 @@
   // .search__form
   &__form {
     padding: 50px;
-    background-color: $white;
     box-shadow: 30px 50px 150px rgba(39, 31, 26, 0.2);
     border-radius: 10px;
     max-width: 1140px;
+    transition: background-color .3s ease-in;
     @include bp-desk(mobile-sm) {
       padding: 22px;
+    }
+    &--light {
+      background-color: $white;
+    }
+    &--dark {
+      background-color: $grey;
     }
   }
 

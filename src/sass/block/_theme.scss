@@ -1,0 +1,63 @@
+.theme {
+  &__icon {
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+  }
+  &__dark {
+    fill: $color-dark-icon;
+    stroke: $white;
+  }
+  &__light {
+    fill: $color-light-icon;
+    stroke: $white;
+  }
+  &__popup {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    font-size: 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px $white;
+    transition: opacity 0.3s ease-in, color 0.3s ease-in,
+      background-color 0.3s ease-in;
+    &::after {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 29%;
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+    }
+    &--light {
+      background-color: $white;
+      color: $black;
+      &::after {
+        transition: border-right 0.3s ease-in;
+        border-right: 5px solid $white;
+      }
+    }
+    &--dark {
+      color: $white;
+      background-color: $black;
+      &::after {
+        transition: border-right 0.3s ease-in;
+        border-right: 5px solid $black;
+      }
+    }
+    &.show {
+      font-size: 10px;
+      visibility: visible;
+      opacity: 1;
+      height: auto;
+      width: 215px;
+    }
+  }
+}

@@ -44,13 +44,21 @@ html,
 body {
   @include reset-model;
   min-height: 100vh;
-  // background-color: #e5e5e5;
   scroll-behavior: smooth;
   @include font-helvetica-regular;
   font-size: $font-size-base;
   line-height: $line-height-base;
 }
 
+.body {
+  transition: background-color .3s ease-in;
+  &--light {
+    background-color: $color-bg-second;
+  }
+  &--dark {
+    background-color: $black;
+  }
+}
 
 // Сброс списка, ссылок и кнопки
 ul {

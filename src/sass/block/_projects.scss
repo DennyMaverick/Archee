@@ -6,20 +6,18 @@
   @include bp-desk(mobile) {
     padding: 43px 0 70px 0;
   }
-  // .projects__inner
-
-  // &__inner {
-  // }
-
-  // .projects__items
-
-  // &__items {
-  // }
 
   // .projects__title
 
   &__title {
     margin-bottom: 50px;
+    transition: color .3s ease-in;
+    &--light {
+      color: $black;
+    }
+    &--dark {
+      color: $white;
+    }
     @include bp-desk(mobile) {
       font-size: 38px;
     }

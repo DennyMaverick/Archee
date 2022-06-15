@@ -21,7 +21,13 @@
     max-width: 249px;
     font-weight: 500;
     @include font(12px, 18px);
-    color: $color-text-base;
     margin-right: -1px;
+    transition: color .3s ease-in;
+    &--light {
+      color: $color-text-base;
+    }
+    &--dark {
+      color: $white;
+    }
   }
 }

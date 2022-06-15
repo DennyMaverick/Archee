@@ -1,6 +1,5 @@
 .footer-list {
   @include font(16px, 28px);
-  color: $color-text-base;
   & + & {
     @include bp-desk(mobile) {
       margin-top: 20px;

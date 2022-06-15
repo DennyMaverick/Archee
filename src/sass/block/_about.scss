@@ -1,7 +1,13 @@
 .about {
   padding-top: 75px;
   padding-bottom: 75px;
-  background-color: $color-bg-fouth;
+  transition: background-color .3s ease-in;
+  &--light {
+    background-color: $color-bg-fouth;
+  }
+  &--dark {
+    background-color: $black;
+  }
   // .about__inner
 
   &__inner {
@@ -17,7 +23,6 @@
 
   &__image {
     margin-left: -140px;
-    mix-blend-mode: darken;
     height: 571px;
     max-width: 833px;
     margin-top: -8px;
@@ -51,6 +56,13 @@
   &__title {
     max-width: 388px;
     margin-bottom: 20px;
+    transition: color .3s ease-in;
+    &--light {
+      color: $black;
+    }
+    &--dark {
+      color: $white;
+    }
     @include bp-desk(large) {
       max-width: 550px;
     }
@@ -69,6 +81,13 @@
     color: $color-text-base;
     max-width: 419px;
     margin-bottom: 40px;
+    transition: color .3s ease-in;
+    &--light {
+      color: $darken;
+    }
+    &--dark {
+      color: $white;
+    }
     @include bp-desk(large) {
       max-width: 450px;
     }

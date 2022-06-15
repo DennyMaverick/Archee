@@ -13,10 +13,16 @@
   &__link {
     font-weight: 500;
     @include font(14px, 21px);
-    color: $black;
     text-transform: uppercase;
     padding: 5px;
     position: relative;
+    transition: color .3s ease-in;
+    &--light {
+      color: $black;
+    }
+    &--dark {
+      color: $white;
+    }
     &::before {
       content: '';
       position: absolute;

@@ -4,9 +4,15 @@
     text-transform: capitalize;
     @include font(16px, 24px);
     letter-spacing: 0.02em;
-    color: #61594d;
     margin-bottom: 26px;
     margin-top: -4px;
+    transition: color .3s ease-in;
+    &--light {
+      color: $color-text-base;
+    }
+    &--dark {
+      color: $white;
+    }
   }
   // .rate__title
 
@@ -14,9 +20,15 @@
     @include font-cabinet-bold();
     @include font(20px, 22px);
     letter-spacing: 0.02em;
-    color: $black;
     margin-bottom: 7px;
     margin-top: -2px;
+    transition: color .3s ease-in;
+    &--light {
+      color: $black;
+    }
+    &--dark {
+      color: $white;
+    }
     }
   &__value {
     margin-left: 25px;

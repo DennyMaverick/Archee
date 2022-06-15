@@ -1,11 +1,24 @@
 .footer {
+  transition: color .3s ease-in;
+  &--light {
+    color: $color-text-base;
+  }
+  &--dark {
+    color: $white;
+  }
   // .footer__inner
   &__inner {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 50px;
-    border-top: 1px solid $color-text-base;
+    transition: border-top .3s ease-in;
+    &--light {
+      border-top: 1px solid $color-text-base;
+    }
+    &--dark {
+      border-top: 1px solid $white;
+    }
     @include bp-desk(mobile) {
       flex-direction: column;
     }

@@ -6,10 +6,16 @@
   transform: translateX(-1000px);
   opacity: 0;
   height: 0;
-  transition: transform 1s linear, opacity 1s linear, height 1s linear;
+  transition: transform 1s linear, opacity 1s linear, height 1s linear, background-color .3s ease-in;
   background-color: $white;
   color: $black;
   z-index: 1000;
+  &--light {
+    background-color: $white;
+  }
+  &--dark {
+    background-color: $black;
+  }
   &--active {
     transform: translate(0, 0);
     opacity: 1;
@@ -19,6 +25,12 @@
     margin-top: 20px;
   }
   &__link {
+    &--light {
+      color: $black;
+    }
+    &--dark {
+      color: $white;
+    }
     font-size: 18px;
   }
   &__lang {

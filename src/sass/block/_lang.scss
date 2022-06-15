@@ -1,5 +1,12 @@
 .lang {
   position: relative;
+  transition: color .3s ease-in;
+  &--light {
+    color: $black;
+  }
+  &--dark {
+    color: $white;
+  }
   // .lang__lang-choose
   &-list {
     height: 0;
@@ -13,7 +20,6 @@
     &__item {
       font-weight: 500;
       @include font(14px, 21px);
-      color: $black;
       text-transform: uppercase;
       cursor: pointer;
       &:hover {
@@ -43,7 +49,16 @@
     align-items: center;
     font-weight: 500;
     @include font(14px, 21px);
-    color: $black;
     text-transform: uppercase;
+  }
+  &__arrow {
+    fill: none;
+    stroke-width: 1.5px;
+    &--light {
+      stroke: $black;
+    }
+    &--dark {
+      stroke: $white;
+    }
   }
 }

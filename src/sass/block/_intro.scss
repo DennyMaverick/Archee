@@ -1,5 +1,4 @@
 .intro {
-  background-color: $color-bg-second;
   padding-top: 220px;
   padding-bottom: 181px;
   background-image: url('../img/intro/blur.svg'),
@@ -7,6 +6,13 @@
   background-position: top 98px left 26px, top 220px right 0;
   background-repeat: no-repeat, no-repeat;
   background-size: 249px 220px, 838px 600px;
+  transition: background-color .3s ease-in;
+  &--light {
+    background-color: $color-bg-second;
+  }
+  &--dark {
+    background-color: $color-bg-dark;
+  }
   @include bp-desk(notebook) {
     background-size: 249px 220px, 580px auto;
   }
@@ -33,6 +39,14 @@
   &__title {
     max-width: 533px;
     margin-bottom: 20px;
+    transition: color .3s ease-in, text-shadow .3s ease-in;
+    &--light {
+      color: $intro-title-color-light;
+    }
+    &--dark {
+      color: $white;
+      text-shadow: 3px 3px 10px $primary-color;
+    }
     @include bp-desk(notebook) {
       font-size: 48px;
     }
@@ -49,8 +63,15 @@
 
   &__subtitle {
     max-width: 452px;
+    transition: color .3s ease-in, text-shadow .3s ease-in;
+    &--light {
+      color: $intro-subtitle-color-light;
+    }
+    &--dark {
+      color: $white;
+      text-shadow: 3px 3px 10px $primary-color;
+    }
     @include font(18px, 30px);
-    color: $color-text-base;
     margin-bottom: 34px;
     @include bp-desk(notebook) {
       max-width: 350px;

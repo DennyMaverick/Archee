@@ -1,14 +1,14 @@
 // drop-down lang
 const arrowsDown = document.querySelectorAll(".lang__arrow")
+const arrowsBtn = document.querySelectorAll(".lang__arrow-btn")
 
-arrowsDown.forEach(function (arrow) {
+arrowsBtn.forEach(function (arrow) {
   arrow.addEventListener("click", function () {
-    const currentClosestArrowBtn = this.closest(".lang__arrow-btn")
-    const currentLangList = currentClosestArrowBtn.nextElementSibling
+    const currentLangList = this.nextElementSibling
 
     currentLangList.classList.toggle("lang-list__show")
 
-    this.classList.toggle("lang__arrow-rotate")
+    this.querySelector(".lang__arrow").classList.toggle("lang__arrow-rotate")
   })
 })
 

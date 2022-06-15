@@ -16,8 +16,13 @@
     content: '';
     display: block;
     margin-bottom: 20px;
-    border-top: 1px solid $color-text-base;
     max-width: 300px;
+  }
+  &--decore-light::before {
+    border-top: 1px solid $color-text-base;
+  }
+  &--decore-dark::before {
+    border-top: 1px solid $white;
   }
   &--white {
     color: $white;

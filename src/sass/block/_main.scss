@@ -1,4 +1,12 @@
 .main {
+  margin: 1px;
+  transition: background-color .3s ease-in;
+  &--light {
+    background-color: $white;
+  }
+  &--dark {
+    background-color: $black;
+  }
   // .main__search
   &__search {
     margin-top: -112px;

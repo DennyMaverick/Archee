@@ -8,7 +8,18 @@
   padding-bottom: 15px;
   // динамический padding для корректного отображения модальных окон
   padding-right: calc(20px - (100vw - 100%));
+  transition: background-color .3s ease-in;
+  &--light {
+    background-color: $color-bg-second;
+  }
+  &--dark {
+    background-color: $black;
+  }
+  @include bp-desk(tablet) {
+    padding-top: 15px;
+  }
   // .header__menu-nav
+
   &__menu-nav {
     margin-left: 71px;
     margin-top: -9px;
@@ -23,10 +34,18 @@
   // .header__inner
 
   &__inner {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+  }
+
+  &__theme {
+    position: absolute;
+    left: 170px;
+    top: 10px;
+    z-index: 1001;
   }
 
   // .header__tool-bar

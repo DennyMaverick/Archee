@@ -19,6 +19,13 @@
   &__title {
     margin-bottom: 10px;
     text-transform: capitalize;
+    transition: color .3s ease-in;
+    &--light {
+      color: $black;
+    }
+    &--dark {
+      color: $white;
+    }
   }
 
   // .project__description
@@ -27,5 +34,12 @@
     @include font(16px, 28px);
     color: $color-text-base;
     max-width: 330px;
+    transition: color .3s ease-in;
+    &--light {
+      color: $darken;
+    }
+    &--dark {
+      color: $white;
+    }
   }
 }

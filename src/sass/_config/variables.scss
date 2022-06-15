@@ -26,6 +26,7 @@ $font-style-base: normal;
 
 // Цвета
 $color-bg-base: #fff;
+$grey: #ccc;
 $color-bg-second: #f7f7f7;
 $color-bg-third: #f5f5f5;
 $color-bg-fouth: #fdfbf6;
@@ -41,8 +42,33 @@ $success-second-color: #5eee5e;
 $red-color: red;
 $error-color: #e71515;
 $modal-bg-color: #F7F7F7;
+$darken: #61594D;
+
 // Colors
 
 $black: #2c2321;
 $primary-color: #d6680f;
 $white: #fff;
+
+$dark-color: blue;
+$black: #2b2b2b;
+$white: #fff;
+$color-grey: #b8b8d3;
+$color-dark: #6669ad;
+$color-dark-icon: #5f584e;
+$color-light-icon: #d6680f;
+$orange:darkorange;
+$btn-color: bisque;
+$color-light: steelblue;
+$color-bg-dark: #2b2b2b;
+
+
+// Theme
+
+// Intro
+
+$intro-title-color-dark: #ffc107;
+$intro-title-color-light: #2b2b2b;
+
+$intro-subtitle-color-light: #61594d;
+$intro-subtitle-color-dark: $white;
