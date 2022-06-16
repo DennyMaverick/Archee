@@ -435,6 +435,14 @@ RU:
   <li> <img src="./img-readme/package-json.png" alt="" width="14" height="15"> package.json</li>
 </ul>
 
+Существует два файла конфигурации: app.js и path.js. Они нужны для того, чтобы gulp-сборка была универсальна. Каждый раз, начиная новый проект, нужно зайти в эти файлы и поменять нужные данные. app.js содержит настройки плагинов:
+
+![app.js файл](https://github.com/DennyMaverick/Archee/raw/main/img-readme/app.jpg)
+
+path.js содержит пути до входных и выходных данных, а также пути отслеживания watch:
+
+![path.js файл](https://github.com/DennyMaverick/Archee/raw/main/img-readme/path.jpg)
+
 SVG-sprite был сгенерирован с помощью gulp. Использовалась следующая задача:
 
 ```
@@ -510,7 +518,7 @@ module.exports = svgsprite;
 
 ![svg-sprite](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite.jpg)
 
-Это решилось, добавив эти изображения в исключение в задаче img:
+Это решилось, добавив эти изображения в исключение в задаче img.
 
 ![sprite-img](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite-img.jpg)
 
