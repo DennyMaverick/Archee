@@ -281,7 +281,7 @@ for (let i = 0; i < searchItems.length; i++) {
 
 ```
 
-## Modal windows
+## Модальные окна
 
 ### Поле 'Местоположение'
 
@@ -328,6 +328,10 @@ locationInput.addEventListener("change", function () {
  })
 
 ```
+
+## Modal windows
+
+### Field 'Location'
 
 EN:
 
@@ -440,6 +444,8 @@ modalInners.forEach((item) => {
 })
 
 ```
+
+### The universal script of closing and opening of modal windows
 
 EN:
 
