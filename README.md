@@ -664,4 +664,129 @@ module.exports = svgsprite;
 
 ![sprite-img](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite-img.jpg)
 
+EN:
+
+***
+
+The project has next structure:
+
+<ul>
+  <li>config</li>
+    <ul>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> app.js </li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> path.js </li>
+    </ul>
+  <li> <img src="./img-readme/node.png" alt="" width="14" height="15"> node_modules</li>
+  <li> <img src="./img-readme/public.png" alt="" width="14" height="15"> public</li>
+  <li> <img src="./img-readme/src-folder.png" alt="" width="14" height="15"> src</li>
+    <ul>
+      <li> <img src="./img-readme/font.png" alt="" width="14" height="15"> font</li>
+      <li> <img src="./img-readme/html.png" alt="" width="14" height="15"> html</li>
+      <li> <img src="./img-readme/img.png" alt="" width="14" height="15"> img</li>
+      <li> <img src="./img-readme/js-folder.png" alt="" width="14" height="15"> js</li>
+      <li> <img src="./img-readme/sass.png" alt="" width="14" height="15"> sass</li>
+    </ul>  
+  <li> <img src="./img-readme/task.png" alt="" width="14" height="15"> task</li>
+    <ul>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> clear.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> css.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> favicon.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> font.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> html.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> img.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> js.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> libs.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> scss.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> server.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> svgsprite.js</li>
+    </ul>
+  <li> <img src="./img-readme/git.png" alt="" width="14" height="15"> .gitignore</li>
+  <li> <img src="./img-readme/gulp.png" alt="" width="14" height="15"> gulpfile.js</li>
+  <li> <img src="./img-readme/package-json.png" alt="" width="14" height="15"> package.json</li>
+</ul>
+
+The two files of configuration do exist: app.js и path.js. They need to the gulp-build became the universal. Every time, starting new project, it needs to enter in these files and change the needed information. app.js consists of the configuration of plugins:
+
+![app.js файл](https://github.com/DennyMaverick/Archee/raw/main/img-readme/app.jpg)
+
+path.js consists of the paths to input and output data and also the paths of watching:
+
+![path.js файл](https://github.com/DennyMaverick/Archee/raw/main/img-readme/path.jpg)
+
+SVG-sprite was genegated for gulp. The task for this:
+
+```
+
+const { src, dest } = require("gulp");
+
+// Configuration
+
+const path = require("../config/path.js");
+const app = require("../config/app.js");
+
+// Plugins
+
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
+const svgSprite = require('gulp-svg-sprite');
+const svgcheerio = require('gulp-cheerio');
+const svgmin = require('gulp-svgmin');
+const replace = require('gulp-replace');
+
+// JavaScript processing
+
+const svgsprite = () => {
+  return src(path.svgsprite.src)
+    .pipe(
+      plumber({
+        errorHandler: notify.onError((error) => ({
+          title: "JavaScript",
+          message: error.message,
+        })),
+      })
+    )
+    .pipe(
+      svgmin({
+        js2svg: {
+          pretty: true,
+        },
+      })
+    )
+    .pipe(
+      svgcheerio({
+        run: function ($) {
+          $("[fill]").removeAttr("fill")
+          $("[stroke]").removeAttr("stroke")
+          $("[style]").removeAttr("style")
+        },
+        parserOptions: {xmlMode: true},
+      })
+    )
+    .pipe(replace("&gt;", ">"))
+    .pipe(
+      svgSprite({
+        mode: {
+          symbol: {
+            sprite: "sprite.svg",
+          },
+        },
+      })
+    )
+    .pipe(dest(path.svgsprite.dest))
+}
+
+module.exports = svgsprite;
+
+```
+
+<p>
+  First, the dificulties have appear. The dificulties with the generation of SVG-sprite: all warked correctly but gulp formed all the images besides of SVG-sprie:
+</p>
+
+![svg-sprite](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite.jpg)
+
+It was solved, adding all these images as exeption in the task 'img'.
+
+![sprite-img](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite-img.jpg)
+
 
