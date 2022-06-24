@@ -381,6 +381,8 @@ locationInput.addEventListener("change", function () {
 
 RU:
 
+***
+
 В проекте во всех модальных реализован универсальный скрипт закрытия модальных окон (вне модального окна или на крестик). И если есть повторяющиеся модальные окна, также реализовано одно универсальное окно, доступ к которому открывается через дата-атрибут кнопки: 
 
 ```
@@ -448,6 +450,8 @@ modalInners.forEach((item) => {
 ### The universal script of closing and opening of modal windows
 
 EN:
+
+***
 
 The universal script was made for closing the modal windows (outside the window or on a cross). Also the modal window was made if the modal windows repeat. The access opens throught the data-atribute of the button:
 
@@ -521,6 +525,8 @@ RU:
 <p>
   При выборе города, наведя курсор мыши на текст с городом, динамически меняется изображение. При наведении на иконки в форме, они увеличиваются в размере и меняют цвет. Первое достгнуто благодаря CSS-анимации трансформирования, а второе — благодаря использованию Svg-спрайта:
 </p>
+
+![modal-windows](https://github.com/DennyMaverick/Archee/raw/main/img-readme/modal-windows.gif)
 
 EN:
 
