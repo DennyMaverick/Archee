@@ -283,6 +283,8 @@ for (let i = 0; i < searchItems.length; i++) {
 
 ## Modal windows
 
+### Поле 'Местоположение'
+
 RU:
 
 ***
@@ -327,8 +329,6 @@ locationInput.addEventListener("change", function () {
 
 ```
 
-В проекте во всех модальных реализован универсальный скрипт закрытия модальных окон (вне модального окна или на крестик). И если есть повторяющиеся модальные окна... 
-
 EN:
 
 ***
@@ -372,6 +372,142 @@ locationInput.addEventListener("change", function () {
  })
 
 ```
+
+### Универсальный скрипт закрытия и открытия модальных окон
+
+RU:
+
+В проекте во всех модальных реализован универсальный скрипт закрытия модальных окон (вне модального окна или на крестик). И если есть повторяющиеся модальные окна, также реализовано одно универсальное окно, доступ к которому открывается через дата-атрибут кнопки: 
+
+```
+// закрытие вне модального окна
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", function () {
+    const currentModalInner = this.querySelector(".modal__inner")
+    currentModalInner.style.transform = "rotateX(90deg)"
+
+    setTimeout(() => {
+      bodyEl.classList.remove("no-scroll")
+      this.classList.remove("show")
+    }, 600)
+
+    resetInputFormStyles()
+  })
+})
+
+//закрытие модального окна по крестику
+
+modalCloseBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const currentModal = btn.closest(".modal")
+    const currentModalInner = currentModal.querySelector(".modal__inner")
+    currentModalInner.style.transform = "rotateX(90deg)"
+
+    setTimeout(() => {
+      bodyEl.classList.remove("no-scroll")
+      currentModal.classList.remove("show")
+    }, 600)
+
+    resetInputFormStyles()
+  })
+})
+
+// открытие модального окна
+
+modalBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const currentModal = document.querySelector(e.target.dataset.modal)
+    const currentModalInner = currentModal.querySelector(".modal__inner")
+    currentModal.classList.add("show")
+
+    setTimeout(() => {
+    
+    // анимация при открытии модального окна
+    
+      currentModalInner.style.transform = "rotateX(0deg)"
+      bodyEl.classList.add("no-scroll")
+    }, 600)
+  })
+})
+
+//запрет всплытия события click
+
+modalInners.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.stopPropagation()
+  })
+})
+
+```
+
+EN:
+
+The universal script was made for closing the modal windows (outside the window or on a cross). Also the modal window was made if the modal windows repeat. The access opens throught the data-atribute of the button:
+
+```
+// closing the modal window when the click is outside
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", function () {
+    const currentModalInner = this.querySelector(".modal__inner")
+    currentModalInner.style.transform = "rotateX(90deg)"
+
+    setTimeout(() => {
+      bodyEl.classList.remove("no-scroll")
+      this.classList.remove("show")
+    }, 600)
+
+    resetInputFormStyles()
+  })
+})
+
+// closing the modal window when the cross is clicked
+
+modalCloseBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const currentModal = btn.closest(".modal")
+    const currentModalInner = currentModal.querySelector(".modal__inner")
+    currentModalInner.style.transform = "rotateX(90deg)"
+
+    setTimeout(() => {
+      bodyEl.classList.remove("no-scroll")
+      currentModal.classList.remove("show")
+    }, 600)
+
+    resetInputFormStyles()
+  })
+})
+
+// opening the modal window
+
+modalBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const currentModal = document.querySelector(e.target.dataset.modal)
+    const currentModalInner = currentModal.querySelector(".modal__inner")
+    currentModal.classList.add("show")
+
+    setTimeout(() => {
+    
+    // animation when the modal window is opening
+    
+      currentModalInner.style.transform = "rotateX(0deg)"
+      bodyEl.classList.add("no-scroll")
+    }, 600)
+  })
+})
+
+//to forbide the surfacing the event 'click'
+
+modalInners.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.stopPropagation()
+  })
+})
+
+```
+
+
 RU:
 
 ***
