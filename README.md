@@ -670,6 +670,18 @@ module.exports = svgsprite;
 
 ![sprite-img](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite-img.jpg)
 
+Посмотреть на проект Archee вы можете по данной ссылке: https://dennymaverick.github.io/Archee/
+
+Также вы можете ознакомиться с другими моими проектами:
+
+https://github.com/DennyMaverick/Web-templates   (4 from 5 stars)
+
+https://github.com/DennyMaverick/Dream-On-Wheels (4 from 5 stars)
+
+https://github.com/DennyMaverick/Oxygen          (3 from 5 stars)
+
+С уважением, Денис ;)
+
 EN:
 
 ***
@@ -795,4 +807,14 @@ It was solved, adding all these images as exeption in the task 'img'.
 
 ![sprite-img](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite-img.jpg)
 
+You can see the Archee project to link: https://dennymaverick.github.io/Archee/
 
+Also you can see other projects in my collection:
+
+https://github.com/DennyMaverick/Web-templates   (4 from 5 stars)
+
+https://github.com/DennyMaverick/Dream-On-Wheels (4 from 5 stars)
+
+https://github.com/DennyMaverick/Oxygen          (3 from 5 stars)
+
+The best wishes, Denny ;)
