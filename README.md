@@ -833,7 +833,7 @@ You can see the Archee project to link: https://dennymaverick.github.io/Archee/
 
 Also you can see other projects in my collection:
 
-https://github.com/DennyMaverick/Web-templates   (4 from 5 stars)
+https://github.com/DennyMaverick/Web-templates   (![star](https://github.com/DennyMaverick/Archee/raw/main/img-readme/star-filled.png))
 
 https://github.com/DennyMaverick/Dream-On-Wheels (4 from 5 stars)
 
