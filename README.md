@@ -696,15 +696,11 @@ Themes switching was made on JavaScript. Detailed description you can see in thi
 
 Также вы можете ознакомиться с другими моими проектами:
 
-[https://github.com/DennyMaverick/Web-templates   (4 from 5 stars)
-
-https://github.com/DennyMaverick/Dream-On-Wheels (4 from 5 stars)
-
-https://github.com/DennyMaverick/Oxygen          (3 from 5 stars)](https://github.com/DennyMaverick/Web-templates    <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> 
+https://github.com/DennyMaverick/Web-templates    <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> 
 
 https://github.com/DennyMaverick/Dream-On-Wheels  <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> 
 
-https://github.com/DennyMaverick/Oxygen           <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> )
+https://github.com/DennyMaverick/Oxygen           <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> 
 
 С уважением, Денис ;)
 
