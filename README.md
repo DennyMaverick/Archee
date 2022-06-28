@@ -835,7 +835,7 @@ Also you can see other projects in my collection:
 
 https://github.com/DennyMaverick/Web-templates   ( )
 
-<img width="15" height="15" src="img-readme/filled.png" alt="star filled">
+<img src="./img-readme/filled.png" alt="star filled" width="15" height="15">
 
 https://github.com/DennyMaverick/Dream-On-Wheels (4 from 5 stars)
 
