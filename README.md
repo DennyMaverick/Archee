@@ -674,15 +674,23 @@ module.exports = svgsprite;
 
 RU:
 
-***
+В проекте реализована функция переключения тем. Существует две цветовые схемы: светлая и темная:
 
-В проекте реализована функция переключения тем. Существует две цветовые схемы: светлая и темная. Переключение тем реализовано на JavaScript. Подробное описание вы можете найти в данном проекте: https://github.com/DennyMaverick/Web-templates. 
+![light-and-dark-theme](https://github.com/DennyMaverick/Archee/raw/main/img-readme/light-dark-theme.gif)
+
+Переключение тем реализовано на JavaScript. Подробное описание вы можете найти в данном проекте: https://github.com/DennyMaverick/Web-templates. 
+
+***
 
 EN:
 
-***
+The function of themes switching was made in the project Archee. Two color schemes do exist: light and dark:
 
-The function of themes switching was made in the project Archee. Two color schemes do exist: light and dark. Themes switching was made on JavaScript. Detailed description you can see in this project: https://github.com/DennyMaverick/Web-templates.
+![light-and-dark-theme](https://github.com/DennyMaverick/Archee/raw/main/img-readme/light-dark-theme.gif)
+
+Themes switching was made on JavaScript. Detailed description you can see in this project: https://github.com/DennyMaverick/Web-templates.
+
+***
 
 Посмотреть на проект Archee вы можете по данной ссылке: https://dennymaverick.github.io/Archee/
 
