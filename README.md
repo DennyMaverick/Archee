@@ -702,7 +702,7 @@ https://github.com/DennyMaverick/Dream-On-Wheels  <img src="./img-readme/star-fi
 
 https://github.com/DennyMaverick/Oxygen           <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> 
 
-С уважением, Денис ;)
+С любовью к web-разработке, Денис ;)
 
 EN:
 
@@ -839,4 +839,4 @@ https://github.com/DennyMaverick/Dream-On-Wheels  <img src="./img-readme/star-fi
 
 https://github.com/DennyMaverick/Oxygen           <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> 
 
-The best wishes, Denny ;)
+With love to web-developing, Denny ;)
