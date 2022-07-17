@@ -542,6 +542,8 @@ EN:
 
 ### GIT
 
+![css/html/javascript](https://github.com/DennyMaverick/Archee/raw/main/src/img-readme/git.jpg)
+
 RU:
 
 Работая над проектом, я использовал систему контроля версий GIT. Это помогло сконцентрироваться на работе и структурировать процесс. 
