@@ -540,9 +540,7 @@ EN:
 
 ![modal-windows](https://github.com/DennyMaverick/Archee/raw/main/img-readme/modal-windows.gif)
 
-### GIT
-
-![GIT](https://github.com/DennyMaverick/Archee/raw/main/img-readme/git.png)
+### GIT ![GIT](https://github.com/DennyMaverick/Archee/raw/main/img-readme/git.png)
 
 RU:
 
