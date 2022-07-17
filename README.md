@@ -540,6 +540,20 @@ EN:
 
 ![modal-windows](https://github.com/DennyMaverick/Archee/raw/main/img-readme/modal-windows.gif)
 
+### GIT
+
+RU:
+
+Работая над проектом, я использовал систему контроля версий GIT. Это помогло сконцентрироваться на работе и структурировать процесс. 
+
+***
+
+EN:
+
+***
+
+Working on project, I used to the system of control versions GIT. It helped to concentrate on work and to structure the process.
+
 ### Gulp
 
 RU:
