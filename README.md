@@ -542,7 +542,7 @@ EN:
 
 ### GIT
 
-![GIT](https://github.com/DennyMaverick/Archee/raw/main/img-readme/git.jpg)
+![GIT](https://github.com/DennyMaverick/Archee/raw/main/img-readme/git.png)
 
 RU:
 
