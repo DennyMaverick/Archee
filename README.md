@@ -281,7 +281,9 @@ for (let i = 0; i < searchItems.length; i++) {
 
 ```
 
-## Modal windows
+## Модальные окна
+
+### Поле 'Местоположение'
 
 RU:
 
@@ -327,7 +329,9 @@ locationInput.addEventListener("change", function () {
 
 ```
 
-В проекте во всех модальных реализован универсальный скрипт закрытия модальных окон (вне модального окна или на крестик). И если есть повторяющиеся модальные окна... 
+## Modal windows
+
+### Field 'Location'
 
 EN:
 
@@ -372,6 +376,148 @@ locationInput.addEventListener("change", function () {
  })
 
 ```
+
+### Универсальный скрипт закрытия и открытия модальных окон
+
+RU:
+
+***
+
+В проекте во всех модальных реализован универсальный скрипт закрытия модальных окон (вне модального окна или на крестик). И если есть повторяющиеся модальные окна, также реализовано одно универсальное окно, доступ к которому открывается через дата-атрибут кнопки: 
+
+```
+// закрытие вне модального окна
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", function () {
+    const currentModalInner = this.querySelector(".modal__inner")
+    currentModalInner.style.transform = "rotateX(90deg)"
+
+    setTimeout(() => {
+      bodyEl.classList.remove("no-scroll")
+      this.classList.remove("show")
+    }, 600)
+
+    resetInputFormStyles()
+  })
+})
+
+//закрытие модального окна по крестику
+
+modalCloseBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const currentModal = btn.closest(".modal")
+    const currentModalInner = currentModal.querySelector(".modal__inner")
+    currentModalInner.style.transform = "rotateX(90deg)"
+
+    setTimeout(() => {
+      bodyEl.classList.remove("no-scroll")
+      currentModal.classList.remove("show")
+    }, 600)
+
+    resetInputFormStyles()
+  })
+})
+
+// открытие модального окна
+
+modalBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const currentModal = document.querySelector(e.target.dataset.modal)
+    const currentModalInner = currentModal.querySelector(".modal__inner")
+    currentModal.classList.add("show")
+
+    setTimeout(() => {
+    
+    // анимация при открытии модального окна
+    
+      currentModalInner.style.transform = "rotateX(0deg)"
+      bodyEl.classList.add("no-scroll")
+    }, 600)
+  })
+})
+
+//запрет всплытия события click
+
+modalInners.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.stopPropagation()
+  })
+})
+
+```
+
+### The universal script of closing and opening of modal windows
+
+EN:
+
+***
+
+The universal script was made for closing the modal windows (outside the window or on a cross). Also the modal window was made if the modal windows repeat. The access opens throught the data-atribute of the button:
+
+```
+// closing the modal window when the click is outside
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", function () {
+    const currentModalInner = this.querySelector(".modal__inner")
+    currentModalInner.style.transform = "rotateX(90deg)"
+
+    setTimeout(() => {
+      bodyEl.classList.remove("no-scroll")
+      this.classList.remove("show")
+    }, 600)
+
+    resetInputFormStyles()
+  })
+})
+
+// closing the modal window when the cross is clicked
+
+modalCloseBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const currentModal = btn.closest(".modal")
+    const currentModalInner = currentModal.querySelector(".modal__inner")
+    currentModalInner.style.transform = "rotateX(90deg)"
+
+    setTimeout(() => {
+      bodyEl.classList.remove("no-scroll")
+      currentModal.classList.remove("show")
+    }, 600)
+
+    resetInputFormStyles()
+  })
+})
+
+// opening the modal window
+
+modalBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const currentModal = document.querySelector(e.target.dataset.modal)
+    const currentModalInner = currentModal.querySelector(".modal__inner")
+    currentModal.classList.add("show")
+
+    setTimeout(() => {
+    
+    // animation when the modal window is opening
+    
+      currentModalInner.style.transform = "rotateX(0deg)"
+      bodyEl.classList.add("no-scroll")
+    }, 600)
+  })
+})
+
+//to forbide the surfacing the event 'click'
+
+modalInners.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.stopPropagation()
+  })
+})
+
+```
+
+
 RU:
 
 ***
@@ -379,6 +525,8 @@ RU:
 <p>
   При выборе города, наведя курсор мыши на текст с городом, динамически меняется изображение. При наведении на иконки в форме, они увеличиваются в размере и меняют цвет. Первое достгнуто благодаря CSS-анимации трансформирования, а второе — благодаря использованию Svg-спрайта:
 </p>
+
+![modal-windows](https://github.com/DennyMaverick/Archee/raw/main/img-readme/modal-windows.gif)
 
 EN:
 
@@ -391,6 +539,22 @@ EN:
 
 
 ![modal-windows](https://github.com/DennyMaverick/Archee/raw/main/img-readme/modal-windows.gif)
+
+### GIT
+
+![GIT](https://github.com/DennyMaverick/Archee/raw/main/img-readme/git.png)
+
+RU:
+
+Работая над проектом, я использовал систему контроля версий GIT. Это помогло сконцентрироваться на работе и структурировать процесс. 
+
+***
+
+EN:
+
+***
+
+Working on project, I used to the system of control versions GIT. It helped to concentrate on work and to structure the process.
 
 ### Gulp
 
@@ -434,6 +598,14 @@ RU:
   <li> <img src="./img-readme/gulp.png" alt="" width="14" height="15"> gulpfile.js</li>
   <li> <img src="./img-readme/package-json.png" alt="" width="14" height="15"> package.json</li>
 </ul>
+
+Существует два файла конфигурации: app.js и path.js. Они нужны для того, чтобы gulp-сборка была универсальна. Каждый раз, начиная новый проект, нужно зайти в эти файлы и поменять нужные данные. app.js содержит настройки плагинов:
+
+![app.js файл](https://github.com/DennyMaverick/Archee/raw/main/img-readme/app.jpg)
+
+path.js содержит пути до входных и выходных данных, а также пути отслеживания watch:
+
+![path.js файл](https://github.com/DennyMaverick/Archee/raw/main/img-readme/path.jpg)
 
 SVG-sprite был сгенерирован с помощью gulp. Использовалась следующая задача:
 
@@ -510,8 +682,177 @@ module.exports = svgsprite;
 
 ![svg-sprite](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite.jpg)
 
-Это решилось, добавив эти изображения в исключение в задаче img:
+Это решилось, добавив эти изображения в исключение в задаче img.
 
 ![sprite-img](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite-img.jpg)
 
+## Dark / Light Theme
 
+RU:
+
+В проекте реализована функция переключения тем. Существует две цветовые схемы: светлая и темная:
+
+![light-and-dark-theme](https://github.com/DennyMaverick/Archee/raw/main/img-readme/light-dark-theme.gif)
+
+Переключение тем реализовано на JavaScript. Подробное описание вы можете найти в данном проекте: https://github.com/DennyMaverick/Web-templates. 
+
+***
+
+EN:
+
+The function of themes switching was made in the project Archee. Two color schemes do exist: light and dark:
+
+![light-and-dark-theme](https://github.com/DennyMaverick/Archee/raw/main/img-readme/light-dark-theme.gif)
+
+Themes switching was made on JavaScript. Detailed description you can see in this project: https://github.com/DennyMaverick/Web-templates.
+
+***
+
+Посмотреть на проект Archee вы можете по данной ссылке: https://dennymaverick.github.io/Archee/
+
+Также вы можете ознакомиться с другими моими проектами:
+
+https://github.com/DennyMaverick/Web-templates    <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> 
+
+https://github.com/DennyMaverick/Dream-On-Wheels  <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> 
+
+https://github.com/DennyMaverick/Oxygen           <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> 
+
+С любовью к web-разработке, Денис ;)
+
+EN:
+
+***
+
+The project has next structure:
+
+<ul>
+  <li>config</li>
+    <ul>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> app.js </li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> path.js </li>
+    </ul>
+  <li> <img src="./img-readme/node.png" alt="" width="14" height="15"> node_modules</li>
+  <li> <img src="./img-readme/public.png" alt="" width="14" height="15"> public</li>
+  <li> <img src="./img-readme/src-folder.png" alt="" width="14" height="15"> src</li>
+    <ul>
+      <li> <img src="./img-readme/font.png" alt="" width="14" height="15"> font</li>
+      <li> <img src="./img-readme/html.png" alt="" width="14" height="15"> html</li>
+      <li> <img src="./img-readme/img.png" alt="" width="14" height="15"> img</li>
+      <li> <img src="./img-readme/js-folder.png" alt="" width="14" height="15"> js</li>
+      <li> <img src="./img-readme/sass.png" alt="" width="14" height="15"> sass</li>
+    </ul>  
+  <li> <img src="./img-readme/task.png" alt="" width="14" height="15"> task</li>
+    <ul>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> clear.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> css.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> favicon.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> font.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> html.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> img.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> js.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> libs.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> scss.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> server.js</li>
+      <li> <img src="./img-readme/js-file.png" alt="" width="14" height="15"> svgsprite.js</li>
+    </ul>
+  <li> <img src="./img-readme/git.png" alt="" width="14" height="15"> .gitignore</li>
+  <li> <img src="./img-readme/gulp.png" alt="" width="14" height="15"> gulpfile.js</li>
+  <li> <img src="./img-readme/package-json.png" alt="" width="14" height="15"> package.json</li>
+</ul>
+
+The two files of configuration do exist: app.js и path.js. They need to the gulp-build became the universal. Every time, starting new project, it needs to enter in these files and change the needed information. app.js consists of the configuration of plugins:
+
+![app.js файл](https://github.com/DennyMaverick/Archee/raw/main/img-readme/app.jpg)
+
+path.js consists of the paths to input and output data and also the paths of watching:
+
+![path.js файл](https://github.com/DennyMaverick/Archee/raw/main/img-readme/path.jpg)
+
+SVG-sprite was genegated for gulp. The task for this:
+
+```
+
+const { src, dest } = require("gulp");
+
+// Configuration
+
+const path = require("../config/path.js");
+const app = require("../config/app.js");
+
+// Plugins
+
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
+const svgSprite = require('gulp-svg-sprite');
+const svgcheerio = require('gulp-cheerio');
+const svgmin = require('gulp-svgmin');
+const replace = require('gulp-replace');
+
+// JavaScript processing
+
+const svgsprite = () => {
+  return src(path.svgsprite.src)
+    .pipe(
+      plumber({
+        errorHandler: notify.onError((error) => ({
+          title: "JavaScript",
+          message: error.message,
+        })),
+      })
+    )
+    .pipe(
+      svgmin({
+        js2svg: {
+          pretty: true,
+        },
+      })
+    )
+    .pipe(
+      svgcheerio({
+        run: function ($) {
+          $("[fill]").removeAttr("fill")
+          $("[stroke]").removeAttr("stroke")
+          $("[style]").removeAttr("style")
+        },
+        parserOptions: {xmlMode: true},
+      })
+    )
+    .pipe(replace("&gt;", ">"))
+    .pipe(
+      svgSprite({
+        mode: {
+          symbol: {
+            sprite: "sprite.svg",
+          },
+        },
+      })
+    )
+    .pipe(dest(path.svgsprite.dest))
+}
+
+module.exports = svgsprite;
+
+```
+
+<p>
+  First, the dificulties have appear. The dificulties with the generation of SVG-sprite: all warked correctly but gulp formed all the images besides of SVG-sprie:
+</p>
+
+![svg-sprite](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite.jpg)
+
+It was solved, adding all these images as exeption in the task 'img'.
+
+![sprite-img](https://github.com/DennyMaverick/Archee/raw/main/img-readme/sprite-img.jpg)
+
+You can see the Archee project to link: https://dennymaverick.github.io/Archee/
+
+Also you can see other projects in my collection:
+
+https://github.com/DennyMaverick/Web-templates    <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> 
+
+https://github.com/DennyMaverick/Dream-On-Wheels  <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> 
+
+https://github.com/DennyMaverick/Oxygen           <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-filled.png" alt="star filled" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> <img src="./img-readme/star-empty.png" alt="star empty" width="13" height="13"> 
+
+With love to web-developing, Denny ;)
