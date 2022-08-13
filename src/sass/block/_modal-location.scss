@@ -1,6 +1,12 @@
 .modal-location {
   &__inner {
-    background-color: $modal-bg-color;
+    &--light {
+    color: $black;
+    background-color: $white !important;
+    }
+    &--dark {
+      color: $white;
+    }
   }
   @include bp-desk(tablet) {
       padding: 0;
@@ -43,10 +49,19 @@
     padding: 10px 10px;
     display: flex;
     justify-content: space-evenly;
-    box-shadow: 0 0 15px $color-violet;
     border-radius: 7px;
     margin-bottom: 150px;
     transition: box-shadow .3s ease-in;
+    &--light {
+      color: $color-violet;
+      background-color: $white;
+      box-shadow: 0 0 15px $color-violet;
+    }
+    &--dark {
+      color: $black;
+      background-color: $white;
+      box-shadow: 0 0 15px $white;
+    }
     @include bp-desk(tablet) {
       margin-bottom: 45px;
     }
@@ -63,7 +78,6 @@
   &__city-name {
     font-size: 19px;
     font-weight: 700;
-    color: $color-violet;
     text-transform: capitalize;
     cursor: pointer;
     transition: color 0.3s ease-in;

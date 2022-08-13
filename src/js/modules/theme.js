@@ -196,6 +196,48 @@ const themes = {
       dark: "menu-nav__link--dark",
     },
   },
+  ".modal__inner": {
+    theme: {
+      light: "modal__inner--light",
+      dark: "modal__inner--dark",
+    },
+  },
+  ".modal-contact__description": {
+    theme: {
+      light: "modal-contact__description--light",
+      dark: "modal-contact__description--dark",
+    },
+  },
+  ".modal-title": {
+    theme: {
+      light: "modal-title--light",
+      dark: "modal-title--dark",
+    },
+  },
+  ".modal__close-icon": {
+    theme: {
+      light: "modal__close-icon--light",
+      dark: "modal__close-icon--dark",
+    },
+  },
+  ".modal-location__inner": {
+    theme: {
+      light: "modal-location__inner--light",
+      dark: "modal-location__inner--dark",
+    },
+  },
+  ".modal-location__cities": {
+    theme: {
+      light: "modal-location__cities--light",
+      dark: "modal-location__cities--dark",
+    },
+  },
+  ".house-item__title": {
+    theme: {
+      light: "house-item__title--light",
+      dark: "house-item__title--dark",
+    },
+  },
 }
 function themeSwitch(theme) {
   const switcherLight = document.querySelector(".theme__light")

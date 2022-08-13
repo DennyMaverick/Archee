@@ -1,5 +1,11 @@
 .modal-title {
   text-transform: uppercase;
+  &--light {
+    color: $black;
+  }
+  &--dark {
+    color: $white;
+  }
   @include font-cabinet-black();
   font-size: 32px;
   line-height: 1.25;

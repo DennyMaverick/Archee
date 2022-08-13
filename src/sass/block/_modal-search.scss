@@ -4,7 +4,12 @@
     color: $success-color;
   }
   &__inner {
-    background-color: $bg-light;
+    &--light {
+      background-color: $bg-light;
+    }
+    &--dark {
+      background-color: $black;
+    }
     @include bp-desk(mobile) {
       padding: 4rem 1.5rem 2rem;
       display: flex;

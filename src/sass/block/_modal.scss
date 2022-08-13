@@ -18,8 +18,15 @@
     position: relative;
     margin: auto;
     padding: 3rem;
+    padding-top: 6rem;
     transform: rotateX(90deg);
-    transition: transform .5s linear;
+    transition: transform 0.5s linear;
+    &--light {
+      background-color: $bg-light;
+    }
+    &--dark {
+      background-color: $black;
+    }
     @include bp-desk(mobile) {
       padding: 6rem 1.5rem 2rem;
     }
@@ -27,16 +34,22 @@
   &__close-icon {
     width: 24px;
     height: 24px;
-    transition: fill .3s ease-in;
+    transition: fill 0.3s ease-in;
     &:hover {
       fill: $primary-color;
+    }
+    &--light {
+      fill: $black;
+    }
+    &--dark {
+      fill: $white;
     }
   }
   &__close-btn {
     position: absolute;
     right: 15px;
     top: 15px;
-    transition: transform .3s ease-in;
+    transition: transform 0.3s ease-in;
     &:hover {
       transform: translateY(-3px);
     }

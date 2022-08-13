@@ -209,7 +209,7 @@ const langs = {
     en: "london",
   },
   "modal-location-description": {
-    ru: "Каждая достопримечательность какой-либо страны когда-то была лишь идеей, записанной на листке. Далее, эта идея развивалась, и в конечном счете превратилась в искусство. Команда Archee придерживается мнению, что если есть проект в голове, на листке, а также есть большое стремление эту идею воплотить в реальность, то все достижимо. Выберите Ваш город, и мы подберем лучший вариант архитектуры, которая точно способна удивлять.",
+    ru: "Каждая достопримечательность какой-либо страны когда-то была лишь идеей, записанной на листке бумаги. Далее, эта идея развивалась, и в конечном счете превратилась в искусство. Команда Archee придерживается мнению, что если есть проект в голове, на листке бумаги, а также есть большое стремление эту идею воплотить в реальность, то все достижимо. Выберите Ваш город, и мы подберем лучший вариант архитектуры, которая точно способна удивлять.",
     en: "Each sight place of any country was once only an insignificant idea, a value on a piece of paper. Further, this idea developed, and eventually built into art. The Archee team believes that if there is a project in the head, on a piece of paper, and there is also a great desire to turn this idea into reality, then everything is achievable. Choose your city, and we will select the best option of the architecture that is sure to surprise.",
   },
   "modal-type-title": {

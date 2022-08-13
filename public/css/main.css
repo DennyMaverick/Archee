@@ -401,6 +401,14 @@ img {
   color: #2b2b2b;
 }
 
+.modal-title--light {
+  color: #2b2b2b;
+}
+
+.modal-title--dark {
+  color: #fff;
+}
+
 .title {
   font-family: "Cabinet Grotesk",sans-serif;
   font-weight: 900;
@@ -966,10 +974,6 @@ img {
   color: #d6680f;
 }
 
-.house-item:hover .house-item__title {
-  color: #d6680f;
-}
-
 .house-item__title {
   font-size: 1rem;
   text-transform: uppercase;
@@ -978,12 +982,24 @@ img {
   transition: color .3s ease-in;
 }
 
+.house-item__title--light {
+  color: #2b2b2b;
+}
+
+.house-item__title--dark {
+  color: #fff;
+}
+
 .house-item__title::before {
   content: "";
   width: 50px;
   height: 50px;
   margin: 0 auto 1rem;
   display: block;
+}
+
+.house-item:hover .house-item__title {
+  color: #d6680f;
 }
 
 .house-item--indoor::before {
@@ -1388,13 +1404,17 @@ img {
   display: flex;
 }
 
-.modal-contact__inner {
-  background-color: #5f9ea0;
-}
-
 .modal-contact__title {
   margin-bottom: 50px;
   font-size: 25px;
+}
+
+.modal-contact__title--light {
+  color: #2b2b2b;
+}
+
+.modal-contact__title--dark {
+  color: #fff;
 }
 
 .modal-contact__description {
@@ -1402,6 +1422,14 @@ img {
   line-height: 1.4;
   max-width: 500px;
   margin-bottom: 25px;
+}
+
+.modal-contact__description--light {
+  color: #2b2b2b;
+}
+
+.modal-contact__description--dark {
+  color: #fff;
 }
 
 .modal-contact__signature {
@@ -1532,8 +1560,13 @@ img {
   display: flex;
 }
 
-.modal-location__inner {
-  background-color: #f7f7f7;
+.modal-location__inner--light {
+  color: #2b2b2b;
+  background-color: #fff !important;
+}
+
+.modal-location__inner--dark {
+  color: #fff;
 }
 
 .modal-location__description {
@@ -1563,8 +1596,6 @@ img {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  -webkit-box-shadow: 0 0 15px #2f2f60;
-  box-shadow: 0 0 15px #2f2f60;
   border-radius: 7px;
   margin-bottom: 150px;
   -webkit-transition: -webkit-box-shadow .3s ease-in;
@@ -1572,6 +1603,20 @@ img {
   -o-transition: box-shadow .3s ease-in;
   transition: box-shadow .3s ease-in;
   transition: box-shadow .3s ease-in, -webkit-box-shadow .3s ease-in;
+}
+
+.modal-location__cities--light {
+  color: #2f2f60;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 15px #2f2f60;
+  box-shadow: 0 0 15px #2f2f60;
+}
+
+.modal-location__cities--dark {
+  color: #2b2b2b;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 15px #fff;
+  box-shadow: 0 0 15px #fff;
 }
 
 .modal-location__cities:hover {
@@ -1582,7 +1627,6 @@ img {
 .modal-location__city-name {
   font-size: 19px;
   font-weight: 700;
-  color: #2f2f60;
   text-transform: capitalize;
   cursor: pointer;
   -webkit-transition: color .3s ease-in;
@@ -1616,8 +1660,12 @@ img {
   color: #1cff1c;
 }
 
-.modal-search__inner {
+.modal-search__inner--light {
   background-color: #5f9ea0;
+}
+
+.modal-search__inner--dark {
+  background-color: #2b2b2b;
 }
 
 .modal-search__description {
@@ -1683,6 +1731,7 @@ img {
   position: relative;
   margin: auto;
   padding: 3rem;
+  padding-top: 6rem;
   -webkit-transform: rotateX(90deg);
   transform: rotateX(90deg);
   -webkit-transition: -webkit-transform .5s linear;
@@ -1690,6 +1739,14 @@ img {
   -o-transition: transform .5s linear;
   transition: transform .5s linear;
   transition: transform .5s linear, -webkit-transform .5s linear;
+}
+
+.modal__inner--light {
+  background-color: #5f9ea0;
+}
+
+.modal__inner--dark {
+  background-color: #2b2b2b;
 }
 
 .modal__close-icon {
@@ -1702,6 +1759,14 @@ img {
 
 .modal__close-icon:hover {
   fill: #d6680f;
+}
+
+.modal__close-icon--light {
+  fill: #2b2b2b;
+}
+
+.modal__close-icon--dark {
+  fill: #fff;
 }
 
 .modal__close-btn {

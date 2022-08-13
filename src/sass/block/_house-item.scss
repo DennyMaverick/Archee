@@ -14,13 +14,17 @@
   &--active &__title {
     color: $primary-color;
   }
-  &:hover &__title {
-    color: $primary-color;
-  }
+
   &__title {
     font-size: 1rem;
     text-transform: uppercase;
     transition: color .3s ease-in;
+    &--light {
+      color: $black;
+    }
+    &--dark {
+      color: $white;
+    }
     &::before {
       content: "";
       width: 50px;
@@ -28,6 +32,9 @@
       margin: 0 auto 1rem;
       display: block;
     }
+  }
+  &:hover &__title {
+    color: $primary-color;
   }
   &--indoor {
     &::before {
