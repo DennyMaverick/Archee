@@ -61,4 +61,10 @@
       stroke: $white;
     }
   }
+  &__arrow-btn {
+    position: relative;
+    z-index: 1000;
+    padding: 10px;
+    margin: -10px;
+  }
 }

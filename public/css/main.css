@@ -1192,6 +1192,13 @@ img {
   stroke: #fff;
 }
 
+.lang__arrow-btn {
+  position: relative;
+  z-index: 1000;
+  padding: 10px;
+  margin: -10px;
+}
+
 .location-popup__text {
   color: #fffaf0;
 }
