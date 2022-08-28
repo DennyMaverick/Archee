@@ -1131,10 +1131,6 @@ img {
   cursor: pointer;
 }
 
-.lang-list__item:hover {
-  color: blue;
-}
-
 .lang-list__show {
   height: auto;
   opacity: 1;
