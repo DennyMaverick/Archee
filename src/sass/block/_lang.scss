@@ -22,9 +22,6 @@
       @include font(14px, 21px);
       text-transform: uppercase;
       cursor: pointer;
-      &:hover {
-        color: blue;
-      }
     }
   }
   &-list__show {

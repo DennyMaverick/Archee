@@ -14,7 +14,7 @@ window.addEventListener("click", (e) => {
   const langLists = document.querySelectorAll(".lang-list")
   langLists.forEach((item) => {
     if (item.classList.contains("lang-list__show")) {
-      if (!e.target.classList.contains("lang__arrow-btn")) {
+      if (!e.target.classList.contains("lang__arrow-btn") && !e.target.classList.contains("lang__arrow") && !e.target.classList.contains("arrow")) {
         langLists.forEach((item) => {
           item.classList.remove("lang-list__show")
         })
