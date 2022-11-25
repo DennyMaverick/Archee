@@ -26,12 +26,17 @@
     &::before {
       content: '';
       position: absolute;
-      bottom: 3px;
+      bottom: 2px;
       left: 5px;
-      background-color: $black;
       height: 1px;
       width: 0;
       transition: width 0.4s linear;
+    }
+    &--light::before {
+      background-color: $black;
+    }
+    &--dark::before {
+      background-color: $white;
     }
     &:hover::before {
       width: calc(100% - 10px);

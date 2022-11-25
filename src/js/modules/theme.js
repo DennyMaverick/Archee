@@ -238,6 +238,12 @@ const themes = {
       dark: "house-item__title--dark",
     },
   },
+  ".menu-nav__link": {
+    theme: {
+      light: "menu-nav__link--light",
+      dark: "menu-nav__link--dark",
+    },
+  },
 }
 function themeSwitch(theme) {
   const switcherLight = document.querySelector(".theme__light")

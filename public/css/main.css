@@ -1273,14 +1273,21 @@ img {
 .menu-nav__link::before {
   content: "";
   position: absolute;
-  bottom: 3px;
+  bottom: 2px;
   left: 5px;
-  background-color: #2b2b2b;
   height: 1px;
   width: 0;
   -webkit-transition: width .4s linear;
   -o-transition: width .4s linear;
   transition: width .4s linear;
+}
+
+.menu-nav__link--light::before {
+  background-color: #2b2b2b;
+}
+
+.menu-nav__link--dark::before {
+  background-color: #fff;
 }
 
 .menu-nav__link:hover::before {
