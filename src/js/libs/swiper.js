@@ -1,21 +1,23 @@
 // Слайдер
-import Swiper, { Navigation } from 'swiper';
+import Swiper from "swiper"
+import {Navigation} from "swiper/modules"
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper(".swiper", {
   modules: [Navigation],
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
   loop: true,
   slidesPerView: 1,
-  navigation: {
-    nextEl: '.arrow-next',
-    prevEl: '.arrow-prev',
-  },
   breakpoints: {
     768: {
-      slidesPerView: 2
+      slidesPerView: 2,
     },
     1200: {
       slidesPerView: 3,
-      width: 1140
-    }
-  }
-});
+      width: 1140,
+    },
+  },
+})

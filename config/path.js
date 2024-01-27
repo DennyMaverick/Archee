@@ -17,6 +17,10 @@ module.exports = {
     dest: pathDest + "/css/",
   },
 
+  libs: {
+    src: ["./node_modules/swiper/swiper.min.js"],
+    dest: pathDest + "/js/libs/vendors/",
+  },
   js: {
     src: pathSrc + "/js/*.js",
     watch: pathSrc + "/js/**/*.js",
