@@ -193,8 +193,8 @@ const langs = {
     en: "tokyo",
   },
   "modal-location-city-new-york": {
-    ru: "Нью-Йорк",
-    en: "New-York",
+    ru: "Нью Йорк",
+    en: "New York",
   },
   "modal-location-city-paris": {
     ru: "париж",
