@@ -1,12 +1,10 @@
 let inputs = document.querySelectorAll("input[data-rules]")
 
 for (let input of inputs) {
-  input.addEventListener("blur", function () {
+  input.addEventListener("change", function () {
     let rules = this.dataset.rules
     let value = this.value
     let check
-    let checkType
-    let checkBudget
 
     switch (rules) {
       //* === Phone ===

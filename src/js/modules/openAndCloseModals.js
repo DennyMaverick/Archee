@@ -26,7 +26,9 @@ modalCloseBtns.forEach((btn) => {
     currentModalInner.style.transform = "rotateX(90deg)"
 
     setTimeout(() => {
-      bodyEl.classList.remove("no-scroll")
+      if (!bodyEl.classList.contains("no-scroll")) {
+        bodyEl.classList.remove("no-scroll")
+      }
       currentModal.classList.remove("show")
     }, 600)
 
@@ -40,7 +42,9 @@ modals.forEach((modal) => {
     currentModalInner.style.transform = "rotateX(90deg)"
 
     setTimeout(() => {
-      bodyEl.classList.remove("no-scroll")
+      if (!bodyEl.classList.contains("no-scroll")) {
+        bodyEl.classList.remove("no-scroll")
+      }
       this.classList.remove("show")
     }, 600)
 
