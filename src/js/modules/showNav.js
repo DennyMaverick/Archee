@@ -11,7 +11,6 @@ burger.addEventListener("click", function () {
   if (this.classList.toggle("burger--active")) {
     resetLangList(langArrowMobile, langListMobile)
   }
-  bodyEl.classList.toggle("no-scroll")
   mobileNav.classList.toggle("mobile-nav--active")
 })
 

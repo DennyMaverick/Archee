@@ -6,12 +6,12 @@ const bodyEl = document.querySelector("body")
 const modalInners = document.querySelectorAll(".modal__inner")
 const modalBtns = document.querySelectorAll("[data-modal]")
 
+
 modalBtns.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
+  btn.addEventListener("click", function (e) {
     const currentModal = document.querySelector(e.target.dataset.modal)
     const currentModalInner = currentModal.querySelector(".modal__inner")
     currentModal.classList.add("show")
-
     setTimeout(() => {
       currentModalInner.style.transform = "rotateX(0deg)"
       bodyEl.classList.add("no-scroll")
@@ -20,15 +20,13 @@ modalBtns.forEach((btn) => {
 })
 
 modalCloseBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener("click", function () {
     const currentModal = btn.closest(".modal")
     const currentModalInner = currentModal.querySelector(".modal__inner")
     currentModalInner.style.transform = "rotateX(90deg)"
 
     setTimeout(() => {
-      if (!bodyEl.classList.contains("no-scroll")) {
-        bodyEl.classList.remove("no-scroll")
-      }
+      bodyEl.classList.remove("no-scroll")
       currentModal.classList.remove("show")
     }, 600)
 
@@ -42,9 +40,7 @@ modals.forEach((modal) => {
     currentModalInner.style.transform = "rotateX(90deg)"
 
     setTimeout(() => {
-      if (!bodyEl.classList.contains("no-scroll")) {
-        bodyEl.classList.remove("no-scroll")
-      }
+      bodyEl.classList.remove("no-scroll")
       this.classList.remove("show")
     }, 600)
 
